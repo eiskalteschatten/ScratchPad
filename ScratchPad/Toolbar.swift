@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Toolbar: View {
-    @State private var pageNumber: String = ""
+    @ObservedObject var noteModel: NoteModel
     
     var body: some View {
         Button(action: { print("back") } ) {
@@ -17,13 +17,15 @@ struct Toolbar: View {
         Button(action: { print("forward") } ) {
             Label("Forward", systemImage: "chevron.right")
         }
-        TextField("", text: $pageNumber)
+        TextField("", text: $noteModel.pageNumberString)
             .frame(width: 30)
     }
 }
 
 struct Toolbar_Previews: PreviewProvider {
+    @ObservedObject private static var noteModel = NoteModel()
+    
     static var previews: some View {
-        Toolbar()
+        Toolbar(noteModel: noteModel)
     }
 }

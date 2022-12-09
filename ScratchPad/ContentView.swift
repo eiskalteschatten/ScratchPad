@@ -14,7 +14,7 @@ struct ContentView: View {
         RichTextEditor(noteModel: noteModel)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
-                Toolbar()
+                Toolbar(noteModel: noteModel)
             }
     }
 }

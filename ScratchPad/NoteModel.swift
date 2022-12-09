@@ -16,10 +16,23 @@ final class NoteModel: ObservableObject {
         }
     }
     
-    @SceneStorage("pageNumber") var pageNumber: Int?
+    @AppStorage("pageNumber") var pageNumber: Int?
+    
+    @Published var pageNumberString: String = "" {
+        didSet {
+            guard let pageNumberInt = Int(pageNumberString) else {
+                return
+            }
+            pageNumber = pageNumberInt
+        }
+    }
     
     init() {
         noteContents = NSAttributedString(string: "")
+        
+        if let unwrappedPageNumber = pageNumber {
+            pageNumberString = String(unwrappedPageNumber)
+        }
     }
 }
 
