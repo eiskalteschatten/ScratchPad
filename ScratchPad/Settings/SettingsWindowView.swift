@@ -10,6 +10,8 @@ import SwiftUI
 struct SettingsWindowView: View {
     @ObservedObject private var settingsModel = SettingsModel()
     
+    @FocusState private var transTextfieldIsFocused: Bool
+    
     private let labelColumnWidth: CGFloat = 150
     
     var body: some View {
@@ -19,7 +21,13 @@ struct SettingsWindowView: View {
                     Text("Window Transparency:")
                         .frame(width: labelColumnWidth, alignment: .trailing)
                     
-                    Slider(value: $settingsModel.windowTransparency, in: 0...100)
+                    Slider(value: Binding<Double>(
+                        get: { settingsModel.windowTransparency },
+                        set: {
+                            settingsModel.windowTransparency = $0
+                            transTextfieldIsFocused = false
+                        }
+                    ), in: 0...100)
                     
                     HStack {
                         TextField("", value: Binding<Double>(
@@ -37,6 +45,7 @@ struct SettingsWindowView: View {
                                 settingsModel.windowTransparency = finalValue
                             }
                         ), formatter: NumberFormatter())
+                            .focused($transTextfieldIsFocused)
                             .frame(width: 50)
                         
                         Text("%")

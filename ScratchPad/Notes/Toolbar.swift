@@ -10,11 +10,16 @@ import SwiftUI
 struct Toolbar: View {
     @EnvironmentObject var noteModel: NoteModel
     
+    @FocusState private var pageNumberTextfieldIsFocused: Bool
+    @State private var pageNumberTextfieldID = UUID()
+    
     var body: some View {
         Button(action: {
             if noteModel.pageNumber > 1 {
                 noteModel.pageNumber -= 1
             }
+            
+            unfocusPageNumberTextfield()
         } ) {
             Label("Back", systemImage: "chevron.left")
         }
@@ -22,6 +27,7 @@ struct Toolbar: View {
         
         Button(action: {
             noteModel.pageNumber += 1
+            unfocusPageNumberTextfield()
         } ) {
             Label("Forward", systemImage: "chevron.right")
         }
@@ -30,7 +36,14 @@ struct Toolbar: View {
             get: { noteModel.pageNumber },
             set: { noteModel.pageNumber = abs($0) }
         ), formatter: NumberFormatter())
-            .frame(width: 30)
+        .focused($pageNumberTextfieldIsFocused)
+        .frame(width: 30)
+        .id(pageNumberTextfieldID)
+    }
+    
+    private func unfocusPageNumberTextfield() {
+        pageNumberTextfieldIsFocused = false
+        pageNumberTextfieldID = UUID()
     }
 }
 
