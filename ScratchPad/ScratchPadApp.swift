@@ -16,6 +16,7 @@ struct ScratchPadApp: App {
             ContentView(noteModel: noteModel)
         }
         .commands {
+            ScratchPadCommands()
             TextEditingCommands()
             TextFormattingCommands()
         }

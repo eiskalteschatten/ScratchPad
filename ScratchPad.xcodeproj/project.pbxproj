@@ -14,6 +14,10 @@
 		93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9029433E9A00C07F70 /* Toolbar.swift */; };
 		93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9229433F8100C07F70 /* RichTextEditor.swift */; };
 		93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E942943415C00C07F70 /* NoteModel.swift */; };
+		93FE2E9729434A6E00C07F70 /* ScratchPadCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9629434A6E00C07F70 /* ScratchPadCommands.swift */; };
+		93FE2E9929434B5C00C07F70 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9829434B5C00C07F70 /* SettingsWindow.swift */; };
+		93FE2E9C29434C1D00C07F70 /* SettingsWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */; };
+		93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		93FE2E9029433E9A00C07F70 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		93FE2E9229433F8100C07F70 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		93FE2E942943415C00C07F70 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		93FE2E9629434A6E00C07F70 /* ScratchPadCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadCommands.swift; sourceTree = "<group>"; };
+		93FE2E9829434B5C00C07F70 /* SettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindow.swift; sourceTree = "<group>"; };
+		93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowView.swift; sourceTree = "<group>"; };
+		93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
+				93FE2E9629434A6E00C07F70 /* ScratchPadCommands.swift */,
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
 				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
 				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
 				93FE2E942943415C00C07F70 /* NoteModel.swift */,
+				93FE2E9A29434C0900C07F70 /* Settings */,
 				93FE2E8529433D7B00C07F70 /* Assets.xcassets */,
 				93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */,
 				93FE2E8729433D7B00C07F70 /* Preview Content */,
@@ -76,6 +86,16 @@
 				93FE2E8829433D7B00C07F70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93FE2E9A29434C0900C07F70 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				93FE2E9829434B5C00C07F70 /* SettingsWindow.swift */,
+				93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */,
+				93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */,
 				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
 				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,
+				93FE2E9729434A6E00C07F70 /* ScratchPadCommands.swift in Sources */,
+				93FE2E9929434B5C00C07F70 /* SettingsWindow.swift in Sources */,
 				93FE2E8229433D7900C07F70 /* ScratchPadApp.swift in Sources */,
+				93FE2E9C29434C1D00C07F70 /* SettingsWindowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
