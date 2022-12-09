@@ -13,5 +13,9 @@ struct ScratchPadApp: App {
         WindowGroup {
             ContentView()
         }
+        .commands {
+            TextEditingCommands()
+            TextFormattingCommands()
+        }
     }
 }
