@@ -5,10 +5,23 @@
 //  Created by Alex Seifert on 09.12.22.
 //
 
+import AppKit
 import SwiftUI
+
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        NSWindow.allowsAutomaticWindowTabbing = false
+        
+        let windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100
+        NSApp.windows.first?.isOpaque = windowTransparency == 100
+        NSApp.windows.first?.alphaValue = windowTransparency / 100
+    }
+}
 
 @main
 struct ScratchPadApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @ObservedObject private var noteModel = NoteModel()
     @ObservedObject private var settingsModel = SettingsModel()
     
