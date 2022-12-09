@@ -15,7 +15,7 @@ struct SettingsWindowView: View {
     private let labelColumnWidth: CGFloat = 150
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 30) {
             Group {
                 HStack(alignment: .top, spacing: 15) {
                     Text("Window Transparency:")
