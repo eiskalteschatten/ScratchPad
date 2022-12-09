@@ -19,7 +19,7 @@ struct ScratchPadApp: App {
                 .environmentObject(settingsModel)
         }
         .commands {
-//            ScratchPadCommands()
+            ScratchPadCommands()
             TextEditingCommands()
             TextFormattingCommands()
         }
