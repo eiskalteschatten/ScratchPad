@@ -56,7 +56,6 @@ struct RichTextEditor: NSViewRepresentable {
         }
         
         func textDidChange(_ notification: Notification) {
-            // TODO: can I just use self.textView instead?
             guard let _textView = notification.object as? NSTextView else {
                 return
             }
