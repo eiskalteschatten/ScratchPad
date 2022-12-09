@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class SettingsModel: ObservableObject {
-    @Published var windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100{
+    @Published var windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100 {
         didSet {
             UserDefaults.standard.set(windowTransparency, forKey: "windowTransparency")
             
@@ -16,6 +16,14 @@ final class SettingsModel: ObservableObject {
         }
     }
 
+    @Published var floatAboveOtherWindows = UserDefaults.standard.bool(forKey: "floatAboveOtherWindows") {
+        didSet {
+            UserDefaults.standard.set(floatAboveOtherWindows, forKey: "floatAboveOtherWindows")
+            
+            // TODO: change window float
+        }
+    }
+    
     @Published var storageLocation = UserDefaults.standard.url(forKey: "storageLocation") {
         didSet {
             UserDefaults.standard.set(storageLocation, forKey: "storageLocation")

@@ -15,7 +15,7 @@ struct SettingsWindowView: View {
     private let labelColumnWidth: CGFloat = 150
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 30) {
+        VStack(alignment: .leading, spacing: 20) {
             Group {
                 HStack(alignment: .top, spacing: 15) {
                     Text("Window Transparency:")
@@ -50,6 +50,14 @@ struct SettingsWindowView: View {
                         
                         Text("%")
                     }
+                }
+            }
+            Group {
+                HStack(alignment: .top, spacing: 15) {
+                    Text("Floating:")
+                        .frame(width: labelColumnWidth, alignment: .trailing)
+                    
+                    Toggle("Float above other windows", isOn: $settingsModel.floatAboveOtherWindows)
                 }
             }
             Group {
