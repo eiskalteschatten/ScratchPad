@@ -12,7 +12,8 @@ final class SettingsModel: ObservableObject {
         didSet {
             UserDefaults.standard.set(windowTransparency, forKey: "windowTransparency")
             
-            // TODO: change window transparency
+            NSApp.windows.first?.isOpaque = windowTransparency == 100
+            NSApp.windows.first?.alphaValue = windowTransparency / 100
         }
     }
 
