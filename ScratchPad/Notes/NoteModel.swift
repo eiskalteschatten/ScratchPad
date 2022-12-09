@@ -89,7 +89,9 @@ final class NoteModel: ObservableObject {
                 print("accessing not allowed")
                 return
             }
-            try contents.rtfd().write(to: fullURL)
+            
+            let rtdf = contents.rtfdFileWrapper(from: .init(location: 0, length: contents.length))
+            try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
             fullURL.stopAccessingSecurityScopedResource()
         } catch {
             // TODO: do something here. This is also a bad error!
