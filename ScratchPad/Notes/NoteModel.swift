@@ -37,7 +37,15 @@ final class NoteModel: ObservableObject {
     }
     
     private func openNote() {
-        guard let storageLocation = UserDefaults.standard.url(forKey: "storageLocation") else {
+        var isStale = false {
+            didSet {
+                // TODO: handle stale bookmarks
+                print("isStale: \(isStale)")
+            }
+        }
+        guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
+              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
+        else {
             // TODO: do something. This is a bad error!
             print("error1")
             return
@@ -47,11 +55,15 @@ final class NoteModel: ObservableObject {
         let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtfd]
         
         do {
-            if fullURL.startAccessingSecurityScopedResource() {
-                let attributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
-                noteContents = attributedString
-                fullURL.stopAccessingSecurityScopedResource()
+            guard storageLocation.startAccessingSecurityScopedResource() else {
+                // TODO: do something. This is a bad error!
+                print("accessing not allowed")
+                return
             }
+            
+            let attributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
+            noteContents = attributedString
+            fullURL.stopAccessingSecurityScopedResource()
         } catch {
             // TODO: do something here. This is also a bad error!
             print(error)
@@ -59,7 +71,11 @@ final class NoteModel: ObservableObject {
     }
     
     private func saveNote(_ contents: NSAttributedString) {
-        guard let storageLocation = UserDefaults.standard.url(forKey: "storageLocation") else {
+        var isStale = false
+        
+        guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
+            let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
+        else {
             // TODO: do something. This is a bad error!
             print("error1")
             return
@@ -68,10 +84,13 @@ final class NoteModel: ObservableObject {
         let fullURL = storageLocation.appendingPathComponent(noteName)
 
         do {
-            if fullURL.startAccessingSecurityScopedResource() {
-                try contents.rtfd().write(to: fullURL)
-                fullURL.stopAccessingSecurityScopedResource()
+            guard storageLocation.startAccessingSecurityScopedResource() else {
+                // TODO: do something. This is a bad error!
+                print("accessing not allowed")
+                return
             }
+            try contents.rtfd().write(to: fullURL)
+            fullURL.stopAccessingSecurityScopedResource()
         } catch {
             // TODO: do something here. This is also a bad error!
             print(error.localizedDescription)

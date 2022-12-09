@@ -24,12 +24,19 @@ final class SettingsModel: ObservableObject {
         }
     }
     
-    @Published var storageLocation = UserDefaults.standard.url(forKey: "storageLocation") {
+    @Published var storageLocation: URL? {
         didSet {
-            UserDefaults.standard.set(storageLocation, forKey: "storageLocation")
-            setFormattedStorageLocation()
-            
-            // TODO: asynchronously move files
+            do {
+                // TODO: what about the default URL?
+                let bookmarkData = try storageLocation!.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
+                
+                UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
+                setFormattedStorageLocation()
+                
+                // TODO: asynchronously move files
+            } catch {
+                print(error)
+            }
         }
     }
     
@@ -41,7 +48,11 @@ final class SettingsModel: ObservableObject {
     }
     
     init() {
-        if storageLocation == nil {
+        if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
+            var isStale = false
+            storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
+        }
+        else {
             resetStorageLocation()
         }
         
