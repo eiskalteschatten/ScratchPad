@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct RichTextEditor: NSViewRepresentable {
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
     @EnvironmentObject var noteModel: NoteModel
     
-    var textView = NSTextView()
-    
-    func makeNSView(context: Context) -> NSTextView {
+    func makeNSView(context: Context) -> NSScrollView {
+        let scrollView = NSTextView.scrollableTextView()
+        
+        guard let textView = scrollView.documentView as? NSTextView else {
+            return scrollView
+        }
+
         textView.delegate = context.coordinator
         textView.isRichText = true
         textView.allowsUndo = true
@@ -33,28 +33,35 @@ struct RichTextEditor: NSViewRepresentable {
         textView.isAutomaticTextCompletionEnabled = true
         textView.isContinuousSpellCheckingEnabled = true
         textView.usesAdaptiveColorMappingForDarkAppearance = true
-
-        return textView
+        
+        context.coordinator.textView = textView
+        
+        return scrollView
     }
     
-    func updateNSView(_ nsView: NSTextView, context: Context) {
-        nsView.textStorage?.setAttributedString(noteModel.noteContents)
+    func updateNSView(_ nsView: NSScrollView, context: Context) {
+        context.coordinator.textView?.textStorage?.setAttributedString(noteModel.noteContents)
     }
-
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
     class Coordinator: NSObject, NSTextViewDelegate {
         var parent: RichTextEditor
-        var affectedCharRange: NSRange?
+        var textView : NSTextView?
         
         init(_ parent: RichTextEditor) {
             self.parent = parent
         }
         
         func textDidChange(_ notification: Notification) {
-            guard let textView = notification.object as? NSTextView else {
+            // TODO: can I just use self.textView instead?
+            guard let _textView = notification.object as? NSTextView else {
                 return
             }
             
-            self.parent.noteModel.noteContents = textView.attributedString()
+            self.parent.noteModel.noteContents = _textView.attributedString()
         }
         
         func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRange: NSRange, replacementString: String?) -> Bool {
