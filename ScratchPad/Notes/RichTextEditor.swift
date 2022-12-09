@@ -37,6 +37,7 @@ struct RichTextEditor: NSViewRepresentable {
         textView.usesRuler = true
         textView.usesFindBar = true
         textView.usesFontPanel = true
+        textView.importsGraphics = true
         
         context.coordinator.textView = textView
         
