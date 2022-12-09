@@ -16,7 +16,7 @@ class SettingsWindowManager {
         
         window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 450, height: 550),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable],
+            styleMask: [.titled, .closable, .miniaturizable],
             backing: .buffered,
             defer: false
         )
@@ -24,10 +24,6 @@ class SettingsWindowManager {
         window!.center()
         window!.setFrameAutosaveName("Settings")
         window!.isReleasedWhenClosed = false
-        window!.isMovableByWindowBackground  = true
-        window!.titleVisibility = .hidden
-        window!.titlebarAppearsTransparent = true
-        window!.styleMask.insert(.fullSizeContentView)
         window!.title = "Settings"
 
         window!.contentView = NSHostingView(rootView: contentView)

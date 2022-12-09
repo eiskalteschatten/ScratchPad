@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct SettingsWindowView: View {
+    @ObservedObject private var settingsModel = SettingsModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Storage Location")
+                .font(.title2)
+            
+            Text(settingsModel.storageLocation ?? "No storage location selected")
+            
+            Button("Change Storage Location...", action: {
+                // TODO: prompt the user to choose a folder
+            })
+            
+        }
+        .padding()
     }
 }
 

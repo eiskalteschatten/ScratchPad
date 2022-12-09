@@ -10,6 +10,3 @@ import SwiftUI
 final class SettingsModel: ObservableObject {
     @AppStorage("storageLocation") var storageLocation: String?
 }
-
-
-
