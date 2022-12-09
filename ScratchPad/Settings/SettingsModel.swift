@@ -11,7 +11,6 @@ final class SettingsModel: ObservableObject {
     @Published var windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100 {
         didSet {
             UserDefaults.standard.set(windowTransparency, forKey: "windowTransparency")
-            
             NSApp.windows.first?.isOpaque = windowTransparency == 100
             NSApp.windows.first?.alphaValue = windowTransparency / 100
         }
@@ -20,8 +19,7 @@ final class SettingsModel: ObservableObject {
     @Published var floatAboveOtherWindows = UserDefaults.standard.bool(forKey: "floatAboveOtherWindows") {
         didSet {
             UserDefaults.standard.set(floatAboveOtherWindows, forKey: "floatAboveOtherWindows")
-            
-            // TODO: change window float
+            NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
         }
     }
     

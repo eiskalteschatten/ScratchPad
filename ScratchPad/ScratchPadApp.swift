@@ -15,6 +15,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100
         NSApp.windows.first?.isOpaque = windowTransparency == 100
         NSApp.windows.first?.alphaValue = windowTransparency / 100
+        
+        let floatAboveOtherWindows = UserDefaults.standard.bool(forKey: "floatAboveOtherWindows")
+        NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
     }
 }
 
