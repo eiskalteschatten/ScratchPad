@@ -20,7 +20,9 @@ struct RichTextEditor: NSViewRepresentable {
         textView.delegate = context.coordinator
         textView.isRichText = true
         textView.allowsUndo = true
-        textView.allowsImageEditing = false
+        textView.allowsImageEditing = true
+        textView.allowsDocumentBackgroundColorChange = true
+        textView.allowsCharacterPickerTouchBarItem = true
 
         return textView
     }
