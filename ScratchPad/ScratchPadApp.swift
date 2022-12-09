@@ -19,9 +19,14 @@ struct ScratchPadApp: App {
                 .environmentObject(settingsModel)
         }
         .commands {
-            ScratchPadCommands()
+//            ScratchPadCommands()
             TextEditingCommands()
             TextFormattingCommands()
+        }
+        
+        Settings {
+            SettingsWindowView()
+                .frame(width: 450)
         }
     }
 }
