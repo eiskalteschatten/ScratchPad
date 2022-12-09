@@ -22,7 +22,6 @@ final class NoteModel: ObservableObject {
         }
     }
     
-    private var noteContentsBag = Set<AnyCancellable>()
     @Published var noteContents: NSAttributedString {
         didSet {
             if !switchingPages {
