@@ -19,7 +19,11 @@ final class NoteModel: ObservableObject {
     }
     
     private var noteContentsBag = Set<AnyCancellable>()
-    @Published var noteContents: NSAttributedString
+    @Published var noteContents: NSAttributedString {
+        didSet {
+            saveNote()
+        }
+    }
     
     private var noteName: String {
         return "\(NOTE_NAME_PREFIX)\(pageNumber).rtfd"
@@ -27,12 +31,6 @@ final class NoteModel: ObservableObject {
     
     init() {
         noteContents = NSAttributedString(string: "")
-        
-        $noteContents
-            .debounce(for: .seconds(1), scheduler: DispatchQueue.main)
-            .sink { self.saveNote($0) }
-            .store(in: &noteContentsBag)
-        
         openNote()
     }
     
@@ -70,7 +68,7 @@ final class NoteModel: ObservableObject {
         }
     }
     
-    private func saveNote(_ contents: NSAttributedString) {
+    private func saveNote() {
         var isStale = false
         
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
@@ -90,7 +88,7 @@ final class NoteModel: ObservableObject {
                 return
             }
             
-            let rtdf = contents.rtfdFileWrapper(from: .init(location: 0, length: contents.length))
+            let rtdf = noteContents.rtfdFileWrapper(from: .init(location: 0, length: noteContents.length))
             try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
             fullURL.stopAccessingSecurityScopedResource()
         } catch {
