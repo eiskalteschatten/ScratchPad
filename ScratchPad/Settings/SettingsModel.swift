@@ -8,24 +8,18 @@
 import SwiftUI
 
 final class SettingsModel: ObservableObject {
-    @AppStorage("windowTransparency") var windowTransparency: Double = 100 {
-        willSet {
-            DispatchQueue.main.async {
-                self.objectWillChange.send()
-            }
-        }
+    @Published var windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100{
         didSet {
-            // TODO: asynchronously move files
+            UserDefaults.standard.set(windowTransparency, forKey: "windowTransparency")
+            
+            // TODO: change window transparency
         }
     }
-    
-    @AppStorage("storageLocation") var storageLocation: URL? {
-        willSet {
-            DispatchQueue.main.async {
-                self.objectWillChange.send()
-            }
-        }
+
+    @Published var storageLocation = UserDefaults.standard.url(forKey: "storageLocation") {
         didSet {
+            UserDefaults.standard.set(storageLocation, forKey: "storageLocation")
+            
             // TODO: asynchronously move files
         }
     }
