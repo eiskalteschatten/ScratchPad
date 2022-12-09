@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var noteContent = NSAttributedString(string: "")
+    @ObservedObject private var noteModel = NoteModel()
     
     var body: some View {
-        RichTextEditor(text: $noteContent)
+        RichTextEditor(noteModel: noteModel)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
                 Toolbar()

@@ -13,6 +13,7 @@
 		93FE2E8929433D7B00C07F70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FE2E8829433D7B00C07F70 /* Preview Assets.xcassets */; };
 		93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9029433E9A00C07F70 /* Toolbar.swift */; };
 		93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9229433F8100C07F70 /* RichTextEditor.swift */; };
+		93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E942943415C00C07F70 /* NoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScratchPad.entitlements; sourceTree = "<group>"; };
 		93FE2E9029433E9A00C07F70 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		93FE2E9229433F8100C07F70 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
+		93FE2E942943415C00C07F70 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
-				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
 				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
+				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
+				93FE2E942943415C00C07F70 /* NoteModel.swift */,
 				93FE2E8529433D7B00C07F70 /* Assets.xcassets */,
 				93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */,
 				93FE2E8729433D7B00C07F70 /* Preview Content */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
 				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,

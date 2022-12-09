@@ -12,9 +12,9 @@ struct RichTextEditor: NSViewRepresentable {
         Coordinator(self)
     }
     
-    var textView = NSTextView()
+    @ObservedObject var noteModel: NoteModel
     
-    @Binding var text: NSAttributedString
+    var textView = NSTextView()
     
     func makeNSView(context: Context) -> NSTextView {
         textView.delegate = context.coordinator
@@ -28,7 +28,7 @@ struct RichTextEditor: NSViewRepresentable {
     }
     
     func updateNSView(_ nsView: NSTextView, context: Context) {
-        nsView.textStorage?.setAttributedString(text)
+        nsView.textStorage?.setAttributedString(noteModel.noteContents)
     }
 
     class Coordinator: NSObject, NSTextViewDelegate {
@@ -44,7 +44,7 @@ struct RichTextEditor: NSViewRepresentable {
                 return
             }
             
-            self.parent.text = textView.attributedString()
+            self.parent.noteModel.noteContents = textView.attributedString()
         }
         
         func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRange: NSRange, replacementString: String?) -> Bool {
