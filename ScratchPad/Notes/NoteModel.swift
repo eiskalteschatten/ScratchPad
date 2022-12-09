@@ -16,32 +16,15 @@ final class NoteModel: ObservableObject {
         }
     }
     
-    @AppStorage("pageNumber") var pageNumber: Int? {
+    @Published var pageNumber = UserDefaults.standard.value(forKey: "pageNumber") as? Int ?? 1 {
         didSet {
+            UserDefaults.standard.set(pageNumber, forKey: "pageNumber")
+            
             // TODO: load note contents and set noteContents
-        }
-    }
-    
-    @Published var pageNumberString: String = "" {
-        didSet {
-            guard let pageNumberInt = Int(pageNumberString) else {
-                return
-            }
-            pageNumber = pageNumberInt
         }
     }
     
     init() {
         noteContents = NSAttributedString(string: "")
-        
-        if let unwrappedPageNumber = pageNumber {
-            pageNumberString = String(unwrappedPageNumber)
-        }
-    }
-    
-    func initPageNumber() {
-        if pageNumber == nil {
-            pageNumber = 1
-        }
     }
 }
