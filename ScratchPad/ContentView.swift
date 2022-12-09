@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var noteModel = NoteModel()
+    @ObservedObject var noteModel: NoteModel
     
     var body: some View {
         RichTextEditor(noteModel: noteModel)
@@ -20,7 +20,9 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    @ObservedObject private static var noteModel = NoteModel()
+    
     static var previews: some View {
-        ContentView()
+        ContentView(noteModel: noteModel)
     }
 }

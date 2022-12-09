@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ScratchPadApp: App {
+    @ObservedObject private var noteModel = NoteModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(noteModel: noteModel)
         }
         .commands {
             TextEditingCommands()
