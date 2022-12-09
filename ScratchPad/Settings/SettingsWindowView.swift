@@ -15,12 +15,12 @@ struct SettingsWindowView: View {
             Text("Storage Location")
                 .font(.title2)
             
-            Text(settingsModel.storageLocation ?? "No storage location selected")
+            Text(settingsModel.storageLocation?.absoluteString ?? "No storage location selected")
+                .font(.caption)
             
             Button("Change Storage Location...", action: {
                 // TODO: prompt the user to choose a folder
             })
-            
         }
         .padding()
     }
