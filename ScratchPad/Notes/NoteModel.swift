@@ -22,7 +22,7 @@ final class NoteModel: ObservableObject {
         }
     }
     
-    @Published var noteContents: NSAttributedString {
+    @Published var noteContents = NSAttributedString(string: "") {
         didSet {
             if !switchingPages {
                 saveNote()
@@ -35,7 +35,6 @@ final class NoteModel: ObservableObject {
     }
     
     init() {
-        noteContents = NSAttributedString(string: "")
         openNote()
     }
     
