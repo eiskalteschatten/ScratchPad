@@ -19,19 +19,38 @@ final class SettingsModel: ObservableObject {
     @Published var storageLocation = UserDefaults.standard.url(forKey: "storageLocation") {
         didSet {
             UserDefaults.standard.set(storageLocation, forKey: "storageLocation")
+            setFormattedStorageLocation()
             
             // TODO: asynchronously move files
         }
+    }
+    
+    @Published var formattedStorageLocation: String?
+    
+    private var defaultStorageLocation: URL {
+        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        return documentURL.appendingPathComponent("ScratchPad")
     }
     
     init() {
         if storageLocation == nil {
             resetStorageLocation()
         }
+        
+        setFormattedStorageLocation()
     }
     
     func resetStorageLocation() {
-        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        storageLocation = documentURL.appendingPathComponent("ScratchPad")
+        storageLocation = defaultStorageLocation
+    }
+    
+    private func setFormattedStorageLocation() {
+        if storageLocation == defaultStorageLocation {
+            formattedStorageLocation = "Your Documents folder"
+        }
+        else {
+            guard let locationString = storageLocation?.absoluteString else { return }
+            formattedStorageLocation = locationString.replacingOccurrences(of: "file://", with: "")
+        }
     }
 }
