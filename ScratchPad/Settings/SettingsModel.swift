@@ -27,13 +27,14 @@ final class SettingsModel: ObservableObject {
     @Published var storageLocation: URL? {
         didSet {
             do {
-                // TODO: what about the default URL?
-                let bookmarkData = try storageLocation!.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
-                
-                UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
-                setFormattedStorageLocation()
-                
-                // TODO: asynchronously move files
+                if let unwrappedLocation = storageLocation {
+                    let bookmarkData = try unwrappedLocation.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
+                    
+                    UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
+                    setFormattedStorageLocation()
+                    
+                    // TODO: move files
+                }
             } catch {
                 print(error)
             }
@@ -45,6 +46,10 @@ final class SettingsModel: ObservableObject {
     private var defaultStorageLocation: URL {
         let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentURL.appendingPathComponent("ScratchPad")
+    }
+    
+    private var usesDefaultStorageLocation: Bool {
+        return storageLocation == defaultStorageLocation
     }
     
     init() {
@@ -60,11 +65,20 @@ final class SettingsModel: ObservableObject {
     }
     
     func resetStorageLocation() {
-        storageLocation = defaultStorageLocation
+        do {
+            if !FileManager.default.fileExists(atPath: defaultStorageLocation.path) {
+                try FileManager.default.createDirectory(atPath: defaultStorageLocation.path, withIntermediateDirectories: true, attributes: nil)
+            }
+            
+            storageLocation = defaultStorageLocation
+        } catch {
+            // TODO: do something here too
+            print(error)
+        }
     }
     
     private func setFormattedStorageLocation() {
-        if storageLocation == defaultStorageLocation {
+        if usesDefaultStorageLocation {
             formattedStorageLocation = "Your Documents folder"
         }
         else {
