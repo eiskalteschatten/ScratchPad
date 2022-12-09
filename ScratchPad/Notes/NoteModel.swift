@@ -40,7 +40,7 @@ final class NoteModel: ObservableObject {
     }
     
     func initPageNumber() {
-        if (pageNumber == nil) {
+        if pageNumber == nil {
             pageNumber = 1
         }
     }

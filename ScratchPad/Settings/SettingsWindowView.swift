@@ -18,11 +18,24 @@ struct SettingsWindowView: View {
             Text(settingsModel.storageLocation?.absoluteString ?? "No storage location selected")
                 .font(.caption)
             
-            Button("Change Storage Location...", action: {
-                // TODO: prompt the user to choose a folder
-            })
+            HStack {
+                Button("Change Storage Location...", action: selectStorageLocation)
+                Button("Use Default Storage Location", action: settingsModel.resetStorageLocation)
+            }
         }
         .padding()
+    }
+    
+    private func selectStorageLocation() {
+        let openPanel = NSOpenPanel()
+        openPanel.allowsMultipleSelection = false
+        openPanel.canChooseDirectories = true
+        openPanel.canChooseFiles = false
+        let response = openPanel.runModal()
+        
+        if response == .OK {
+            settingsModel.storageLocation = openPanel.url
+        }
     }
 }
 
