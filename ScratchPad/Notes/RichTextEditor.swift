@@ -33,6 +33,10 @@ struct RichTextEditor: NSViewRepresentable {
         textView.isAutomaticTextCompletionEnabled = true
         textView.isContinuousSpellCheckingEnabled = true
         textView.usesAdaptiveColorMappingForDarkAppearance = true
+        textView.usesInspectorBar = true
+        textView.usesRuler = true
+        textView.usesFindBar = true
+        textView.usesFontPanel = true
         
         context.coordinator.textView = textView
         
