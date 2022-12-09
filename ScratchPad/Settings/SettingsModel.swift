@@ -36,7 +36,7 @@ final class SettingsModel: ObservableObject {
     @Published var formattedStorageLocation: String?
     
     private var defaultStorageLocation: URL {
-        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentURL.appendingPathComponent("ScratchPad")
     }
     

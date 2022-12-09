@@ -81,6 +81,7 @@ struct SettingsWindowView: View {
         openPanel.allowsMultipleSelection = false
         openPanel.canChooseDirectories = true
         openPanel.canChooseFiles = false
+        openPanel.canCreateDirectories = true
         let response = openPanel.runModal()
         
         if response == .OK {
