@@ -23,6 +23,16 @@ struct RichTextEditor: NSViewRepresentable {
         textView.allowsImageEditing = true
         textView.allowsDocumentBackgroundColorChange = true
         textView.allowsCharacterPickerTouchBarItem = true
+        textView.isAutomaticLinkDetectionEnabled = true
+        textView.displaysLinkToolTips = true
+        textView.isAutomaticDataDetectionEnabled = true
+        textView.isAutomaticTextReplacementEnabled = true
+        textView.isAutomaticDashSubstitutionEnabled = true
+        textView.isAutomaticSpellingCorrectionEnabled = true
+        textView.isAutomaticQuoteSubstitutionEnabled = true
+        textView.isAutomaticTextCompletionEnabled = true
+        textView.isContinuousSpellCheckingEnabled = true
+        textView.usesAdaptiveColorMappingForDarkAppearance = true
 
         return textView
     }
