@@ -10,10 +10,13 @@ import SwiftUI
 @main
 struct ScratchPadApp: App {
     @ObservedObject private var noteModel = NoteModel()
+    @ObservedObject private var settingsModel = SettingsModel()
     
     var body: some Scene {
         WindowGroup {
-            ContentView(noteModel: noteModel)
+            ContentView()
+                .environmentObject(noteModel)
+                .environmentObject(settingsModel)
         }
         .commands {
             ScratchPadCommands()

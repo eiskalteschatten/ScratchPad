@@ -12,7 +12,7 @@ struct RichTextEditor: NSViewRepresentable {
         Coordinator(self)
     }
     
-    @ObservedObject var noteModel: NoteModel
+    @EnvironmentObject var noteModel: NoteModel
     
     var textView = NSTextView()
     

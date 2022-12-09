@@ -8,21 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var noteModel: NoteModel
+    @EnvironmentObject var noteModel: NoteModel
     
     var body: some View {
-        RichTextEditor(noteModel: noteModel)
+        RichTextEditor()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
-                Toolbar(noteModel: noteModel)
+                Toolbar()
             }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    @ObservedObject private static var noteModel = NoteModel()
-    
     static var previews: some View {
-        ContentView(noteModel: noteModel)
+        ContentView()
     }
 }

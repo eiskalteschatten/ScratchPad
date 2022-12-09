@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Toolbar: View {
-    @ObservedObject var noteModel: NoteModel
+    @EnvironmentObject var noteModel: NoteModel
     
     var body: some View {
         Button(action: {
@@ -32,9 +32,7 @@ struct Toolbar: View {
 }
 
 struct Toolbar_Previews: PreviewProvider {
-    @ObservedObject private static var noteModel = NoteModel()
-    
     static var previews: some View {
-        Toolbar(noteModel: noteModel)
+        Toolbar()
     }
 }
