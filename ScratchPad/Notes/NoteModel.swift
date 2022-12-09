@@ -44,7 +44,6 @@ final class NoteModel: ObservableObject {
         var isStale = false {
             didSet {
                 // TODO: handle stale bookmarks
-                print("isStale: \(isStale)")
             }
         }
         
@@ -79,7 +78,11 @@ final class NoteModel: ObservableObject {
     }
     
     private func saveNote() {
-        var isStale = false
+        var isStale = false {
+            didSet {
+                // TODO: handle stale bookmarks
+            }
+        }
         
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
             let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
