@@ -16,7 +16,11 @@ final class NoteModel: ObservableObject {
         }
     }
     
-    @AppStorage("pageNumber") var pageNumber: Int?
+    @AppStorage("pageNumber") var pageNumber: Int? {
+        didSet {
+            // TODO: load note contents and set noteContents
+        }
+    }
     
     @Published var pageNumberString: String = "" {
         didSet {
