@@ -68,10 +68,7 @@
 			children = (
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
 				93FE2E9629434A6E00C07F70 /* ScratchPadCommands.swift */,
-				93FE2E8329433D7900C07F70 /* ContentView.swift */,
-				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
-				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
-				93FE2E942943415C00C07F70 /* NoteModel.swift */,
+				93FE2E9F29434CAE00C07F70 /* Notes */,
 				93FE2E9A29434C0900C07F70 /* Settings */,
 				93FE2E8529433D7B00C07F70 /* Assets.xcassets */,
 				93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */,
@@ -96,6 +93,17 @@
 				93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		93FE2E9F29434CAE00C07F70 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				93FE2E8329433D7900C07F70 /* ContentView.swift */,
+				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
+				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
+				93FE2E942943415C00C07F70 /* NoteModel.swift */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
