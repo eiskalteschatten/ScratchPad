@@ -8,7 +8,23 @@
 import SwiftUI
 
 final class SettingsModel: ObservableObject {
+    @AppStorage("windowTransparency") var windowTransparency: Double = 100 {
+        willSet {
+            DispatchQueue.main.async {
+                self.objectWillChange.send()
+            }
+        }
+        didSet {
+            // TODO: asynchronously move files
+        }
+    }
+    
     @AppStorage("storageLocation") var storageLocation: URL? {
+        willSet {
+            DispatchQueue.main.async {
+                self.objectWillChange.send()
+            }
+        }
         didSet {
             // TODO: asynchronously move files
         }
