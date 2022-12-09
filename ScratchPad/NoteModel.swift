@@ -34,6 +34,12 @@ final class NoteModel: ObservableObject {
             pageNumberString = String(unwrappedPageNumber)
         }
     }
+    
+    func initPageNumber() {
+        if (pageNumber == nil) {
+            pageNumber = 1
+        }
+    }
 }
 
 

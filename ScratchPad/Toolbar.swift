@@ -11,12 +11,21 @@ struct Toolbar: View {
     @ObservedObject var noteModel: NoteModel
     
     var body: some View {
-        Button(action: { print("back") } ) {
+        Button(action: {
+            noteModel.initPageNumber();
+            noteModel.pageNumber! -= 1
+        } ) {
             Label("Back", systemImage: "chevron.left")
         }
-        Button(action: { print("forward") } ) {
+        .disabled(noteModel.pageNumber == nil || noteModel.pageNumber! <= 1)
+        
+        Button(action: {
+            noteModel.initPageNumber();
+            noteModel.pageNumber! += 1
+        } ) {
             Label("Forward", systemImage: "chevron.right")
         }
+        
         TextField("", text: $noteModel.pageNumberString)
             .frame(width: 30)
     }
