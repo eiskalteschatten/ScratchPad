@@ -10,18 +10,24 @@ import Combine
 
 final class NoteModel: ObservableObject {
     private let NOTE_NAME_PREFIX = "note"
+    private var switchingPages = false
 
     @Published var pageNumber = UserDefaults.standard.value(forKey: "pageNumber") as? Int ?? 1 {
         didSet {
             UserDefaults.standard.set(pageNumber, forKey: "pageNumber")
+            switchingPages = true
+            noteContents = NSAttributedString(string: "")
             openNote()
+            switchingPages = false
         }
     }
     
     private var noteContentsBag = Set<AnyCancellable>()
     @Published var noteContents: NSAttributedString {
         didSet {
-            saveNote()
+            if !switchingPages {
+                saveNote()
+            }
         }
     }
     
@@ -41,6 +47,7 @@ final class NoteModel: ObservableObject {
                 print("isStale: \(isStale)")
             }
         }
+        
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
               let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
         else {
@@ -59,8 +66,11 @@ final class NoteModel: ObservableObject {
                 return
             }
             
-            let attributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
-            noteContents = attributedString
+            if let _ = try? fullURL.checkResourceIsReachable() {
+                let attributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
+                noteContents = attributedString
+            }
+            
             fullURL.stopAccessingSecurityScopedResource()
         } catch {
             // TODO: do something here. This is also a bad error!
