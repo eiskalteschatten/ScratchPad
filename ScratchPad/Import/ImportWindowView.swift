@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ImportWindowView: View {
+    @State private var importing = false
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Text("This importer will import your notes and settings from ScratchPad version 1.x.")
@@ -19,12 +21,19 @@ struct ImportWindowView: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
             
-            Button("Import") {
-                // TODO:
-                // 1. Check if there is a ScratchPad folder in Application Support
-                // 2. If so, import the settings
-                // 3. Make sure the storage location is correct since V1 always used the "Notes" subfolder
-                print("import!")
+            if !importing {
+                Button("Import") {
+                    // TODO:
+                    // 1. Check if there is a ScratchPad folder in Application Support
+                    // 2. If so, import the settings
+                    // 3. Make sure the storage location is correct since V1 always used the "Notes" subfolder
+                    print("import!")
+                    importing = true
+                }
+            }
+            else {
+                ProgressView()
+                    .controlSize(.small)
             }
         }
         .padding()
