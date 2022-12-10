@@ -19,6 +19,8 @@
 		93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */; };
 		93FE2EA72944959D00C07F70 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EA62944959D00C07F70 /* ErrorHandling.swift */; };
 		93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EA82944A19B00C07F70 /* NoteManager.swift */; };
+		93FE2EAC2944F66400C07F70 /* ImportWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EAB2944F66400C07F70 /* ImportWindowView.swift */; };
+		93FE2EAE2944F6F200C07F70 /* ImportWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EAD2944F6F200C07F70 /* ImportWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		93FE2EA62944959D00C07F70 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		93FE2EA82944A19B00C07F70 /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
+		93FE2EAB2944F66400C07F70 /* ImportWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWindowView.swift; sourceTree = "<group>"; };
+		93FE2EAD2944F6F200C07F70 /* ImportWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
 				93FE2E9F29434CAE00C07F70 /* Notes */,
 				93FE2E9A29434C0900C07F70 /* Settings */,
+				93FE2EAA2944F65100C07F70 /* Import */,
 				93FE2EA52944958F00C07F70 /* Lib */,
 				93FE2E8529433D7B00C07F70 /* Assets.xcassets */,
 				93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */,
@@ -115,6 +120,15 @@
 				93FE2EA82944A19B00C07F70 /* NoteManager.swift */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		93FE2EAA2944F65100C07F70 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				93FE2EAD2944F6F200C07F70 /* ImportWindow.swift */,
+				93FE2EAB2944F66400C07F70 /* ImportWindowView.swift */,
+			);
+			path = Import;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FE2EAE2944F6F200C07F70 /* ImportWindow.swift in Sources */,
 				93FE2EA72944959D00C07F70 /* ErrorHandling.swift in Sources */,
 				93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */,
 				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
 				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
+				93FE2EAC2944F66400C07F70 /* ImportWindowView.swift in Sources */,
 				93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */,
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,
 				93FE2E9729434A6E00C07F70 /* ScratchPadCommands.swift in Sources */,
@@ -337,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
