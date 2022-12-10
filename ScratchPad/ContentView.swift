@@ -9,12 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var noteModel: NoteModel
+    @EnvironmentObject var commandsModel: CommandsModel
     
     var body: some View {
         RichTextEditor()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
                 Toolbar()
+            }
+            .sheet(isPresented: $commandsModel.importSheetOpen) {
+                ImportView()
             }
     }
 }

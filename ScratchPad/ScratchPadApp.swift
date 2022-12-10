@@ -27,15 +27,26 @@ struct ScratchPadApp: App {
     
     @ObservedObject private var noteModel = NoteModel()
     @ObservedObject private var settingsModel = SettingsModel()
+    @ObservedObject private var commandsModel = CommandsModel()
+    
+    @State private var importScreenOpen = false
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(noteModel)
                 .environmentObject(settingsModel)
+                .environmentObject(commandsModel)
         }
         .commands {
-            ScratchPadCommands()
+            CommandGroup(replacing: .newItem) { }
+            
+            CommandGroup(replacing: .importExport) {
+                Button("Import from Older Version...") {
+                    commandsModel.importSheetOpen.toggle()
+                }
+            }
+            
             TextEditingCommands()
             TextFormattingCommands()
         }

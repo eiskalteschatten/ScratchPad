@@ -7,14 +7,23 @@
 
 import SwiftUI
 
-struct ImportWindowView: View {
-    @ObservedObject private var noteModel = NoteModel()
-    @ObservedObject private var settingsModel = SettingsModel()
+struct ImportView: View {
+    @EnvironmentObject var noteModel: NoteModel
+    @EnvironmentObject var settingsModel: SettingsModel
+    @EnvironmentObject var commandsModel: CommandsModel
     
     @State private var importing = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
+            Button (action: {
+                commandsModel.importSheetOpen = false
+            }) {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.system(size: 18))
+            }
+            .buttonStyle(.plain)
+            
             Text("This importer will guide you through importing your notes and settings from ScratchPad 1.x.")
                 .lineLimit(nil)
             
@@ -22,7 +31,7 @@ struct ImportWindowView: View {
                 .font(.system(size: 12))
                 .lineLimit(nil)
             
-            VStack(alignment: .leading, spacing: 30) {
+            HStack(alignment: .top, spacing: 30) {
                 HStack(alignment: .top) {
                     Image(systemName: "1.circle.fill")
                         .font(.title)
@@ -32,6 +41,7 @@ struct ImportWindowView: View {
                         Image("createBackup")
                             .resizable()
                             .scaledToFit()
+                            .frame(maxHeight: 300)
                     }
                 }
                 
@@ -48,6 +58,7 @@ struct ImportWindowView: View {
                         Image("chooseScratchPadFolder")
                             .resizable()
                             .scaledToFit()
+                            .frame(maxHeight: 300)
                         
                         HStack(alignment: .center, spacing: 15) {
                             Button("Choose backup folder...") {
@@ -63,9 +74,10 @@ struct ImportWindowView: View {
                     }
                 }
             }
+            .padding()
         }
         .padding()
-        .frame(maxWidth: 500)
+        .frame(maxWidth: 800)
     }
     
     private func importFromV1() {
@@ -92,8 +104,8 @@ struct ImportWindowView: View {
     }
 }
 
-struct ImportWindowView_Previews: PreviewProvider {
+struct ImportView_Previews: PreviewProvider {
     static var previews: some View {
-        ImportWindowView()
+        ImportView()
     }
 }
