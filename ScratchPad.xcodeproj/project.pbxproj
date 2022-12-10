@@ -21,6 +21,7 @@
 		93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EA82944A19B00C07F70 /* NoteManager.swift */; };
 		93FE2EAC2944F66400C07F70 /* ImportWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EAB2944F66400C07F70 /* ImportWindowView.swift */; };
 		93FE2EAE2944F6F200C07F70 /* ImportWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EAD2944F6F200C07F70 /* ImportWindow.swift */; };
+		93FE2EB22945065000C07F70 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EB12945065000C07F70 /* Files.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		93FE2EA82944A19B00C07F70 /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
 		93FE2EAB2944F66400C07F70 /* ImportWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWindowView.swift; sourceTree = "<group>"; };
 		93FE2EAD2944F6F200C07F70 /* ImportWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWindow.swift; sourceTree = "<group>"; };
+		93FE2EB12945065000C07F70 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,7 @@
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
 				93FE2E9F29434CAE00C07F70 /* Notes */,
 				93FE2E9A29434C0900C07F70 /* Settings */,
-				93FE2EAA2944F65100C07F70 /* Import */,
+				93FE2EAA2944F65100C07F70 /* ImportFromOldVersion */,
 				93FE2EA52944958F00C07F70 /* Lib */,
 				93FE2E8529433D7B00C07F70 /* Assets.xcassets */,
 				93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */,
@@ -109,6 +111,7 @@
 				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
 				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
 				93FE2E942943415C00C07F70 /* NoteModel.swift */,
+				93FE2EA82944A19B00C07F70 /* NoteManager.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -117,18 +120,18 @@
 			isa = PBXGroup;
 			children = (
 				93FE2EA62944959D00C07F70 /* ErrorHandling.swift */,
-				93FE2EA82944A19B00C07F70 /* NoteManager.swift */,
+				93FE2EB12945065000C07F70 /* Files.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		93FE2EAA2944F65100C07F70 /* Import */ = {
+		93FE2EAA2944F65100C07F70 /* ImportFromOldVersion */ = {
 			isa = PBXGroup;
 			children = (
 				93FE2EAD2944F6F200C07F70 /* ImportWindow.swift */,
 				93FE2EAB2944F66400C07F70 /* ImportWindowView.swift */,
 			);
-			path = Import;
+			path = ImportFromOldVersion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +214,7 @@
 				93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */,
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,
 				93FE2E9729434A6E00C07F70 /* ScratchPadCommands.swift in Sources */,
+				93FE2EB22945065000C07F70 /* Files.swift in Sources */,
 				93FE2E8229433D7900C07F70 /* ScratchPadApp.swift in Sources */,
 				93FE2E9C29434C1D00C07F70 /* SettingsWindowView.swift in Sources */,
 			);
