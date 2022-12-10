@@ -48,8 +48,7 @@ final class NoteModel: ObservableObject {
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
               let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
         else {
-            // TODO: do something. This is a bad error!
-            print("error1")
+            ErrorHandling.showErrorToUser("No storage location for your notes could be found!", informativeText: "Please try re-selecting your storage location in the settings.")
             return
         }
         
@@ -58,8 +57,7 @@ final class NoteModel: ObservableObject {
         
         do {
             guard storageLocation.startAccessingSecurityScopedResource() else {
-                // TODO: do something. This is a bad error!
-                print("accessing not allowed")
+                ErrorHandling.showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
                 return
             }
             
@@ -70,8 +68,8 @@ final class NoteModel: ObservableObject {
             
             fullURL.stopAccessingSecurityScopedResource()
         } catch {
-            // TODO: do something here. This is also a bad error!
             print(error)
+            ErrorHandling.showErrorToUser(error.localizedDescription)
         }
     }
     
@@ -83,10 +81,9 @@ final class NoteModel: ObservableObject {
         }
         
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-            let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
+              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
         else {
-            // TODO: do something. This is a bad error!
-            print("error1")
+            ErrorHandling.showErrorToUser("No storage location for your notes could be found!", informativeText: "Please try re-selecting your storage location in the settings.")
             return
         }
         
@@ -94,8 +91,7 @@ final class NoteModel: ObservableObject {
 
         do {
             guard storageLocation.startAccessingSecurityScopedResource() else {
-                // TODO: do something. This is a bad error!
-                print("accessing not allowed")
+                ErrorHandling.showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
                 return
             }
             
@@ -103,8 +99,8 @@ final class NoteModel: ObservableObject {
             try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
             fullURL.stopAccessingSecurityScopedResource()
         } catch {
-            // TODO: do something here. This is also a bad error!
-            print(error.localizedDescription)
+            print(error)
+            ErrorHandling.showErrorToUser(error.localizedDescription)
         }
     }
 }

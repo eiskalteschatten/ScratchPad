@@ -36,6 +36,7 @@ final class SettingsModel: ObservableObject {
                 }
             } catch {
                 print(error)
+                ErrorHandling.showErrorToUser(error.localizedDescription)
             }
         }
     }
@@ -71,8 +72,8 @@ final class SettingsModel: ObservableObject {
             
             storageLocation = defaultStorageLocation
         } catch {
-            // TODO: do something here too
             print(error)
+            ErrorHandling.showErrorToUser(error.localizedDescription)
         }
     }
     
