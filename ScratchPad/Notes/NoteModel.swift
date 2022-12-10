@@ -38,11 +38,8 @@ final class NoteModel: ObservableObject {
     }
     
     private func openNote() {
-        var isStale = false {
-            didSet {
-                // TODO: handle stale bookmarks
-            }
-        }
+        // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
+        var isStale = false
         
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
               let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
@@ -73,12 +70,9 @@ final class NoteModel: ObservableObject {
     }
     
     private func saveNote() {
-        var isStale = false {
-            didSet {
-                // TODO: handle stale bookmarks
-            }
-        }
-        
+        // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
+        var isStale = false
+                
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
               let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
         else {
