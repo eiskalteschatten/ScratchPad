@@ -15,7 +15,7 @@ class ImportWindowManager {
         let contentView = ImportWindowView()
 
         window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 450, height: 550),
+            contentRect: NSRect(x: 0, y: 0, width: 350, height: 550),
             styleMask: [.titled, .closable, .miniaturizable],
             backing: .buffered,
             defer: false
@@ -23,7 +23,7 @@ class ImportWindowManager {
 
         window!.center()
         window!.setFrameAutosaveName("ImportFromOldVersion")
-        window!.isReleasedWhenClosed = true
+        window!.isReleasedWhenClosed = false
         window!.title = "Import from ScratchPad"
 
         window!.contentView = NSHostingView(rootView: contentView)
