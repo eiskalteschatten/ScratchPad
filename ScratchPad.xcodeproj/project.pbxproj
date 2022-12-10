@@ -70,6 +70,7 @@
 			children = (
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
 				93FE2E9629434A6E00C07F70 /* ScratchPadCommands.swift */,
+				93FE2E8329433D7900C07F70 /* ContentView.swift */,
 				93FE2E9F29434CAE00C07F70 /* Notes */,
 				93FE2E9A29434C0900C07F70 /* Settings */,
 				93FE2EA52944958F00C07F70 /* Lib */,
@@ -100,7 +101,6 @@
 		93FE2E9F29434CAE00C07F70 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				93FE2E8329433D7900C07F70 /* ContentView.swift */,
 				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
 				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
 				93FE2E942943415C00C07F70 /* NoteModel.swift */,
