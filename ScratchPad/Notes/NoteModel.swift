@@ -9,7 +9,6 @@ import SwiftUI
 import Combine
 
 final class NoteModel: ObservableObject {
-    private let NOTE_NAME_PREFIX = "note"
     private var switchingPages = false
 
     @Published var pageNumber = UserDefaults.standard.value(forKey: "pageNumber") as? Int ?? 1 {
@@ -31,7 +30,7 @@ final class NoteModel: ObservableObject {
     }
     
     private var noteName: String {
-        return "\(NOTE_NAME_PREFIX)\(pageNumber).rtfd"
+        return "\(NoteManager.NOTE_NAME_PREFIX)\(pageNumber).rtfd"
     }
     
     init() {
