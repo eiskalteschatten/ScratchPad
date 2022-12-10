@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ScratchPadCommands: Commands {
     var body: some Commands {
-        CommandGroup(replacing: .newItem, addition: { })
-        CommandGroup(after: CommandGroupPlacement.newItem) {
+        CommandGroup(replacing: .newItem) { }
+        
+        CommandGroup(replacing: .importExport) {
             Button("Import from Older Version...") {
                 let importWindow = ImportWindowManager()
                 importWindow.openWindow()
