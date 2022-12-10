@@ -14,73 +14,78 @@ struct ImportWindowView: View {
     @State private var importing = false
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            Text("This importer will import your notes and settings from ScratchPad version 1.x.")
-                .multilineTextAlignment(.center)
+        VStack(alignment: .leading, spacing: 20) {
+            Text("This importer will guide you through importing your notes and settings from ScratchPad 1.x.")
                 .lineLimit(nil)
             
-            Text("Press the Import button to continue.")
+            Text("Due to modern macOS security, it is not possible to automatically import from ScratchPad 1.x. Please follow the steps below to proceed.")
                 .font(.system(size: 12))
-                .multilineTextAlignment(.center)
                 .lineLimit(nil)
             
-            if !importing {
-                Button("Import") {
-                    startImportFromV1()
+            VStack(alignment: .leading, spacing: 30) {
+                HStack(alignment: .top) {
+                    Image(systemName: "1.circle.fill")
+                        .font(.title)
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Create a backup in ScratchPad 1.x and remember its location.")
+                        Image("createBackup")
+                            .resizable()
+                            .scaledToFit()
+                    }
                 }
-            }
-            else {
-                ProgressView()
-                    .controlSize(.small)
+                
+                HStack(alignment: .top) {
+                    Image(systemName: "2.circle.fill")
+                        .font(.title)
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Select the button below to choose the backup folder. The folder will be called \"ScratchPad\" and will contain two folders called \"Notes\" and \"Preferences\".")
+                            .lineLimit(nil)
+                        
+                        Text("Select the \"ScratchPad\" folder.")
+                        
+                        Image("chooseScratchPadFolder")
+                            .resizable()
+                            .scaledToFit()
+                        
+                        HStack(alignment: .center, spacing: 15) {
+                            Button("Choose backup folder...") {
+                                importFromV1()
+                            }
+                            .disabled(importing)
+                            
+                            if importing {
+                                ProgressView()
+                                    .controlSize(.small)
+                            }
+                        }
+                    }
+                }
             }
         }
         .padding()
-        .frame(maxWidth: 350)
+        .frame(maxWidth: 500)
     }
     
-    private func startImportFromV1() {
+    private func importFromV1() {
         importing = true
         
         // TODO:
-        // 1. Check if there is a ScratchPad folder in Application Support
-        // 2. If so, import the settings
-        // 3. Make sure the storage location is correct since V1 always used the "Notes" subfolder
+        // 1. Allow the user to choose the exported folder
+        // 2. Set the settings from the import
+        // 3. Move the files to the storage location
+        // 4. Prompt the user and ask if the exported folder should be deleted
         
-        let fileManager = FileManager.default
-        let realHomeDirectoryURL = realHomeDirectory()
+        let openPanel = NSOpenPanel()
+        openPanel.allowsMultipleSelection = false
+        openPanel.canChooseDirectories = true
+        openPanel.canChooseFiles = false
+        openPanel.canCreateDirectories = false
+        let response = openPanel.runModal()
         
-        guard let locationURL = realHomeDirectoryURL?.appendingPathComponent("Library/Application Support/ScratchPad") else {
-            ErrorHandling.showErrorToUser("An older version of ScratchPad could not be found.")
-            importing = false
-            return
-        }
-        
-        
-        // MARK: Import Preferences
-        let preferencesURL = locationURL.appendingPathComponent("Preferences")
-        let floatAboveWindowsURL = preferencesURL.appendingPathComponent("FloatAboveWindows.txt")
-        let rememberPageNumberURL = preferencesURL.appendingPathComponent("RememberPageNumber.txt")
-        let showPageNumberBoxURL = preferencesURL.appendingPathComponent("ShowPageNumberBox.txt")
-        let syncDropBoxLocationURL = preferencesURL.appendingPathComponent("SyncDropBoxLocation.txt")
-        let transparencyURL = preferencesURL.appendingPathComponent("Transparency.txt")
-        
-        do {
-            let floatAboveWindows = try String(contentsOf: floatAboveWindowsURL, encoding: .utf8)
-//            settingsModel.floatAboveOtherWindows = floatAboveWindows === "YES"
-        } catch {
-            print(error)
-            ErrorHandling.showErrorToUser(error.localizedDescription)
-        }
-        
-        
-        // MARK: Import Notes
-        let notesURL = locationURL.appendingPathComponent("Notes")
-        
-        do {
-            
-        } catch {
-            print(error)
-            ErrorHandling.showErrorToUser(error.localizedDescription)
+        if response == .OK {
+            let backupURL = openPanel.url
         }
         
         importing = false
