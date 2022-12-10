@@ -18,6 +18,7 @@
 		93FE2E9C29434C1D00C07F70 /* SettingsWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */; };
 		93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */; };
 		93FE2EA72944959D00C07F70 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EA62944959D00C07F70 /* ErrorHandling.swift */; };
+		93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EA82944A19B00C07F70 /* NoteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowView.swift; sourceTree = "<group>"; };
 		93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		93FE2EA62944959D00C07F70 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		93FE2EA82944A19B00C07F70 /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				93FE2EA62944959D00C07F70 /* ErrorHandling.swift */,
+				93FE2EA82944A19B00C07F70 /* NoteManager.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
 				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
+				93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */,
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,
 				93FE2E9729434A6E00C07F70 /* ScratchPadCommands.swift in Sources */,
 				93FE2E8229433D7900C07F70 /* ScratchPadApp.swift in Sources */,

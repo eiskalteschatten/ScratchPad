@@ -40,21 +40,7 @@ final class SettingsModel: ObservableObject {
                     if let unwrappedPreviousLocation = previousStorageLocation,
                        let unwrappedStorageLocation = storageLocation,
                        storageLocation != previousStorageLocation {
-                        let fileManager = FileManager.default
-                        let allFiles = try fileManager.contentsOfDirectory(atPath: unwrappedPreviousLocation.path)
-
-                        let noteFileRegex = try! NSRegularExpression(pattern: "note(\\d*)\\.rtfd$")
-                        let notes = allFiles.filter {
-                            let matches = noteFileRegex.matches(in: $0, options: [], range: .init(location: 0, length: $0.count))
-                            return matches.count > 0
-                        }
-                        
-                        for note in notes {
-                            let oldURL = unwrappedPreviousLocation.appendingPathComponent(note)
-                            let newURL = unwrappedStorageLocation.appendingPathComponent(note)
-                            
-                            try fileManager.moveItem(atPath: oldURL.path, toPath: newURL.path)
-                        }
+                        NoteManager.moveNotes(from: unwrappedPreviousLocation, to: unwrappedStorageLocation)
                     }
                 }
             } catch {
