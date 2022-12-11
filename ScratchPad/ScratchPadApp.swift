@@ -24,9 +24,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 @main
 struct ScratchPadApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    @ObservedObject private var noteModel = NoteModel()
+
     @ObservedObject private var settingsModel = SettingsModel()
+    @ObservedObject private var noteModel = NoteModel()
     @ObservedObject private var commandsModel = CommandsModel()
     
     @State private var importScreenOpen = false
