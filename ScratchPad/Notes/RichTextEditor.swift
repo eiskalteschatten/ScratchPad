@@ -17,7 +17,6 @@ struct RichTextEditor: NSViewRepresentable {
             return scrollView
         }
 
-        textView.delegate = context.coordinator
         textView.isRichText = true
         textView.allowsUndo = true
         textView.allowsImageEditing = true
@@ -39,6 +38,7 @@ struct RichTextEditor: NSViewRepresentable {
         textView.usesFontPanel = true
         textView.importsGraphics = true
         
+        textView.delegate = context.coordinator
         context.coordinator.textView = textView
         
         return scrollView
@@ -66,10 +66,6 @@ struct RichTextEditor: NSViewRepresentable {
             }
             
             self.parent.noteModel.noteContents = _textView.attributedString()
-        }
-        
-        func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRange: NSRange, replacementString: String?) -> Bool {
-            return true
         }
     }
 }
