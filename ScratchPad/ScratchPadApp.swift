@@ -42,6 +42,12 @@ struct ScratchPadApp: App {
             CommandGroup(replacing: .newItem) { }
             
             CommandGroup(replacing: .importExport) {
+                Button("Export Page...") {
+                    noteModel.exportNote()
+                }
+                
+                Divider()
+                
                 Button("Import from Version 1.x...") {
                     commandsModel.importSheetOpen.toggle()
                 }

@@ -102,4 +102,23 @@ final class NoteModel: ObservableObject {
             ErrorHandling.showErrorToUser(error.localizedDescription)
         }
     }
+    
+    func exportNote() {
+        let savePanel = NSSavePanel()
+        savePanel.canCreateDirectories = true
+        savePanel.nameFieldStringValue = noteName
+        let response = savePanel.runModal()
+        
+        if response == .OK {
+            guard let saveURL = savePanel.url else { return }
+            let rtdf = noteContents.rtfdFileWrapper(from: .init(location: 0, length: noteContents.length))
+            
+            do {
+                try rtdf?.write(to: saveURL, options: .atomic, originalContentsURL: nil)
+            } catch {
+                print(error)
+                ErrorHandling.showErrorToUser(error.localizedDescription)
+            }
+        }
+    }
 }
