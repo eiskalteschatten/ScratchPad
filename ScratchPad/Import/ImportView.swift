@@ -124,7 +124,10 @@ struct ImportView: View {
                     return
                 }
                 
-                // TODO: move imported notes to the end
+                if let lastPageNumber = try NoteManager.getLastPageNumber() {
+                    // TODO: rename incoming notes or something
+                }
+                
                 NoteManager.moveNotes(from: notesURL, to: storageLocation)
                 noteModel.openNote()
                 

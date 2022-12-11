@@ -37,4 +37,31 @@ final class NoteManager {
             ErrorHandling.showErrorToUser(error.localizedDescription)
         }
     }
+    
+    static func getLastPageNumber() throws -> Int? {
+        if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
+            var isStale = false
+            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
+            
+            guard storageLocation.startAccessingSecurityScopedResource() else {
+                ErrorHandling.showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
+                return nil
+            }
+            
+            let notes = try getNoteFileList(storageLocation)
+            
+            let pageNumbers = notes.compactMap {
+                let noteURL = storageLocation.appendingPathComponent($0)
+                let fileName = noteURL.deletingPathExtension().lastPathComponent
+                let pageNumber = fileName.replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
+                return Int(pageNumber)
+            }.sorted()
+            
+            storageLocation.stopAccessingSecurityScopedResource()
+            
+            return pageNumbers.last ?? 1
+        }
+        
+        return nil
+    }
 }
