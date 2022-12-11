@@ -10,6 +10,9 @@ import SwiftUI
 struct RichTextEditor: NSViewRepresentable {
     @EnvironmentObject var noteModel: NoteModel
     
+    // Only used for debugging. See comments below
+    @State private var text = NSAttributedString(string: "")
+    
     func makeNSView(context: Context) -> NSScrollView {
         let scrollView = NSTextView.scrollableTextView()
         
@@ -46,6 +49,8 @@ struct RichTextEditor: NSViewRepresentable {
     
     func updateNSView(_ nsView: NSScrollView, context: Context) {
         context.coordinator.textView?.textStorage?.setAttributedString(noteModel.noteContents)
+//        If I replace the above line with this line, formatting and images work
+//        context.coordinator.textView?.textStorage?.setAttributedString(text)
     }
     
     func makeCoordinator() -> Coordinator {
@@ -66,6 +71,8 @@ struct RichTextEditor: NSViewRepresentable {
             }
             
             self.parent.noteModel.noteContents = _textView.attributedString()
+//        If I replace the above line with this line, formatting and images work
+//            self.parent.text = _textView.attributedString()
         }
         
         func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRange: NSRange, replacementString: String?) -> Bool {

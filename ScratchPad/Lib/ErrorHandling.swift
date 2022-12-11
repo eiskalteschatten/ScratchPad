@@ -21,3 +21,11 @@ final class ErrorHandling {
         alert.runModal()
     }
 }
+
+struct ErrorWithMessage: Error {
+    let message: String
+    
+    init(_ message: String) {
+        self.message = message
+    }
+}
