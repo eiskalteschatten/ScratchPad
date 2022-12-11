@@ -21,11 +21,11 @@ final class ErrorHandling {
         alert.runModal()
     }
     
-    static func showStroageLocationNotAccessible() {
+    static func showStorageLocationNotAccessible() {
         showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
     }
     
-    static func showStroageLocationNotFoundError() {
+    static func showStorageLocationNotFoundError() {
         showErrorToUser("The storage location for your notes could not be determined", informativeText: "Please re-select your storage location in the Settings and try again.")
     }
 }

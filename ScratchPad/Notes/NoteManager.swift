@@ -58,7 +58,7 @@ final class NoteManager {
             let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
             
             guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStroageLocationNotAccessible()
+                ErrorHandling.showStorageLocationNotAccessible()
                 return nil
             }
             
@@ -82,7 +82,7 @@ final class NoteManager {
     static func importNotes(from: URL) {
         do {
             guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data else {
-                ErrorHandling.showStroageLocationNotFoundError()
+                ErrorHandling.showStorageLocationNotFoundError()
                 return
             }
             
@@ -90,7 +90,7 @@ final class NoteManager {
             let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
             
             guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStroageLocationNotAccessible()
+                ErrorHandling.showStorageLocationNotAccessible()
                 return
             }
             
