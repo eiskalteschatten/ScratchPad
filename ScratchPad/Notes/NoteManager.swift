@@ -99,14 +99,25 @@ final class NoteManager {
             }
             
             let notesToImport = try getNoteFileList(from, sorted: true)
+            var firstPageExists = true
+            
+            if currentLastPageNumber == 1 {
+                let firstPageURL = storageLocation.appendingPathComponent("\(NoteManager.NOTE_NAME_PREFIX) 1.\(NoteManager.NOTE_NAME_EXTENSION)")
+                firstPageExists = FileManager.default.fileExists(atPath: firstPageURL.path)
+            }
             
             for note in notesToImport {
                 if let pageNumber = getPageNumberFromNoteName(note) {
                     let oldURL = from.appendingPathComponent(note)
                     
-                    // Append the imported notes after the last note
-                    let newPageNumber = pageNumber + currentLastPageNumber
-                    let newNoteName = "\(NoteManager.NOTE_NAME_PREFIX) \(newPageNumber).\(NoteManager.NOTE_NAME_EXTENSION)"
+                    // Append the imported notes after the last note if page 1 exists
+                    var newNoteName = note
+                    
+                    if firstPageExists {
+                        let newPageNumber = pageNumber + currentLastPageNumber
+                        newNoteName = "\(NoteManager.NOTE_NAME_PREFIX) \(newPageNumber).\(NoteManager.NOTE_NAME_EXTENSION)"
+                    }
+                    
                     let newURL = storageLocation.appendingPathComponent(newNoteName)
                     
                     try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
