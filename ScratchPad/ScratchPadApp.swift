@@ -52,6 +52,12 @@ struct ScratchPadApp: App {
             
             CommandGroup(replacing: .newItem) { }
             
+            CommandGroup(after: .newItem) {
+                Button("Close") {
+                    NSApplication.shared.keyWindow?.close()
+                }.keyboardShortcut("w", modifiers: [.command])
+            }
+            
             CommandGroup(replacing: .saveItem) {
                 Button("Delete Page") {
                     noteModel.deleteNote()
@@ -62,8 +68,6 @@ struct ScratchPadApp: App {
                 Button("Export Page...") {
                     noteModel.exportNote()
                 }
-                
-                Divider()
                 
                 Button("Import from Version 1.x...") {
                     commandsModel.importSheetOpen.toggle()
