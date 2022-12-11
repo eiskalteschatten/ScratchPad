@@ -16,16 +16,20 @@ struct ImportView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Button (action: {
-                commandsModel.importSheetOpen = false
-            }) {
-                Image(systemName: "xmark.circle.fill")
-                    .font(.system(size: 18))
+            HStack(alignment: .top) {
+                Text("This importer will guide you through importing your notes and settings from ScratchPad 1.x.")
+                    .lineLimit(nil)
+                
+                Spacer()
+                
+                Button (action: {
+                    commandsModel.importSheetOpen = false
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 18))
+                }
+                .buttonStyle(.plain)
             }
-            .buttonStyle(.plain)
-            
-            Text("This importer will guide you through importing your notes and settings from ScratchPad 1.x.")
-                .lineLimit(nil)
             
             Text("Due to modern macOS security, it is not possible to automatically import from ScratchPad 1.x. Please follow the steps below to proceed.")
                 .font(.system(size: 12))
