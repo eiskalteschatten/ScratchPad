@@ -20,6 +20,14 @@ final class ErrorHandling {
         alert.alertStyle = .critical
         alert.runModal()
     }
+    
+    static func showStroageLocationNotAccessible() {
+        showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
+    }
+    
+    static func showStroageLocationNotFoundError() {
+        showErrorToUser("The storage location for your notes could not be determined", informativeText: "Please re-select your storage location in the Settings and try again.")
+    }
 }
 
 struct ErrorWithMessage: Error {

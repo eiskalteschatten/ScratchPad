@@ -44,7 +44,7 @@ final class NoteManager {
             let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
             
             guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
+                ErrorHandling.showStroageLocationNotAccessible()
                 return nil
             }
             
@@ -63,5 +63,41 @@ final class NoteManager {
         }
         
         return nil
+    }
+    
+    static func importNotes(from: URL) {
+        do {
+            guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data else {
+                ErrorHandling.showStroageLocationNotFoundError()
+                return
+            }
+            
+            var isStale = false
+            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
+            
+            guard storageLocation.startAccessingSecurityScopedResource() else {
+                ErrorHandling.showStroageLocationNotAccessible()
+                return
+            }
+            
+            let notes = try getNoteFileList(from)
+            
+            guard let lastPageNumber = try NoteManager.getLastPageNumber() else {
+                throw ErrorWithMessage("No last page number could be found!")
+            }
+            
+            // TODO: move notes to the storage location after the last page
+//            for note in notes {
+//                let oldURL = from.appendingPathComponent(note)
+//                let newURL = to.appendingPathComponent(note)
+//
+//                try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
+//            }
+            
+            storageLocation.stopAccessingSecurityScopedResource()
+        } catch {
+            print(error)
+            ErrorHandling.showErrorToUser(error.localizedDescription)
+        }
     }
 }

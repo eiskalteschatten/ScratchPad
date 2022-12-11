@@ -118,17 +118,7 @@ struct ImportView: View {
                 
                                 
                 // MARK: import notes
-                guard let storageLocation = settingsModel.storageLocation else {
-                    ErrorHandling.showErrorToUser("The storage location for your notes could not be determined", informativeText: "Please re-select your storage location in the Settings and try again.")
-                    importing = false
-                    return
-                }
-                
-                if let lastPageNumber = try NoteManager.getLastPageNumber() {
-                    // TODO: rename incoming notes or something
-                }
-                
-                NoteManager.moveNotes(from: notesURL, to: storageLocation)
+                NoteManager.importNotes(from: notesURL)
                 noteModel.openNote()
                 
                 
