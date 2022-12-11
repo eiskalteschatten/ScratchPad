@@ -88,8 +88,9 @@ struct ScratchPadApp: App {
         }
         
         Settings {
-            SettingsWindowView()
+            SettingsWindowView(updater: updaterController.updater)
                 .frame(width: 450)
+                .environmentObject(settingsModel)
         }
     }
 }

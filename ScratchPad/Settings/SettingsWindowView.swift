@@ -6,16 +6,33 @@
 //
 
 import SwiftUI
+import Sparkle
 
 struct SettingsWindowView: View {
-    @ObservedObject private var settingsModel = SettingsModel()
+    @EnvironmentObject private var settingsModel: SettingsModel
     
     @FocusState private var transTextfieldIsFocused: Bool
     
+    private let updater: SPUUpdater
+    @State private var automaticallyCheckForUpdates: Bool
+    
     private let labelColumnWidth: CGFloat = 150
     
+    init(updater: SPUUpdater) {
+        self.updater = updater
+        automaticallyCheckForUpdates = updater.automaticallyChecksForUpdates
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 30) {
+            Group {
+                HStack(alignment: .top, spacing: 15) {
+                    Text("Updates:")
+                        .frame(width: labelColumnWidth, alignment: .trailing)
+                    
+                    Toggle("Automatically check for updates", isOn: $automaticallyCheckForUpdates)
+                }
+            }
             Group {
                 HStack(alignment: .top, spacing: 15) {
                     Text("Window Transparency:")
@@ -74,6 +91,9 @@ struct SettingsWindowView: View {
             }
         }
         .padding()
+        .onChange(of: automaticallyCheckForUpdates) {
+            updater.automaticallyChecksForUpdates = $0
+        }
     }
     
     private func selectStorageLocation() {
@@ -91,7 +111,9 @@ struct SettingsWindowView: View {
 }
 
 struct SettingsWindowView_Previews: PreviewProvider {
+    private static let updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
+    
     static var previews: some View {
-        SettingsWindowView()
+        SettingsWindowView(updater: updaterController.updater)
     }
 }
