@@ -129,9 +129,7 @@ struct ImportView: View {
                 noteModel.openNote()
                 
                 
-                // MARK: delete the backup folder
-                
-                
+                // MARK: sync DropBox prompt
                 let syncDropBox = try String(contentsOf: syncDropBoxURL, encoding: .utf8)
                 if syncDropBox == "YES" {
                     let alert = NSAlert()
@@ -151,6 +149,10 @@ struct ImportView: View {
                         }
                     }
                 }
+                
+                
+                // MARK: delete the backup folder
+                try FileManager.default.removeItem(atPath: backupURL.path)
            } catch {
                print(error)
                ErrorHandling.showErrorToUser(error.localizedDescription)
