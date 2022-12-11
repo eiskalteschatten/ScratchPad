@@ -20,6 +20,8 @@
 		93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EA82944A19B00C07F70 /* NoteManager.swift */; };
 		93FE2EAC2944F66400C07F70 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EAB2944F66400C07F70 /* ImportView.swift */; };
 		93FE2EB4294541BA00C07F70 /* CommandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EB3294541BA00C07F70 /* CommandsModel.swift */; };
+		93FE2EBA2946536000C07F70 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EB92946536000C07F70 /* Updater.swift */; };
+		93FE2EBD294653AE00C07F70 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 93FE2EBC294653AE00C07F70 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		93FE2EAB2944F66400C07F70 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
 		93FE2EB3294541BA00C07F70 /* CommandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModel.swift; sourceTree = "<group>"; };
 		93FE2EB82946514500C07F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93FE2EB92946536000C07F70 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FE2EBD294653AE00C07F70 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 				93FE2E9A29434C0900C07F70 /* Settings */,
 				93FE2EAA2944F65100C07F70 /* Import */,
 				93FE2EA52944958F00C07F70 /* Lib */,
+				93FE2EB92946536000C07F70 /* Updater.swift */,
 				93FE2E8529433D7B00C07F70 /* Assets.xcassets */,
 				93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */,
 				93FE2E8729433D7B00C07F70 /* Preview Content */,
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = ScratchPad;
+			packageProductDependencies = (
+				93FE2EBC294653AE00C07F70 /* Sparkle */,
+			);
 			productName = ScratchPad;
 			productReference = 93FE2E7E29433D7900C07F70 /* ScratchPad.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 93FE2E7529433D7900C07F70;
+			packageReferences = (
+				93FE2EBB294653AE00C07F70 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 93FE2E7F29433D7900C07F70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,6 +216,7 @@
 				93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */,
 				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
+				93FE2EBA2946536000C07F70 /* Updater.swift in Sources */,
 				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
 				93FE2EAC2944F66400C07F70 /* ImportView.swift in Sources */,
 				93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */,
@@ -414,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93FE2EBB294653AE00C07F70 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				branch = 2.x;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93FE2EBC294653AE00C07F70 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93FE2EBB294653AE00C07F70 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93FE2E7629433D7900C07F70 /* Project object */;
 }

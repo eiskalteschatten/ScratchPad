@@ -7,6 +7,7 @@
 
 import AppKit
 import SwiftUI
+import Sparkle
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -24,12 +25,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 @main
 struct ScratchPadApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    
     @ObservedObject private var settingsModel = SettingsModel()
     @ObservedObject private var noteModel = NoteModel()
     @ObservedObject private var commandsModel = CommandsModel()
     
     @State private var importScreenOpen = false
+    
+    private let updaterController: SPUStandardUpdaterController
+    
+    init() {
+        updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
+    }
     
     var body: some Scene {
         WindowGroup {
@@ -39,6 +46,10 @@ struct ScratchPadApp: App {
                 .environmentObject(commandsModel)
         }
         .commands {
+            CommandGroup(after: .appInfo) {
+                CheckForUpdatesView(updater: updaterController.updater)
+            }
+            
             CommandGroup(replacing: .newItem) { }
             
             CommandGroup(replacing: .saveItem) {
