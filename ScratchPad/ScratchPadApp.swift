@@ -69,7 +69,7 @@ struct ScratchPadApp: App {
                     noteModel.exportNote()
                 }
                 
-                Button("Import from Version 1.x...") {
+                Button("Import from Version 1...") {
                     commandsModel.importSheetOpen.toggle()
                 }
             }
