@@ -11,6 +11,11 @@ final class NoteManager {
     static let NOTE_NAME_PREFIX = "Note"
     static let NOTE_NAME_EXTENSION = "rtfd"
     
+    static func getPageNumberFromNoteName(_ name: String) -> Int? {
+        let cleanedName = name.replacingOccurrences(of: ".\(NOTE_NAME_EXTENSION)", with: "").replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
+        return Int(cleanedName)
+    }
+    
     static func getNoteFileList(_ from: URL, sorted: Bool = false) throws -> [String] {
         let allFiles = try FileManager.default.contentsOfDirectory(atPath: from.path)
         let noteFileRegex = try! NSRegularExpression(pattern: "\(NOTE_NAME_PREFIX) (\\d*)\\.\(NOTE_NAME_EXTENSION)$")
@@ -22,10 +27,8 @@ final class NoteManager {
         
         if sorted {
             notes.sort() {
-                let note1Name = $0.replacingOccurrences(of: ".\(NOTE_NAME_EXTENSION)", with: "").replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
-                let note2Name = $1.replacingOccurrences(of: ".\(NOTE_NAME_EXTENSION)", with: "").replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
-                guard let pageNumber1 = Int(note1Name) else { return false }
-                guard let pageNumber2 = Int(note2Name) else { return false }
+                guard let pageNumber1 = getPageNumberFromNoteName($0) else { return false }
+                guard let pageNumber2 = getPageNumberFromNoteName($1) else { return false }
                 return pageNumber1 < pageNumber2
             }
         }
@@ -91,19 +94,23 @@ final class NoteManager {
                 return
             }
             
-            let notes = try getNoteFileList(from, sorted: true)
-            
-            guard let lastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
                 throw ErrorWithMessage("No last page number could be found!")
             }
             
-            // TODO: move notes to the storage location after the last page
-            for note in notes {
-                print(note)
-//                let oldURL = from.appendingPathComponent(note)
-//                let newURL = storageLocation.appendingPathComponent(note)
-//
-//                try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
+            let notesToImport = try getNoteFileList(from, sorted: true)
+            
+            for note in notesToImport {
+                if let pageNumber = getPageNumberFromNoteName(note) {
+                    let oldURL = from.appendingPathComponent(note)
+                    
+                    // Append the imported notes after the last note
+                    let newPageNumber = pageNumber + currentLastPageNumber
+                    let newNoteName = "\(NoteManager.NOTE_NAME_PREFIX) \(newPageNumber).\(NoteManager.NOTE_NAME_EXTENSION)"
+                    let newURL = storageLocation.appendingPathComponent(newNoteName)
+                    
+                    try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
+                }
             }
             
             storageLocation.stopAccessingSecurityScopedResource()
