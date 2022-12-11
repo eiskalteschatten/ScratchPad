@@ -42,7 +42,7 @@ struct ScratchPadApp: App {
             CommandGroup(replacing: .newItem) { }
             
             CommandGroup(replacing: .importExport) {
-                Button("Import from Older Version...") {
+                Button("Import from Version 1.x...") {
                     commandsModel.importSheetOpen.toggle()
                 }
             }
