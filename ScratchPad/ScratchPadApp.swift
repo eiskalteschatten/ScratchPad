@@ -53,6 +53,18 @@ struct ScratchPadApp: App {
                 }
             }
             
+            CommandMenu("Page") {
+                Button("Previous Page") {
+                    if noteModel.pageNumber > 1 {
+                        noteModel.pageNumber -= 1
+                    }
+                }.keyboardShortcut(.leftArrow, modifiers: [.option, .command])
+                
+                Button("Next Page") {
+                    noteModel.pageNumber += 1
+                }.keyboardShortcut(.rightArrow, modifiers: [.option, .command])
+            }
+            
             TextEditingCommands()
             TextFormattingCommands()
         }
