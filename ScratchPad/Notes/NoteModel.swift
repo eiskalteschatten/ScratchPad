@@ -30,7 +30,7 @@ final class NoteModel: ObservableObject {
     }
     
     private var noteName: String {
-        return "\(NoteManager.NOTE_NAME_PREFIX) \(pageNumber).rtfd"
+        return "\(NoteManager.NOTE_NAME_PREFIX) \(pageNumber).\(NoteManager.NOTE_NAME_EXTENSION)"
     }
     
     init() {
