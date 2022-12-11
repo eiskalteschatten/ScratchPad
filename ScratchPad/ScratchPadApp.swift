@@ -73,6 +73,7 @@ struct ScratchPadApp: App {
             
             TextEditingCommands()
             TextFormattingCommands()
+            ToolbarCommands()
         }
         
         Settings {
