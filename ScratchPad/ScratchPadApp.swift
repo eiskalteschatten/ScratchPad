@@ -74,6 +74,14 @@ struct ScratchPadApp: App {
                 }
             }
             
+            CommandGroup(before: .windowList) {
+                Button("Open Welcome Sheet...") {
+                    commandsModel.welcomeSheetOpen.toggle()
+                }
+                
+                Divider()
+            }
+            
             CommandMenu("Page") {
                 Button("Previous Page") {
                     if noteModel.pageNumber > 1 {

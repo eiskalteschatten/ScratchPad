@@ -22,6 +22,7 @@
 		93FE2EB4294541BA00C07F70 /* CommandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EB3294541BA00C07F70 /* CommandsModel.swift */; };
 		93FE2EBA2946536000C07F70 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EB92946536000C07F70 /* Updater.swift */; };
 		93FE2EBD294653AE00C07F70 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 93FE2EBC294653AE00C07F70 /* Sparkle */; };
+		93FE2EBF29465BEA00C07F70 /* WelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2EBE29465BEA00C07F70 /* WelcomeSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		93FE2EB3294541BA00C07F70 /* CommandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModel.swift; sourceTree = "<group>"; };
 		93FE2EB82946514500C07F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		93FE2EB92946536000C07F70 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		93FE2EBE29465BEA00C07F70 /* WelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
 				93FE2EB3294541BA00C07F70 /* CommandsModel.swift */,
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
+				93FE2EBE29465BEA00C07F70 /* WelcomeSheet.swift */,
 				93FE2E9F29434CAE00C07F70 /* Notes */,
 				93FE2E9A29434C0900C07F70 /* Settings */,
 				93FE2EAA2944F65100C07F70 /* Import */,
@@ -216,6 +219,7 @@
 				93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */,
 				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
+				93FE2EBF29465BEA00C07F70 /* WelcomeSheet.swift in Sources */,
 				93FE2EBA2946536000C07F70 /* Updater.swift in Sources */,
 				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
 				93FE2EAC2944F66400C07F70 /* ImportView.swift in Sources */,

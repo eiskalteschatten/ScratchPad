@@ -9,5 +9,6 @@ import SwiftUI
 
 final class CommandsModel: ObservableObject {
     @Published var importSheetOpen = false
+    @Published var welcomeSheetOpen = false
 }
 

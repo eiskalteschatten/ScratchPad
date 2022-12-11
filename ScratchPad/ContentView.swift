@@ -20,6 +20,9 @@ struct ContentView: View {
             .sheet(isPresented: $commandsModel.importSheetOpen) {
                 ImportView()
             }
+            .sheet(isPresented: $commandsModel.welcomeSheetOpen) {
+                WelcomeSheet()
+            }
     }
 }
 
