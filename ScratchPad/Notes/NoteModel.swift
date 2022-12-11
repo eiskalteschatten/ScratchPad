@@ -88,7 +88,7 @@ final class NoteModel: ObservableObject {
                 return
             }
             
-            if noteContents.length == 0 {
+            if noteContents.length == 0 && FileManager.default.fileExists(atPath: fullURL.path){
                 try FileManager.default.removeItem(atPath: fullURL.path)
             }
             else {
@@ -100,6 +100,23 @@ final class NoteModel: ObservableObject {
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
+        }
+    }
+    
+    func deleteNote() {
+        let alert = NSAlert()
+        alert.messageText = "Are you sure you want to delete this page?"
+        alert.informativeText = "All contents will be deleted. This cannot be undone."
+        alert.addButton(withTitle: "No")
+        alert.addButton(withTitle: "Yes")
+        alert.alertStyle = .warning
+        
+        alert.buttons.last?.hasDestructiveAction = true
+        
+        let response = alert.runModal()
+        
+        if response == .alertSecondButtonReturn {
+            noteContents = NSAttributedString(string: "")
         }
     }
     

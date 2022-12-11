@@ -41,6 +41,12 @@ struct ScratchPadApp: App {
         .commands {
             CommandGroup(replacing: .newItem) { }
             
+            CommandGroup(replacing: .saveItem) {
+                Button("Delete Page") {
+                    noteModel.deleteNote()
+                }.keyboardShortcut(.delete, modifiers: [.command])
+            }
+            
             CommandGroup(replacing: .importExport) {
                 Button("Export Page...") {
                     noteModel.exportNote()
