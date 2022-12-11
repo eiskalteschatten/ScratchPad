@@ -87,13 +87,6 @@ struct ImportView: View {
     private func importFromV1() {
         importing = true
         
-        // TODO:
-        // 1. Allow the user to choose the exported folder
-        // 2. Set the settings from the import
-        //      - Don't forget to add the "Notes" folder manually since that is how the old version of ScratchPad worked
-        //      - If the user already has notes in v2, the notes from v1 should be added to the end so as not to override anything
-        // 3. Prompt the user and ask if the backup folder should be deleted
-        
         let openPanel = NSOpenPanel()
         openPanel.allowsMultipleSelection = false
         openPanel.canChooseDirectories = true
@@ -102,10 +95,52 @@ struct ImportView: View {
         let response = openPanel.runModal()
         
         if response == .OK {
-            let backupURL = openPanel.url
+            guard let backupURL = openPanel.url else { return }
+            let preferencesURL = backupURL.appendingPathComponent("Preferences")
+            let floatAboveWindowsURL = preferencesURL.appendingPathComponent("FloatAboveWindows.txt")
+            let syncDropBoxURL = preferencesURL.appendingPathComponent("SyncDropBox.txt")
+            let transparencyURL = preferencesURL.appendingPathComponent("Transparency.txt")
+            
+            do {
+                let floatAboveWindows = try String(contentsOf: floatAboveWindowsURL, encoding: .utf8)
+                settingsModel.floatAboveOtherWindows = floatAboveWindows == "YES"
+                
+                let transparency = try String(contentsOf: transparencyURL, encoding: .utf8)
+                if let windowTransparency = Double(transparency) {
+                    settingsModel.windowTransparency = windowTransparency
+                }
+                
+                // TODO: import notes here
+                
+                // TODO: delete the backup folder
+                
+                let syncDropBox = try String(contentsOf: syncDropBoxURL, encoding: .utf8)
+                if syncDropBox == "YES" {
+                    let alert = NSAlert()
+                    alert.messageText = "ScratchPad version 1.x is using currently syncing to DropBox."
+                    alert.informativeText = "Due to modern macOS security, this setting cannot be imported. Your notes have been imported into ScratchPad, but you will have to re-select your DropBox location in the Settings."
+                    alert.addButton(withTitle: "Open Settings...")
+                    alert.addButton(withTitle: "OK")
+                    alert.alertStyle = .informational
+                    
+                    let response = alert.runModal()
+                    
+                    if response == .alertFirstButtonReturn {
+                        if #available(macOS 13, *) {
+                            NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                        } else {
+                            NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
+                        }
+                    }
+                }
+           } catch {
+               print(error)
+               ErrorHandling.showErrorToUser(error.localizedDescription)
+           }
         }
         
         importing = false
+        commandsModel.importSheetOpen = false
     }
 }
 
