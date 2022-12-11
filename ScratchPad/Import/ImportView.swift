@@ -90,8 +90,9 @@ struct ImportView: View {
         // TODO:
         // 1. Allow the user to choose the exported folder
         // 2. Set the settings from the import
-        // 3. Move the files to the storage location
-        // 4. Prompt the user and ask if the exported folder should be deleted
+        //      - Don't forget to add the "Notes" folder manually since that is how the old version of ScratchPad worked
+        //      - If the user already has notes in v2, the notes from v1 should be added to the end so as not to override anything
+        // 3. Prompt the user and ask if the backup folder should be deleted
         
         let openPanel = NSOpenPanel()
         openPanel.allowsMultipleSelection = false
