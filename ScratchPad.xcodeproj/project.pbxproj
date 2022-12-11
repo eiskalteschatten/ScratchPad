@@ -38,6 +38,7 @@
 		93FE2EA82944A19B00C07F70 /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
 		93FE2EAB2944F66400C07F70 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
 		93FE2EB3294541BA00C07F70 /* CommandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModel.swift; sourceTree = "<group>"; };
+		93FE2EB82946514500C07F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		93FE2E8029433D7900C07F70 /* ScratchPad */ = {
 			isa = PBXGroup;
 			children = (
+				93FE2EB82946514500C07F70 /* Info.plist */,
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
 				93FE2EB3294541BA00C07F70 /* CommandsModel.swift */,
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
@@ -342,6 +344,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScratchPad/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ScratchPad;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -372,6 +375,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScratchPad/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ScratchPad;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
