@@ -62,7 +62,7 @@ final class NoteModel: ObservableObject {
                 noteContents = attributedString
             }
             
-            fullURL.stopAccessingSecurityScopedResource()
+            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
@@ -88,9 +88,15 @@ final class NoteModel: ObservableObject {
                 return
             }
             
-            let rtdf = noteContents.rtfdFileWrapper(from: .init(location: 0, length: noteContents.length))
-            try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
-            fullURL.stopAccessingSecurityScopedResource()
+            if noteContents.length == 0 {
+                try FileManager.default.removeItem(atPath: fullURL.path)
+            }
+            else {
+                let rtdf = noteContents.rtfdFileWrapper(from: .init(location: 0, length: noteContents.length))
+                try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
+            }
+            
+            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
