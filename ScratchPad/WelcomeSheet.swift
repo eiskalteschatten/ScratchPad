@@ -22,7 +22,7 @@ struct WelcomeSheet: View {
                     Text("ScratchPad")
                         .font(.system(size: 42))
                     
-                    if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String {
+                    if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
                         Text("version \(appVersion)")
                     }
                 }
@@ -30,6 +30,7 @@ struct WelcomeSheet: View {
             
             Button(action: {
                 commandsModel.welcomeSheetOpen = false
+                UserDefaults.standard.set(false, forKey: "openWelcomeSheetOnLaunch")
             }) {
                 Text("Continue")
                     .frame(width: 150)
