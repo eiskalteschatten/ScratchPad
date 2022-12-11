@@ -30,14 +30,14 @@ final class NoteModel: ObservableObject {
     }
     
     private var noteName: String {
-        return "\(NoteManager.NOTE_NAME_PREFIX)\(pageNumber).rtfd"
+        return "\(NoteManager.NOTE_NAME_PREFIX) \(pageNumber).rtfd"
     }
     
     init() {
         openNote()
     }
     
-    private func openNote() {
+    func openNote() {
         // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
         var isStale = false
         

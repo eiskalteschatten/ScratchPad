@@ -95,13 +95,19 @@ struct ImportView: View {
         let response = openPanel.runModal()
         
         if response == .OK {
-            guard let backupURL = openPanel.url else { return }
+            guard let backupURL = openPanel.url else {
+                importing = false
+                return
+            }
+            
+            let notesURL = backupURL.appendingPathComponent("Notes")
             let preferencesURL = backupURL.appendingPathComponent("Preferences")
             let floatAboveWindowsURL = preferencesURL.appendingPathComponent("FloatAboveWindows.txt")
             let syncDropBoxURL = preferencesURL.appendingPathComponent("SyncDropBox.txt")
             let transparencyURL = preferencesURL.appendingPathComponent("Transparency.txt")
             
             do {
+                // MARK: import settings
                 let floatAboveWindows = try String(contentsOf: floatAboveWindowsURL, encoding: .utf8)
                 settingsModel.floatAboveOtherWindows = floatAboveWindows == "YES"
                 
@@ -110,9 +116,21 @@ struct ImportView: View {
                     settingsModel.windowTransparency = windowTransparency
                 }
                 
-                // TODO: import notes here
+                                
+                // MARK: import notes
+                guard let storageLocation = settingsModel.storageLocation else {
+                    ErrorHandling.showErrorToUser("The storage location for your notes could not be determined", informativeText: "Please re-select your storage location in the Settings and try again.")
+                    importing = false
+                    return
+                }
                 
-                // TODO: delete the backup folder
+                // TODO: move imported notes to the end
+                NoteManager.moveNotes(from: notesURL, to: storageLocation)
+                noteModel.openNote()
+                
+                
+                // MARK: delete the backup folder
+                
                 
                 let syncDropBox = try String(contentsOf: syncDropBoxURL, encoding: .utf8)
                 if syncDropBox == "YES" {

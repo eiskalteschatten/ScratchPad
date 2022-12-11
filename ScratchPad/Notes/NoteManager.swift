@@ -8,14 +8,14 @@
 import SwiftUI
 
 final class NoteManager {
-    static let NOTE_NAME_PREFIX = "note"
+    static let NOTE_NAME_PREFIX = "Note"
     
     static func moveNotes(from: URL, to: URL) {
         do {
             let fileManager = FileManager.default
             let allFiles = try fileManager.contentsOfDirectory(atPath: from.path)
             
-            let noteFileRegex = try! NSRegularExpression(pattern: "\(NOTE_NAME_PREFIX)(\\d*)\\.rtfd$")
+            let noteFileRegex = try! NSRegularExpression(pattern: "\(NOTE_NAME_PREFIX) (\\d*)\\.rtfd$")
             let notes = allFiles.filter {
                 let matches = noteFileRegex.matches(in: $0, options: [], range: .init(location: 0, length: $0.count))
                 return matches.count > 0
