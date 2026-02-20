@@ -11,7 +11,6 @@ struct Toolbar: View {
     @EnvironmentObject var noteModel: NoteModel
     
     @FocusState private var pageNumberTextfieldIsFocused: Bool
-    @State private var pageNumberTextfieldID = UUID()
     
     var body: some View {
         Button(action: {
@@ -39,12 +38,10 @@ struct Toolbar: View {
         .multilineTextAlignment(.center)
         .focused($pageNumberTextfieldIsFocused)
         .frame(width: 50)
-        .id(pageNumberTextfieldID)
     }
     
     private func unfocusPageNumberTextfield() {
         pageNumberTextfieldIsFocused = false
-        pageNumberTextfieldID = UUID()
     }
 }
 
