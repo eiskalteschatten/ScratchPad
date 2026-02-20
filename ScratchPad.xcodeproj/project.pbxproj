@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9356ECCE2F489EB400EA4C62 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */; };
 		9356ECD02F48A72C00EA4C62 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9356ECCF2F48A72C00EA4C62 /* AppIcon.icon */; };
+		93E3664A2F49045E00C3533E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 93E366492F49045E00C3533E /* Localizable.xcstrings */; };
 		93FE2E8229433D7900C07F70 /* ScratchPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */; };
 		93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E8329433D7900C07F70 /* ContentView.swift */; };
 		93FE2E8629433D7B00C07F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FE2E8529433D7B00C07F70 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		9356ECCF2F48A72C00EA4C62 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		93E366492F49045E00C3533E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		93FE2E7E29433D7900C07F70 /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadApp.swift; sourceTree = "<group>"; };
 		93FE2E8329433D7900C07F70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				93FE2EB3294541BA00C07F70 /* CommandsModel.swift */,
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
 				93FE2EBE29465BEA00C07F70 /* WelcomeSheet.swift */,
+				93E366492F49045E00C3533E /* Localizable.xcstrings */,
 				93FE2E9F29434CAE00C07F70 /* Notes */,
 				93FE2E9A29434C0900C07F70 /* Settings */,
 				93FE2EAA2944F65100C07F70 /* Import */,
@@ -180,6 +183,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 93FE2E7529433D7900C07F70;
 			packageReferences = (
@@ -200,6 +204,7 @@
 			files = (
 				93FE2E8929433D7B00C07F70 /* Preview Assets.xcassets in Resources */,
 				93FE2E8629433D7B00C07F70 /* Assets.xcassets in Resources */,
+				93E3664A2F49045E00C3533E /* Localizable.xcstrings in Resources */,
 				9356ECD02F48A72C00EA4C62 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +295,7 @@
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -348,6 +354,7 @@
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;

@@ -88,7 +88,7 @@ final class SettingsModel: ObservableObject {
     
     private func setFormattedStorageLocation() {
         if usesDefaultStorageLocation {
-            formattedStorageLocation = "Your Documents folder"
+            formattedStorageLocation = String(localized: "Default Location", comment: "")
         }
         else {
             guard let locationString = storageLocation?.absoluteString else { return }
