@@ -91,8 +91,8 @@ struct SettingsWindowView: View {
             }
         }
         .padding()
-        .onChange(of: automaticallyCheckForUpdates) {
-            updater.automaticallyChecksForUpdates = $0
+        .onChange(of: automaticallyCheckForUpdates) { _, newValue in
+            updater.automaticallyChecksForUpdates = newValue
         }
     }
     
