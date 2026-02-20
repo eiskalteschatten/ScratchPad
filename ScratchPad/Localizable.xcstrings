@@ -46,6 +46,12 @@
             "state" : "translated",
             "value" : "Terug"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atrás"
+          }
         }
       }
     },
@@ -73,6 +79,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opslaglocatie wijzigen…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar ubicación de almacenamiento…"
           }
         }
       }
@@ -102,6 +114,12 @@
             "state" : "translated",
             "value" : "Back-upmap kiezen…"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir carpeta de copia de seguridad…"
+          }
         }
       }
     },
@@ -129,6 +147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluiten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
           }
         }
       }
@@ -158,6 +182,12 @@
             "state" : "translated",
             "value" : "Doorgaan"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
         }
       }
     },
@@ -185,6 +215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maak een back-up in ScratchPad 1.x en onthoud de locatie."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una copia de seguridad en ScratchPad 1.x y recuerda su ubicación."
           }
         }
       }
@@ -214,6 +250,12 @@
             "state" : "translated",
             "value" : "Standaardlocatie"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación predeterminada"
+          }
         }
       }
     },
@@ -241,6 +283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pagina verwijderen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar página"
           }
         }
       }
@@ -270,6 +318,12 @@
             "state" : "translated",
             "value" : "Vanwege de moderne macOS-beveiliging is het niet mogelijk om automatisch te importeren vanuit ScratchPad 1.x. Volg de onderstaande stappen om door te gaan."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debido a la seguridad moderna de macOS, no es posible importar automáticamente desde ScratchPad 1.x. Sigue los pasos a continuación para continuar."
+          }
         }
       }
     },
@@ -297,6 +351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pagina exporteren…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportar página…"
           }
         }
       }
@@ -326,6 +386,12 @@
             "state" : "translated",
             "value" : "Eerste pagina"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primera página"
+          }
         }
       }
     },
@@ -353,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Boven andere vensters zweven"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flotar sobre otras ventanas"
           }
         }
       }
@@ -382,6 +454,12 @@
             "state" : "translated",
             "value" : "Zwevend:"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flotante:"
+          }
         }
       }
     },
@@ -409,6 +487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vooruit"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adelante"
           }
         }
       }
@@ -438,6 +522,12 @@
             "state" : "translated",
             "value" : "Ga"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ir"
+          }
         }
       }
     },
@@ -465,6 +555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "U kunt ze echter handmatig importeren door op \"Bestand\" te klikken, dan op \"Importeren vanuit versie 1…\" en de instructies te volgen. U kunt ook op de onderstaande knop klikken."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin embargo, puedes importarlos manualmente haciendo clic en «Archivo», luego en «Importar desde la versión 1…» y siguiendo las instrucciones. También puedes hacer clic en el botón de abajo."
           }
         }
       }
@@ -494,6 +590,12 @@
             "state" : "translated",
             "value" : "Importeren vanuit versie 1…"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importar desde la versión 1…"
+          }
         }
       }
     },
@@ -521,6 +623,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uw notities importeren vanuit ScratchPad 1"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importando tus notas desde ScratchPad 1"
           }
         }
       }
@@ -550,6 +658,12 @@
             "state" : "translated",
             "value" : "Laatste pagina"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Última página"
+          }
         }
       }
     },
@@ -577,6 +691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nieuwe pagina"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva página"
           }
         }
       }
@@ -606,6 +726,12 @@
             "state" : "translated",
             "value" : "Volgende pagina"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Página siguiente"
+          }
         }
       }
     },
@@ -634,6 +760,12 @@
             "state" : "translated",
             "value" : "Welkomstscherm openen…"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir pantalla de bienvenida…"
+          }
         }
       }
     },
@@ -661,6 +793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vorige pagina"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Página anterior"
           }
         }
       }
@@ -701,6 +839,12 @@
             "state" : "translated",
             "value" : "Selecteer de map \"ScratchPad\"."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona la carpeta «ScratchPad»."
+          }
         }
       }
     },
@@ -728,6 +872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klik op de onderstaande knop om de back-upmap te kiezen. De map heet \"ScratchPad\" en bevat twee submappen met de naam \"Notes\" en \"Preferences\"."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz clic en el botón de abajo para elegir la carpeta de copia de seguridad. La carpeta se llamará «ScratchPad» y contendrá dos subcarpetas llamadas «Notes» y «Preferences»."
           }
         }
       }
@@ -757,6 +907,12 @@
             "state" : "translated",
             "value" : "Omdat macOS zijn beveiligingsbeleid voor de uitvoering van applicaties heeft bijgewerkt, is het niet mogelijk om uw notities automatisch te importeren vanuit ScratchPad 1."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dado que macOS ha actualizado sus políticas de seguridad para la ejecución de aplicaciones, no es posible importar automáticamente tus notas desde ScratchPad 1."
+          }
         }
       }
     },
@@ -784,6 +940,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opslaglocatie:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación de almacenamiento:"
           }
         }
       }
@@ -813,6 +975,12 @@
             "state" : "translated",
             "value" : "Deze importassistent begeleidt u bij het importeren van uw notities en instellingen vanuit ScratchPad 1.x."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este asistente de importación te guiará a través de la importación de tus notas y ajustes desde ScratchPad 1.x."
+          }
         }
       }
     },
@@ -840,6 +1008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deze versie is een volledige herschrijving van ScratchPad met moderne macOS-technologieën zoals SwiftUI. Het draait native op zowel Intel- als Apple Silicon-Macs en ondersteunt moderne macOS-functies zoals de donkere modus."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta versión es una reescritura completa de ScratchPad desde cero utilizando tecnologías modernas de macOS como SwiftUI. Se ejecuta de forma nativa en Mac Intel y Apple Silicon y admite funciones modernas de macOS como el Modo Oscuro."
           }
         }
       }
@@ -869,6 +1043,12 @@
             "state" : "translated",
             "value" : "Standaard opslaglocatie gebruiken"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar ubicación de almacenamiento predeterminada"
+          }
         }
       }
     },
@@ -896,6 +1076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versie %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "versión %@"
           }
         }
       }
@@ -925,6 +1111,12 @@
             "state" : "translated",
             "value" : "ScratchPad 2 is eindelijk hier. De eerste versie van ScratchPad werd in 2007 uitgebracht voor Mac OS X Tiger (10.4) en werd bijgewerkt tot Mac OS X El Capitan (10.11)."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 ha llegado por fin. La primera versión de ScratchPad se lanzó en 2007 para Mac OS X Tiger (10.4) y se actualizó hasta Mac OS X El Capitan (10.11)."
+          }
         }
       }
     },
@@ -953,6 +1145,12 @@
             "state" : "translated",
             "value" : "Welkom bij ScratchPad 2!"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Bienvenido a ScratchPad 2!"
+          }
         }
       }
     },
@@ -980,6 +1178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Venstertransparantie:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transparencia de la ventana:"
           }
         }
       }
