@@ -36,8 +36,9 @@ struct Toolbar: View {
             get: { noteModel.pageNumber },
             set: { noteModel.pageNumber = abs($0) }
         ), formatter: NumberFormatter())
+        .multilineTextAlignment(.center)
         .focused($pageNumberTextfieldIsFocused)
-        .frame(width: 30)
+        .frame(width: 50)
         .id(pageNumberTextfieldID)
     }
     
