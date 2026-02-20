@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9356ECCE2F489EB400EA4C62 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */; };
 		93FE2E8229433D7900C07F70 /* ScratchPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */; };
 		93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E8329433D7900C07F70 /* ContentView.swift */; };
 		93FE2E8629433D7B00C07F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FE2E8529433D7B00C07F70 /* Assets.xcassets */; };
 		93FE2E8929433D7B00C07F70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FE2E8829433D7B00C07F70 /* Preview Assets.xcassets */; };
 		93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9029433E9A00C07F70 /* Toolbar.swift */; };
-		93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9229433F8100C07F70 /* RichTextEditor.swift */; };
 		93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E942943415C00C07F70 /* NoteModel.swift */; };
 		93FE2E9C29434C1D00C07F70 /* SettingsWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */; };
 		93FE2E9E29434C5E00C07F70 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */; };
@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		93FE2E7E29433D7900C07F70 /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadApp.swift; sourceTree = "<group>"; };
 		93FE2E8329433D7900C07F70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		93FE2E8829433D7B00C07F70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93FE2E8A29433D7B00C07F70 /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScratchPad.entitlements; sourceTree = "<group>"; };
 		93FE2E9029433E9A00C07F70 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
-		93FE2E9229433F8100C07F70 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		93FE2E942943415C00C07F70 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		93FE2E9B29434C1D00C07F70 /* SettingsWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowView.swift; sourceTree = "<group>"; };
 		93FE2E9D29434C5E00C07F70 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
@@ -115,9 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				93FE2E9029433E9A00C07F70 /* Toolbar.swift */,
-				93FE2E9229433F8100C07F70 /* RichTextEditor.swift */,
 				93FE2E942943415C00C07F70 /* NoteModel.swift */,
 				93FE2EA82944A19B00C07F70 /* NoteManager.swift */,
+				9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -220,8 +220,8 @@
 				93FE2E952943415C00C07F70 /* NoteModel.swift in Sources */,
 				93FE2E9129433E9A00C07F70 /* Toolbar.swift in Sources */,
 				93FE2EBF29465BEA00C07F70 /* WelcomeSheet.swift in Sources */,
+				9356ECCE2F489EB400EA4C62 /* RichTextEditor.swift in Sources */,
 				93FE2EBA2946536000C07F70 /* Updater.swift in Sources */,
-				93FE2E9329433F8100C07F70 /* RichTextEditor.swift in Sources */,
 				93FE2EAC2944F66400C07F70 /* ImportView.swift in Sources */,
 				93FE2EA92944A19B00C07F70 /* NoteManager.swift in Sources */,
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,
@@ -368,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -399,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";

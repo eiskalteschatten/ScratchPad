@@ -15,13 +15,13 @@ final class NoteModel: ObservableObject {
         didSet {
             UserDefaults.standard.set(pageNumber, forKey: "pageNumber")
             switchingPages = true
-            noteContents = NSAttributedString(string: "")
+            noteContents = AttributedString()
             openNote()
             switchingPages = false
         }
     }
     
-    @Published var noteContents = NSAttributedString(string: "") {
+    @Published var noteContents = AttributedString() {
         didSet {
             if !switchingPages {
                 saveNote()
@@ -58,8 +58,8 @@ final class NoteModel: ObservableObject {
             }
             
             if let _ = try? fullURL.checkResourceIsReachable() {
-                let attributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
-                noteContents = attributedString
+                let nsAttributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
+                noteContents = (try? AttributedString(nsAttributedString, including: \.appKit)) ?? AttributedString(nsAttributedString)
             }
             
             storageLocation.stopAccessingSecurityScopedResource()
@@ -88,11 +88,12 @@ final class NoteModel: ObservableObject {
                 return
             }
             
-            if noteContents.length == 0 && FileManager.default.fileExists(atPath: fullURL.path){
+            let nsContents = (try? NSAttributedString(noteContents, including: \.appKit)) ?? NSAttributedString(noteContents)
+            if nsContents.length == 0 && FileManager.default.fileExists(atPath: fullURL.path) {
                 try FileManager.default.removeItem(atPath: fullURL.path)
             }
             else {
-                let rtdf = noteContents.rtfdFileWrapper(from: .init(location: 0, length: noteContents.length))
+                let rtdf = nsContents.rtfdFileWrapper(from: .init(location: 0, length: nsContents.length))
                 try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
             }
             
@@ -116,7 +117,7 @@ final class NoteModel: ObservableObject {
         let response = alert.runModal()
         
         if response == .alertSecondButtonReturn {
-            noteContents = NSAttributedString(string: "")
+            noteContents = AttributedString()
         }
     }
     
@@ -128,7 +129,8 @@ final class NoteModel: ObservableObject {
         
         if response == .OK {
             guard let saveURL = savePanel.url else { return }
-            let rtdf = noteContents.rtfdFileWrapper(from: .init(location: 0, length: noteContents.length))
+            let nsContents = (try? NSAttributedString(noteContents, including: \.appKit)) ?? NSAttributedString(noteContents)
+            let rtdf = nsContents.rtfdFileWrapper(from: .init(location: 0, length: nsContents.length))
             
             do {
                 try rtdf?.write(to: saveURL, options: .atomic, originalContentsURL: nil)

@@ -9,10 +9,10 @@ import SwiftUI
 
 struct RichTextEditor: NSViewRepresentable {
     @EnvironmentObject var noteModel: NoteModel
-    
+
     func makeNSView(context: Context) -> NSScrollView {
         let scrollView = NSTextView.scrollableTextView()
-        
+
         guard let textView = scrollView.documentView as? NSTextView else {
             return scrollView
         }
@@ -37,35 +37,40 @@ struct RichTextEditor: NSViewRepresentable {
         textView.usesFindBar = true
         textView.usesFontPanel = true
         textView.importsGraphics = true
-        
+
         textView.delegate = context.coordinator
         context.coordinator.textView = textView
-        
+
         return scrollView
     }
-    
+
     func updateNSView(_ nsView: NSScrollView, context: Context) {
-        context.coordinator.textView?.textStorage?.setAttributedString(noteModel.noteContents)
+        guard let textView = context.coordinator.textView else { return }
+        let nsAttributedString = (try? NSAttributedString(noteModel.noteContents, including: \.appKit))
+            ?? NSAttributedString(noteModel.noteContents)
+        // Only update if the content actually changed to avoid overwriting the selection/undo stack
+        if textView.attributedString() != nsAttributedString {
+            textView.textStorage?.setAttributedString(nsAttributedString)
+        }
     }
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
-    
+
     class Coordinator: NSObject, NSTextViewDelegate {
         var parent: RichTextEditor
-        var textView : NSTextView?
-        
+        var textView: NSTextView?
+
         init(_ parent: RichTextEditor) {
             self.parent = parent
         }
-        
+
         func textDidChange(_ notification: Notification) {
-            guard let _textView = notification.object as? NSTextView else {
-                return
-            }
-            
-            self.parent.noteModel.noteContents = _textView.attributedString()
+            guard let textView = notification.object as? NSTextView else { return }
+            let attributed = textView.attributedString()
+            parent.noteModel.noteContents = (try? AttributedString(attributed, including: \.appKit))
+                ?? AttributedString(attributed)
         }
     }
 }
