@@ -28,6 +28,12 @@
             "state" : "translated",
             "value" : "Zurück"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retour"
+          }
         }
       }
     },
@@ -37,6 +43,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Speicherort ändern…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Changer l'emplacement de stockage…"
           }
         }
       }
@@ -48,6 +60,12 @@
             "state" : "translated",
             "value" : "Backup-Ordner auswählen…"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir le dossier de sauvegarde…"
+          }
         }
       }
     },
@@ -57,6 +75,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schließen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
           }
         }
       }
@@ -68,6 +92,12 @@
             "state" : "translated",
             "value" : "Fortfahren"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuer"
+          }
         }
       }
     },
@@ -77,6 +107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erstelle ein Backup in ScratchPad 1.x und merke dir den Speicherort."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créez une sauvegarde dans ScratchPad 1.x et notez son emplacement."
           }
         }
       }
@@ -88,6 +124,12 @@
             "state" : "translated",
             "value" : "Standardort"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emplacement par défaut"
+          }
         }
       }
     },
@@ -97,6 +139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seite löschen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer la page"
           }
         }
       }
@@ -108,6 +156,12 @@
             "state" : "translated",
             "value" : "Aufgrund der modernen macOS-Sicherheitsrichtlinien ist es nicht möglich, automatisch von ScratchPad 1.x zu importieren. Bitte folge den untenstehenden Schritten, um fortzufahren."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En raison des mesures de sécurité modernes de macOS, il n'est pas possible d'importer automatiquement depuis ScratchPad 1.x. Veuillez suivre les étapes ci-dessous pour continuer."
+          }
         }
       }
     },
@@ -117,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seite exportieren…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exporter la page…"
           }
         }
       }
@@ -128,6 +188,12 @@
             "state" : "translated",
             "value" : "Erste Seite"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Première page"
+          }
         }
       }
     },
@@ -137,6 +203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Über anderen Fenstern schweben"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flotter au-dessus des autres fenêtres"
           }
         }
       }
@@ -148,6 +220,12 @@
             "state" : "translated",
             "value" : "Schwebend:"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flottant :"
+          }
         }
       }
     },
@@ -157,6 +235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vorwärts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
           }
         }
       }
@@ -168,6 +252,12 @@
             "state" : "translated",
             "value" : "Gehe zu"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aller"
+          }
         }
       }
     },
@@ -177,6 +267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du kannst deine Notizen jedoch manuell importieren, indem du auf \"Ablage\" und dann auf \"Von Version 1 importieren…\" klickst und den Anweisungen folgst. Alternativ kannst du auf die Schaltfläche unten klicken."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pouvez toutefois les importer manuellement en cliquant sur « Fichier », puis sur « Importer depuis la version 1… » et en suivant les instructions. Vous pouvez également cliquer sur le bouton ci-dessous."
           }
         }
       }
@@ -188,6 +284,12 @@
             "state" : "translated",
             "value" : "Von Version 1 importieren…"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer depuis la version 1…"
+          }
         }
       }
     },
@@ -197,6 +299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deine Notizen von ScratchPad 1 importieren"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer vos notes depuis ScratchPad 1"
           }
         }
       }
@@ -208,6 +316,12 @@
             "state" : "translated",
             "value" : "Letzte Seite"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière page"
+          }
         }
       }
     },
@@ -217,6 +331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Neue Seite"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle page"
           }
         }
       }
@@ -228,6 +348,12 @@
             "state" : "translated",
             "value" : "Nächste Seite"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page suivante"
+          }
         }
       }
     },
@@ -238,6 +364,12 @@
             "state" : "translated",
             "value" : "Willkommensbildschirm öffnen…"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir l'écran de bienvenue…"
+          }
         }
       }
     },
@@ -247,6 +379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vorherige Seite"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page précédente"
           }
         }
       }
@@ -269,6 +407,12 @@
             "state" : "translated",
             "value" : "Wähle den Ordner \"ScratchPad\" aus."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionnez le dossier « ScratchPad »."
+          }
         }
       }
     },
@@ -278,6 +422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wähle die Schaltfläche unten aus, um den Backup-Ordner auszuwählen. Der Ordner heißt \"ScratchPad\" und enthält zwei Unterordner namens \"Notes\" und \"Preferences\"."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cliquez sur le bouton ci-dessous pour choisir le dossier de sauvegarde. Ce dossier s'appellera « ScratchPad » et contiendra deux sous-dossiers nommés « Notes » et « Preferences »."
           }
         }
       }
@@ -289,6 +439,12 @@
             "state" : "translated",
             "value" : "Da macOS seine Sicherheitsrichtlinien für die Ausführung von Anwendungen aktualisiert hat, ist es nicht möglich, deine Notizen automatisch aus ScratchPad 1 zu importieren."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depuis que macOS a mis à jour ses politiques de sécurité concernant l'exécution des applications, il n'est pas possible d'importer automatiquement vos notes depuis ScratchPad 1."
+          }
         }
       }
     },
@@ -298,6 +454,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Speicherort:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emplacement de stockage :"
           }
         }
       }
@@ -309,6 +471,12 @@
             "state" : "translated",
             "value" : "Dieser Importassistent führt dich durch den Import deiner Notizen und Einstellungen aus ScratchPad 1.x."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet assistant d'importation vous guidera tout au long de l'importation de vos notes et paramètres depuis ScratchPad 1.x."
+          }
         }
       }
     },
@@ -318,6 +486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diese Version ist eine vollständige Neuentwicklung von ScratchPad mit modernen macOS-Technologien wie SwiftUI. Sie läuft nativ auf Intel- und Apple Silicon-Macs und unterstützt moderne macOS-Funktionen wie den Dunkelmodus."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette version est une réécriture complète de ScratchPad en utilisant des technologies macOS modernes telles que SwiftUI. Elle s'exécute nativement sur les Mac Intel et Apple Silicon et prend en charge les fonctionnalités modernes de macOS telles que le mode sombre."
           }
         }
       }
@@ -329,12 +503,24 @@
             "state" : "translated",
             "value" : "Standardspeicherort verwenden"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utiliser l'emplacement de stockage par défaut"
+          }
         }
       }
     },
     "version %@" : {
       "localizations" : {
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version %@"
@@ -349,6 +535,12 @@
             "state" : "translated",
             "value" : "ScratchPad 2 ist endlich da. Die erste Version von ScratchPad wurde 2007 für Mac OS X Tiger (10.4) veröffentlicht und bis Mac OS X El Capitan (10.11) aktualisiert."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 est enfin là. La première version de ScratchPad a été publiée en 2007 pour Mac OS X Tiger (10.4) et a été mise à jour jusqu'à Mac OS X El Capitan (10.11)."
+          }
         }
       }
     },
@@ -359,6 +551,12 @@
             "state" : "translated",
             "value" : "Willkommen bei ScratchPad 2!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenue dans ScratchPad 2 !"
+          }
         }
       }
     },
@@ -368,6 +566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fenstertransparenz:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transparence de la fenêtre :"
           }
         }
       }
