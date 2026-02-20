@@ -17,7 +17,8 @@ struct WelcomeSheet: View {
                     Image("AppIconImage")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 86)
+                        .frame(height: 65)
+                        .padding(.trailing, 10)
                     
                     VStack(alignment: .leading) {
                         Text("ScratchPad")
