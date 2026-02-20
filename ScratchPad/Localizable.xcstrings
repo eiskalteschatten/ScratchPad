@@ -1,0 +1,377 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "shouldTranslate" : false
+    },
+    "%" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "Back" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurück"
+          }
+        }
+      }
+    },
+    "Change Storage Location..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicherort ändern…"
+          }
+        }
+      }
+    },
+    "Choose backup folder..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup-Ordner auswählen…"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließen"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortfahren"
+          }
+        }
+      }
+    },
+    "Create a backup in ScratchPad 1.x and remember its location." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle ein Backup in ScratchPad 1.x und merke dir den Speicherort."
+          }
+        }
+      }
+    },
+    "Default Location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardort"
+          }
+        }
+      }
+    },
+    "Delete Page" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seite löschen"
+          }
+        }
+      }
+    },
+    "Due to modern macOS security, it is not possible to automatically import from ScratchPad 1.x. Please follow the steps below to proceed." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aufgrund der modernen macOS-Sicherheitsrichtlinien ist es nicht möglich, automatisch von ScratchPad 1.x zu importieren. Bitte folge den untenstehenden Schritten, um fortzufahren."
+          }
+        }
+      }
+    },
+    "Export Page..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seite exportieren…"
+          }
+        }
+      }
+    },
+    "First Page" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erste Seite"
+          }
+        }
+      }
+    },
+    "Float above other windows" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über anderen Fenstern schweben"
+          }
+        }
+      }
+    },
+    "Floating:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schwebend:"
+          }
+        }
+      }
+    },
+    "Forward" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorwärts"
+          }
+        }
+      }
+    },
+    "Go" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gehe zu"
+          }
+        }
+      }
+    },
+    "However, you can manually import them by clicking on \"File\", then \"Import from Version 1...\" and following the instructions from there. Alternatively, you can click the button below." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kannst deine Notizen jedoch manuell importieren, indem du auf \"Ablage\" und dann auf \"Von Version 1 importieren…\" klickst und den Anweisungen folgst. Alternativ kannst du auf die Schaltfläche unten klicken."
+          }
+        }
+      }
+    },
+    "Import from Version 1..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Von Version 1 importieren…"
+          }
+        }
+      }
+    },
+    "Importing Your Notes from ScratchPad 1" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Notizen von ScratchPad 1 importieren"
+          }
+        }
+      }
+    },
+    "Last Page" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letzte Seite"
+          }
+        }
+      }
+    },
+    "New Page" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Seite"
+          }
+        }
+      }
+    },
+    "Next Page" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nächste Seite"
+          }
+        }
+      }
+    },
+    "Open Welcome Sheet..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willkommensbildschirm öffnen…"
+          }
+        }
+      }
+    },
+    "Previous Page" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorherige Seite"
+          }
+        }
+      }
+    },
+    "ScratchPad" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "Select the \"ScratchPad\" folder." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle den Ordner \"ScratchPad\" aus."
+          }
+        }
+      }
+    },
+    "Select the button below to choose the backup folder. The folder will be called \"ScratchPad\" and will contain two folders called \"Notes\" and \"Preferences\"." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle die Schaltfläche unten aus, um den Backup-Ordner auszuwählen. Der Ordner heißt \"ScratchPad\" und enthält zwei Unterordner namens \"Notes\" und \"Preferences\"."
+          }
+        }
+      }
+    },
+    "Since macOS has updated its security policies for the way applications are allowed to run, it is not possible to automatically import your notes from ScratchPad 1." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da macOS seine Sicherheitsrichtlinien für die Ausführung von Anwendungen aktualisiert hat, ist es nicht möglich, deine Notizen automatisch aus ScratchPad 1 zu importieren."
+          }
+        }
+      }
+    },
+    "Storage Location:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicherort:"
+          }
+        }
+      }
+    },
+    "This importer will guide you through importing your notes and settings from ScratchPad 1.x." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieser Importassistent führt dich durch den Import deiner Notizen und Einstellungen aus ScratchPad 1.x."
+          }
+        }
+      }
+    },
+    "This version is a complete rewrite of ScratchPad from the ground up using modern macOS technologies such as SwiftUI. It runs natively on both Intel and Apple Silicon Macs and supports modern macOS features such as Dark Mode." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Version ist eine vollständige Neuentwicklung von ScratchPad mit modernen macOS-Technologien wie SwiftUI. Sie läuft nativ auf Intel- und Apple Silicon-Macs und unterstützt moderne macOS-Funktionen wie den Dunkelmodus."
+          }
+        }
+      }
+    },
+    "Use Default Storage Location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardspeicherort verwenden"
+          }
+        }
+      }
+    },
+    "version %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@"
+          }
+        }
+      }
+    },
+    "Version 2 of ScratchPad has finally arrived. The first version of ScratchPad was released in 2007 for Mac OS X Tiger (10.4) and was updated through Mac OS X El Capitan (10.11)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 ist endlich da. Die erste Version von ScratchPad wurde 2007 für Mac OS X Tiger (10.4) veröffentlicht und bis Mac OS X El Capitan (10.11) aktualisiert."
+          }
+        }
+      }
+    },
+    "Welcome to ScratchPad 2!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willkommen bei ScratchPad 2!"
+          }
+        }
+      }
+    },
+    "Window Transparency:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fenstertransparenz:"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

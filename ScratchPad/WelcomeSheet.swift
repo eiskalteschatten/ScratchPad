@@ -38,7 +38,7 @@ struct WelcomeSheet: View {
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)
                 
-                Text("This version is a complete rewrite of ScratchPad from the ground up using modern macOS technologies such as SwiftUI. It runs natively on both Intel and Apple Silicon Macs and support modern macOS features such as Dark Mode.")
+                Text("This version is a complete rewrite of ScratchPad from the ground up using modern macOS technologies such as SwiftUI. It runs natively on both Intel and Apple Silicon Macs and supports modern macOS features such as Dark Mode.")
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)
                 
