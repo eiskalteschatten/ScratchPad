@@ -39,7 +39,11 @@ struct ScratchPadApp: App {
                 .environmentObject(commandsModel)
         }
         .commands {
-            CommandGroup(replacing: .newItem) { }
+            CommandGroup(replacing: .newItem) {
+                Button("New Page") {
+                    noteModel.appendNewNote()
+                }.keyboardShortcut("n", modifiers: [.command])
+            }
             
             CommandGroup(after: .newItem) {
                 Button("Close") {

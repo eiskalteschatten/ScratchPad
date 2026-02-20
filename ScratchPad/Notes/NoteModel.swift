@@ -140,4 +140,17 @@ final class NoteModel: ObservableObject {
             }
         }
     }
+    
+    func appendNewNote() {
+        do {
+            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+                ErrorHandling.showNewNoteCouldNotBeCreatedError()
+                return
+            }
+            
+            pageNumber = currentLastPageNumber + 1
+        } catch {
+            ErrorHandling.showNewNoteCouldNotBeCreatedError()
+        }
+    }
 }

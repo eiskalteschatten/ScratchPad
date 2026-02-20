@@ -28,6 +28,10 @@ final class ErrorHandling {
     static func showStorageLocationNotFoundError() {
         showErrorToUser("The storage location for your notes could not be determined", informativeText: "Please re-select your storage location in the Settings and try again.")
     }
+    
+    static func showNewNoteCouldNotBeCreatedError() {
+        showErrorToUser("A new note could not be added!", informativeText: "Please manually navigate to the last page to create a new note.")
+    }
 }
 
 struct ErrorWithMessage: Error {
