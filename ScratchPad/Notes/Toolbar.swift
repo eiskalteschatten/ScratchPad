@@ -14,12 +14,18 @@ struct Toolbar: View {
     
     var body: some View {
         Button(action: {
+            noteModel.appendNewNote()
+        }) {
+            Label("New Page", systemImage: "plus")
+        }
+        
+        Button(action: {
             if noteModel.pageNumber > 1 {
                 noteModel.pageNumber -= 1
             }
             
             unfocusPageNumberTextfield()
-        } ) {
+        }) {
             Label("Back", systemImage: "chevron.left")
         }
         .disabled(noteModel.pageNumber <= 1)
@@ -27,7 +33,7 @@ struct Toolbar: View {
         Button(action: {
             noteModel.pageNumber += 1
             unfocusPageNumberTextfield()
-        } ) {
+        }) {
             Label("Forward", systemImage: "chevron.right")
         }
         
