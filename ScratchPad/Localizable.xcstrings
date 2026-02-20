@@ -35,6 +35,12 @@
             "value" : "Retour"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "戻る"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55,6 +61,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changer l'emplacement de stockage…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存場所を変更…"
           }
         },
         "nl" : {
@@ -79,6 +91,12 @@
             "value" : "Choisir le dossier de sauvegarde…"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バックアップフォルダを選択…"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -99,6 +117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
           }
         },
         "nl" : {
@@ -123,6 +147,12 @@
             "value" : "Continuer"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続ける"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -143,6 +173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Créez une sauvegarde dans ScratchPad 1.x et notez son emplacement."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 1.xでバックアップを作成し、その場所を記録しておく。"
           }
         },
         "nl" : {
@@ -167,6 +203,12 @@
             "value" : "Emplacement par défaut"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デフォルトの場所"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -187,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer la page"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ページを削除"
           }
         },
         "nl" : {
@@ -211,6 +259,12 @@
             "value" : "En raison des mesures de sécurité modernes de macOS, il n'est pas possible d'importer automatiquement depuis ScratchPad 1.x. Veuillez suivre les étapes ci-dessous pour continuer."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOSのセキュリティの制約により、ScratchPad 1.xから自動的にインポートすることはできません。続行するには、以下の手順に従ってください。"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -231,6 +285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exporter la page…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ページをエクスポート…"
           }
         },
         "nl" : {
@@ -255,6 +315,12 @@
             "value" : "Première page"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最初のページ"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -275,6 +341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flotter au-dessus des autres fenêtres"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "他のウィンドウの上に表示"
           }
         },
         "nl" : {
@@ -299,6 +371,12 @@
             "value" : "Flottant :"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フローティング:"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -319,6 +397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suivant"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進む"
           }
         },
         "nl" : {
@@ -343,6 +427,12 @@
             "value" : "Aller"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "移動"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -363,6 +453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous pouvez toutefois les importer manuellement en cliquant sur « Fichier », puis sur « Importer depuis la version 1… » et en suivant les instructions. Vous pouvez également cliquer sur le bouton ci-dessous."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「ファイル」をクリックし、次に「バージョン1からインポート…」をクリックして指示に従うことで、手動でインポートすることもできます。または、以下のボタンをクリックすることもできます。"
           }
         },
         "nl" : {
@@ -387,6 +483,12 @@
             "value" : "Importer depuis la version 1…"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン1からインポート…"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -407,6 +509,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importer vos notes depuis ScratchPad 1"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 1からメモをインポート"
           }
         },
         "nl" : {
@@ -431,6 +539,12 @@
             "value" : "Dernière page"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最後のページ"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -451,6 +565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nouvelle page"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいページ"
           }
         },
         "nl" : {
@@ -475,6 +595,12 @@
             "value" : "Page suivante"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次のページ"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -497,6 +623,12 @@
             "value" : "Ouvrir l'écran de bienvenue…"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ようこそ画面を開く…"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -517,6 +649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Page précédente"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前のページ"
           }
         },
         "nl" : {
@@ -552,6 +690,12 @@
             "value" : "Sélectionnez le dossier « ScratchPad »."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「ScratchPad」フォルダを選択してください。"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -572,6 +716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cliquez sur le bouton ci-dessous pour choisir le dossier de sauvegarde. Ce dossier s'appellera « ScratchPad » et contiendra deux sous-dossiers nommés « Notes » et « Preferences »."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下のボタンをクリックしてバックアップフォルダを選択してください。フォルダの名前は「ScratchPad」で、「Notes」と「Preferences」という2つのサブフォルダが含まれます。"
           }
         },
         "nl" : {
@@ -596,6 +746,12 @@
             "value" : "Depuis que macOS a mis à jour ses politiques de sécurité concernant l'exécution des applications, il n'est pas possible d'importer automatiquement vos notes depuis ScratchPad 1."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOSがアプリケーションの実行に関するセキュリティポリシーを更新したため、ScratchPad 1からメモを自動的にインポートすることはできません。"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -616,6 +772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emplacement de stockage :"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存場所:"
           }
         },
         "nl" : {
@@ -640,6 +802,12 @@
             "value" : "Cet assistant d'importation vous guidera tout au long de l'importation de vos notes et paramètres depuis ScratchPad 1.x."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このインポートアシスタントが、ScratchPad 1.xからメモと設定をインポートする手順を案内します。"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -660,6 +828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette version est une réécriture complète de ScratchPad en utilisant des technologies macOS modernes telles que SwiftUI. Elle s'exécute nativement sur les Mac Intel et Apple Silicon et prend en charge les fonctionnalités modernes de macOS telles que le mode sombre."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このバージョンは、SwiftUIなどの最新のmacOS技術を使用してScratchPadをゼロから全面的に書き直したものです。IntelおよびApple Silicon Macの両方でネイティブ動作し、ダークモードなどの最新のmacOS機能をサポートしています。"
           }
         },
         "nl" : {
@@ -684,6 +858,12 @@
             "value" : "Utiliser l'emplacement de stockage par défaut"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デフォルトの保存場所を使用"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -704,6 +884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン %@"
           }
         },
         "nl" : {
@@ -728,6 +914,12 @@
             "value" : "ScratchPad 2 est enfin là. La première version de ScratchPad a été publiée en 2007 pour Mac OS X Tiger (10.4) et a été mise à jour jusqu'à Mac OS X El Capitan (10.11)."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2がついに登場しました。ScratchPadの最初のバージョンは2007年にMac OS X Tiger (10.4)向けにリリースされ、Mac OS X El Capitan (10.11)までアップデートされました。"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -750,6 +942,12 @@
             "value" : "Bienvenue dans ScratchPad 2 !"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2へようこそ！"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -770,6 +968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transparence de la fenêtre :"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ウィンドウの透明度:"
           }
         },
         "nl" : {
