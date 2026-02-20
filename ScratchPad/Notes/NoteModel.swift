@@ -153,4 +153,21 @@ final class NoteModel: ObservableObject {
             ErrorHandling.showNewNoteCouldNotBeCreatedError()
         }
     }
+    
+    func goToFirstPage() {
+        pageNumber = 1
+    }
+    
+    func goToLastPage() {
+        do {
+            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+                ErrorHandling.showCouldNotFindLastPage()
+                return
+            }
+            
+            pageNumber = currentLastPageNumber
+        } catch {
+            ErrorHandling.showCouldNotFindLastPage()
+        }
+    }
 }

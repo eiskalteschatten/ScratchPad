@@ -30,7 +30,11 @@ final class ErrorHandling {
     }
     
     static func showNewNoteCouldNotBeCreatedError() {
-        showErrorToUser("A new note could not be added!", informativeText: "Please manually navigate to the last page to create a new note.")
+        showErrorToUser("A new note could not be added!", informativeText: "Please manually navigate past the last page to create a new note.")
+    }
+    
+    static func showCouldNotFindLastPage() {
+        showErrorToUser("ScratchPad could not find the last page!", informativeText: "Please manually navigate to the last page.")
     }
 }
 

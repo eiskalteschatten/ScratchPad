@@ -75,7 +75,11 @@ struct ScratchPadApp: App {
                 Divider()
             }
             
-            CommandMenu("Page") {
+            CommandMenu("Go") {
+                Button("First Page") {
+                    noteModel.goToFirstPage()
+                }.keyboardShortcut(.leftArrow, modifiers: [.shift, .command])
+                
                 Button("Previous Page") {
                     if noteModel.pageNumber > 1 {
                         noteModel.pageNumber -= 1
@@ -85,6 +89,10 @@ struct ScratchPadApp: App {
                 Button("Next Page") {
                     noteModel.pageNumber += 1
                 }.keyboardShortcut(.rightArrow, modifiers: [.option, .command])
+                
+                Button("Last Page") {
+                    noteModel.goToLastPage()
+                }.keyboardShortcut(.rightArrow, modifiers: [.shift, .command])
             }
             
             TextEditingCommands()
