@@ -36,6 +36,11 @@ struct ImportView: View {
                 .font(.system(size: 12))
                 .lineLimit(nil)
             
+            Text("Note: The imported notes will be added after any notes that currently exist in ScratchPad 2. No existing notes will be deleted, modified or overwritten.")
+                .italic()
+                .font(.system(size: 12))
+                .lineLimit(nil)
+            
             HStack(alignment: .top, spacing: 30) {
                 HStack(alignment: .top) {
                     Image(systemName: "1.circle.fill")

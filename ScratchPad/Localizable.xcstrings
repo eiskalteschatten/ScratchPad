@@ -1471,6 +1471,64 @@
         }
       }
     },
+    "Note: The imported notes will be added after any notes that currently exist in ScratchPad 2. No existing notes will be deleted, modified or overwritten." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinweis: Die importierten Notizen werden nach den bereits in ScratchPad 2 vorhandenen Notizen hinzugefügt. Keine vorhandenen Notizen werden gelöscht, geändert oder überschrieben."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota: Las notas importadas se añadirán después de las notas que actualmente existen en ScratchPad 2. No se eliminará, modificará ni sobrescribirá ninguna nota existente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remarque : Les notes importées seront ajoutées après les notes existantes dans ScratchPad 2. Aucune note existante ne sera supprimée, modifiée ou écrasée."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota: Le note importate verranno aggiunte dopo le note attualmente presenti in ScratchPad 2. Nessuna nota esistente verrà eliminata, modificata o sovrascritta."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注意：インポートされたメモは、ScratchPad 2に現在存在するメモの後に追加されます。既存のメモは削除、変更、または上書きされません。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opmerking: De geïmporteerde notities worden toegevoegd na de notities die momenteel in ScratchPad 2 bestaan. Geen bestaande notities worden verwijderd, gewijzigd of overschreven."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Примечание: Импортированные заметки будут добавлены после существующих заметок в ScratchPad 2. Никакие существующие заметки не будут удалены, изменены или перезаписаны."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注意：导入的笔记将添加在 ScratchPad 2 中现有笔记之后。不会删除、修改或覆盖任何现有笔记。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注意：匯入的筆記將新增在 ScratchPad 2 現有筆記之後。不會刪除、修改或覆寫任何現有筆記。"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "de" : {
