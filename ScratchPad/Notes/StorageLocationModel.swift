@@ -11,10 +11,16 @@ final class StorageLocationModel: ObservableObject {
     let scratchPadFolderName = "ScratchPad"
     
     private var previousStorageLocation: URL?
+    private var securityScopedURL: URL?
     
     @Published var storageLocation: URL? {
         willSet {
             previousStorageLocation = storageLocation
+            // Stop accessing the previous security-scoped resource before switching
+            if let scoped = securityScopedURL, scoped != newValue {
+                scoped.stopAccessingSecurityScopedResource()
+                securityScopedURL = nil
+            }
         }
         didSet {
             do {
@@ -53,8 +59,19 @@ final class StorageLocationModel: ObservableObject {
     init() {
         if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
             var isStale = false
-            if let resolved = try? URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale),
-               FileManager.default.fileExists(atPath: resolved.path) {
+            if let resolved = try? URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale) {
+                guard resolved.startAccessingSecurityScopedResource() else {
+                    UserDefaults.standard.removeObject(forKey: "storageLocationBookmarkData")
+                    handleStorageLocationNotFound()
+                    return
+                }
+                securityScopedURL = resolved
+                if isStale {
+                    // Renew the stale bookmark now that we have access
+                    if let renewed = try? resolved.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil) {
+                        UserDefaults.standard.set(renewed, forKey: "storageLocationBookmarkData")
+                    }
+                }
                 storageLocation = resolved
             }
             else {
