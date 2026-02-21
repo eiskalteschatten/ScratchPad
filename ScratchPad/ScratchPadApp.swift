@@ -25,7 +25,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 struct ScratchPadApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    /// Note: The order here is critical. StorageLocationModel always needs to be initialized first so that the storageLocation is set and checked correctly!
     @ObservedObject private var storageLocationModel: StorageLocationModel
     @ObservedObject private var settingsModel: SettingsModel
     @ObservedObject private var noteModel: NoteModel
@@ -34,6 +33,7 @@ struct ScratchPadApp: App {
     @State private var importScreenOpen = false
     
     init() {
+        /// Note: The order here is critical. StorageLocationModel always needs to be initialized first so that the storageLocation is set and checked correctly!
         let storageLocationModel = StorageLocationModel()
         _storageLocationModel = ObservedObject(wrappedValue: storageLocationModel)
         _settingsModel = ObservedObject(wrappedValue: SettingsModel(storageLocationModel: storageLocationModel))
