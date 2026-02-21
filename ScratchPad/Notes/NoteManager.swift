@@ -55,12 +55,7 @@ final class NoteManager {
     static func getLastPageNumber() throws -> Int? {
         if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
             var isStale = false
-            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
-            
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return nil
-            }
+            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
             
             let notes = try getNoteFileList(storageLocation)
             
@@ -70,8 +65,6 @@ final class NoteManager {
                 let pageNumber = fileName.replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
                 return Int(pageNumber)
             }.sorted()
-            
-            storageLocation.stopAccessingSecurityScopedResource()
             
             return pageNumbers.last ?? 1
         }
@@ -87,12 +80,7 @@ final class NoteManager {
             }
             
             var isStale = false
-            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
-            
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return
-            }
+            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
             
             guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
                 throw ErrorWithMessage(String(localized: "No last page number could be found!"))
@@ -123,8 +111,6 @@ final class NoteManager {
                     try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
                 }
             }
-            
-            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)

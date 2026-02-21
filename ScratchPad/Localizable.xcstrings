@@ -253,6 +253,9 @@
         }
       }
     },
+    "Choose Location..." : {
+
+    },
     "Close" : {
       "localizations" : {
         "de" : {
@@ -2062,6 +2065,9 @@
         }
       }
     },
+    "Storage Location Not Found" : {
+
+    },
     "Storage Location:" : {
       "localizations" : {
         "de" : {
@@ -2119,6 +2125,9 @@
           }
         }
       }
+    },
+    "The folder where your notes are stored could not be found. Would you like to choose a new location or reset to the default?" : {
+
     },
     "The folder you selected is invalid." : {
       "localizations" : {
@@ -2351,6 +2360,9 @@
           }
         }
       }
+    },
+    "Use Default Location" : {
+
     },
     "Use Default Storage Location" : {
       "localizations" : {

@@ -42,7 +42,7 @@ final class NoteModel: ObservableObject {
         var isStale = false
         
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
+              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
         else {
             ErrorHandling.showStorageLocationNotFoundError()
             return
@@ -52,17 +52,10 @@ final class NoteModel: ObservableObject {
         let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtfd]
         
         do {
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return
-            }
-            
             if let _ = try? fullURL.checkResourceIsReachable() {
                 let nsAttributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
                 noteContents = (try? AttributedString(nsAttributedString, including: \.appKit)) ?? AttributedString(nsAttributedString)
             }
-            
-            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
@@ -74,7 +67,7 @@ final class NoteModel: ObservableObject {
         var isStale = false
                 
         guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
+              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
         else {
             ErrorHandling.showStorageLocationNotFoundError()
             return
@@ -83,11 +76,6 @@ final class NoteModel: ObservableObject {
         let fullURL = storageLocation.appendingPathComponent(noteName)
 
         do {
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return
-            }
-            
             let nsContents = (try? NSAttributedString(noteContents, including: \.appKit)) ?? NSAttributedString(noteContents)
             if nsContents.length == 0 && FileManager.default.fileExists(atPath: fullURL.path) {
                 try FileManager.default.removeItem(atPath: fullURL.path)
@@ -96,8 +84,6 @@ final class NoteModel: ObservableObject {
                 let rtdf = nsContents.rtfdFileWrapper(from: .init(location: 0, length: nsContents.length))
                 try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
             }
-            
-            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)

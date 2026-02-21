@@ -25,15 +25,26 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 struct ScratchPadApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    @ObservedObject private var settingsModel = SettingsModel()
-    @ObservedObject private var noteModel = NoteModel()
-    @ObservedObject private var commandsModel = CommandsModel()
+    /// Note: The order here is critical. StorageLocationModel always needs to be initialized first so that the storageLocation is set and checked correctly!
+    @ObservedObject private var storageLocationModel: StorageLocationModel
+    @ObservedObject private var settingsModel: SettingsModel
+    @ObservedObject private var noteModel: NoteModel
+    @ObservedObject private var commandsModel: CommandsModel
     
     @State private var importScreenOpen = false
+    
+    init() {
+        let storageLocationModel = StorageLocationModel()
+        _storageLocationModel = ObservedObject(wrappedValue: storageLocationModel)
+        _settingsModel = ObservedObject(wrappedValue: SettingsModel(storageLocationModel: storageLocationModel))
+        _noteModel = ObservedObject(wrappedValue: NoteModel())
+        _commandsModel = ObservedObject(wrappedValue: CommandsModel())
+    }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(storageLocationModel)
                 .environmentObject(noteModel)
                 .environmentObject(settingsModel)
                 .environmentObject(commandsModel)
@@ -105,6 +116,7 @@ struct ScratchPadApp: App {
                 .frame(minWidth: 450)
                 .fixedSize()
                 .environmentObject(settingsModel)
+                .environmentObject(storageLocationModel)
         }
     }
 }
