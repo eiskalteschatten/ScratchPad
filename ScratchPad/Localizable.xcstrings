@@ -58,6 +58,12 @@
             "state" : "translated",
             "value" : "Indietro"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назад"
+          }
         }
       }
     },
@@ -97,6 +103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cambia posizione di archiviazione…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить место хранения…"
           }
         }
       }
@@ -138,6 +150,12 @@
             "state" : "translated",
             "value" : "Scegli cartella di backup…"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрать папку резервной копии…"
+          }
         }
       }
     },
@@ -177,6 +195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiudi"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть"
           }
         }
       }
@@ -218,6 +242,12 @@
             "state" : "translated",
             "value" : "Continua"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжить"
+          }
         }
       }
     },
@@ -257,6 +287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crea un backup in ScratchPad 1.x e ricorda la sua posizione."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создайте резервную копию в ScratchPad 1.x и запомните её расположение."
           }
         }
       }
@@ -298,6 +334,12 @@
             "state" : "translated",
             "value" : "Posizione predefinita"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расположение по умолчанию"
+          }
         }
       }
     },
@@ -337,6 +379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina pagina"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить страницу"
           }
         }
       }
@@ -378,6 +426,12 @@
             "state" : "translated",
             "value" : "A causa delle moderne restrizioni di sicurezza di macOS, non è possibile importare automaticamente da ScratchPad 1.x. Segui i passaggi seguenti per procedere."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Из-за современных ограничений безопасности macOS автоматический импорт из ScratchPad 1.x невозможен. Пожалуйста, следуйте инструкциям ниже для продолжения."
+          }
         }
       }
     },
@@ -417,6 +471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esporta pagina…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экспортировать страницу…"
           }
         }
       }
@@ -458,6 +518,12 @@
             "state" : "translated",
             "value" : "Prima pagina"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Первая страница"
+          }
         }
       }
     },
@@ -497,6 +563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fluttua sopra le altre finestre"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поверх других окон"
           }
         }
       }
@@ -538,6 +610,12 @@
             "state" : "translated",
             "value" : "Mobile:"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поверх окон:"
+          }
         }
       }
     },
@@ -577,6 +655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avanti"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вперёд"
           }
         }
       }
@@ -618,6 +702,12 @@
             "state" : "translated",
             "value" : "Vai"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейти"
+          }
         }
       }
     },
@@ -657,6 +747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuttavia, puoi importarle manualmente facendo clic su «File», poi su «Importa dalla versione 1…» e seguendo le istruzioni. Puoi anche fare clic sul pulsante in basso."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Однако вы можете импортировать их вручную, нажав «Файл», затем «Импортировать из версии 1…» и следуя инструкциям. Также можно нажать кнопку ниже."
           }
         }
       }
@@ -698,6 +794,12 @@
             "state" : "translated",
             "value" : "Importa dalla versione 1…"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Импортировать из версии 1…"
+          }
         }
       }
     },
@@ -737,6 +839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importazione delle note da ScratchPad 1"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Импорт заметок из ScratchPad 1"
           }
         }
       }
@@ -778,6 +886,12 @@
             "state" : "translated",
             "value" : "Ultima pagina"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последняя страница"
+          }
         }
       }
     },
@@ -817,6 +931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuova pagina"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новая страница"
           }
         }
       }
@@ -858,6 +978,12 @@
             "state" : "translated",
             "value" : "Pagina successiva"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующая страница"
+          }
         }
       }
     },
@@ -898,6 +1024,12 @@
             "state" : "translated",
             "value" : "Apri schermata di benvenuto…"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть экран приветствия…"
+          }
         }
       }
     },
@@ -937,6 +1069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pagina precedente"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предыдущая страница"
           }
         }
       }
@@ -989,6 +1127,12 @@
             "state" : "translated",
             "value" : "Seleziona la cartella «ScratchPad»."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите папку «ScratchPad»."
+          }
         }
       }
     },
@@ -1028,6 +1172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fai clic sul pulsante in basso per scegliere la cartella di backup. La cartella si chiamerà «ScratchPad» e conterrà due sottocartelle chiamate «Notes» e «Preferences»."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите кнопку ниже, чтобы выбрать папку резервной копии. Папка будет называться «ScratchPad» и будет содержать две подпапки: «Notes» и «Preferences»."
           }
         }
       }
@@ -1069,6 +1219,12 @@
             "state" : "translated",
             "value" : "Poiché macOS ha aggiornato le sue politiche di sicurezza per l'esecuzione delle applicazioni, non è possibile importare automaticamente le note da ScratchPad 1."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поскольку macOS обновила свои политики безопасности для запуска приложений, автоматический импорт заметок из ScratchPad 1 невозможен."
+          }
         }
       }
     },
@@ -1108,6 +1264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Posizione di archiviazione:"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Место хранения:"
           }
         }
       }
@@ -1149,6 +1311,12 @@
             "state" : "translated",
             "value" : "Questa procedura guidata ti aiuterà a importare le note e le impostazioni da ScratchPad 1.x."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот помощник проведёт вас через импорт заметок и настроек из ScratchPad 1.x."
+          }
         }
       }
     },
@@ -1188,6 +1356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa versione è una riscrittura completa di ScratchPad da zero utilizzando le moderne tecnologie macOS come SwiftUI. Funziona nativamente su Mac Intel e Apple Silicon e supporta le funzionalità moderne di macOS come la Modalità Scura."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эта версия — полная переработка ScratchPad с нуля с использованием современных технологий macOS, таких как SwiftUI. Она работает нативно на Mac с Intel и Apple Silicon и поддерживает современные функции macOS, такие как тёмный режим."
           }
         }
       }
@@ -1229,6 +1403,12 @@
             "state" : "translated",
             "value" : "Usa posizione di archiviazione predefinita"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовать расположение по умолчанию"
+          }
         }
       }
     },
@@ -1268,6 +1448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "versione %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "версия %@"
           }
         }
       }
@@ -1309,6 +1495,12 @@
             "state" : "translated",
             "value" : "ScratchPad 2 è finalmente arrivato. La prima versione di ScratchPad è stata rilasciata nel 2007 per Mac OS X Tiger (10.4) ed è stata aggiornata fino a Mac OS X El Capitan (10.11)."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 наконец-то здесь. Первая версия ScratchPad вышла в 2007 году для Mac OS X Tiger (10.4) и обновлялась вплоть до Mac OS X El Capitan (10.11)."
+          }
         }
       }
     },
@@ -1349,6 +1541,12 @@
             "state" : "translated",
             "value" : "Benvenuto in ScratchPad 2!"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать в ScratchPad 2!"
+          }
         }
       }
     },
@@ -1388,6 +1586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trasparenza della finestra:"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прозрачность окна:"
           }
         }
       }
