@@ -149,6 +149,15 @@ struct ImportView: View {
                 
                 // MARK: delete the backup folder
                 try FileManager.default.removeItem(atPath: backupURL.path)
+                
+                
+                // MARK: inform the user that everything was successful
+                let alert = NSAlert()
+                alert.messageText = String(localized: "Your notes were successfully imported!")
+                alert.informativeText = String(localized: "Your imported notes will appear after the last page of the notes that were already in ScratchPad 2.")
+                alert.addButton(withTitle: String(localized: "OK"))
+                alert.alertStyle = .informational
+                alert.runModal()
            } catch {
                print(error)
                ErrorHandling.showErrorToUser(error.localizedDescription)

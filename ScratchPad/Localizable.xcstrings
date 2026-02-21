@@ -3105,6 +3105,122 @@
           }
         }
       }
+    },
+    "Your imported notes will appear after the last page of the notes that were already in ScratchPad 2." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine importierten Notizen werden nach der letzten Seite der bereits in ScratchPad 2 vorhandenen Notizen erscheinen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus notas importadas aparecerán después de la última página de las notas que ya estaban en ScratchPad 2."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vos notes importées apparaîtront après la dernière page des notes déjà présentes dans ScratchPad 2."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le note importate appariranno dopo l'ultima pagina delle note già presenti in ScratchPad 2."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インポートされたメモは、ScratchPad 2にすでにあったメモの最後のページの後に表示されます。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uw geïmporteerde notities verschijnen na de laatste pagina van de notities die al in ScratchPad 2 stonden."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Импортированные заметки появятся после последней страницы заметок, уже находившихся в ScratchPad 2."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您导入的笔记将出现在 ScratchPad 2 中已有笔记的最后一页之后。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您匯入的筆記將出現在 ScratchPad 2 中已有筆記的最後一頁之後。"
+          }
+        }
+      }
+    },
+    "Your notes were successfully imported!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Notizen wurden erfolgreich importiert!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Tus notas se han importado correctamente!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vos notes ont été importées avec succès !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tue note sono state importate con successo!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メモが正常にインポートされました！"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uw notities zijn succesvol geïmporteerd!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваши заметки успешно импортированы!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的笔记已成功导入！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的筆記已成功匯入！"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"
