@@ -85,7 +85,15 @@ struct SettingsWindowView: View {
         let response = openPanel.runModal()
         
         if response == .OK {
-            settingsModel.storageLocation = openPanel.url
+            guard var newLocation = openPanel.url else {
+                ErrorHandling.showErrorToUser("The folder you selected is invalid.", informativeText: "Please select a different folder.")
+                return
+            }
+            
+            if newLocation.lastPathComponent != settingsModel.scratchPadFolderName {
+                newLocation = newLocation.appendingPathComponent(settingsModel.scratchPadFolderName)
+            }
+            settingsModel.storageLocation = newLocation
         }
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 final class SettingsModel: ObservableObject {
+    let scratchPadFolderName = "ScratchPad"
+    
     @Published var windowTransparency = UserDefaults.standard.value(forKey: "windowTransparency") as? Double ?? 100 {
         didSet {
             UserDefaults.standard.set(windowTransparency, forKey: "windowTransparency")
@@ -31,7 +33,11 @@ final class SettingsModel: ObservableObject {
         }
         didSet {
             do {
-                if let unwrappedLocation = storageLocation {
+                if var unwrappedLocation = storageLocation {                   
+                    if !FileManager.default.fileExists(atPath: unwrappedLocation.path) {
+                        try FileManager.default.createDirectory(atPath: unwrappedLocation.path, withIntermediateDirectories: true, attributes: nil)
+                    }
+                    
                     let bookmarkData = try unwrappedLocation.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
                     
                     UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
@@ -54,8 +60,9 @@ final class SettingsModel: ObservableObject {
     
     private var defaultStorageLocation: URL {
         let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return documentURL.appendingPathComponent("ScratchPad")
-    }
+        /// Note: This is necessary for the comparison in usesDefaultStorageLocation to work
+        return documentURL.appendingPathComponent(scratchPadFolderName)
+   }
     
     private var usesDefaultStorageLocation: Bool {
         return storageLocation == defaultStorageLocation
@@ -74,16 +81,7 @@ final class SettingsModel: ObservableObject {
     }
     
     func resetStorageLocation() {
-        do {
-            if !FileManager.default.fileExists(atPath: defaultStorageLocation.path) {
-                try FileManager.default.createDirectory(atPath: defaultStorageLocation.path, withIntermediateDirectories: true, attributes: nil)
-            }
-            
-            storageLocation = defaultStorageLocation
-        } catch {
-            print(error)
-            ErrorHandling.showErrorToUser(error.localizedDescription)
-        }
+        storageLocation = defaultStorageLocation
     }
     
     private func setFormattedStorageLocation() {
