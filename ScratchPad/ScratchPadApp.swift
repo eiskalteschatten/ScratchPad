@@ -102,7 +102,8 @@ struct ScratchPadApp: App {
         
         Settings {
             SettingsWindowView()
-                .frame(width: 450)
+                .frame(minWidth: 450)
+                .fixedSize()
                 .environmentObject(settingsModel)
         }
     }
