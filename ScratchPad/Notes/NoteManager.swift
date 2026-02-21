@@ -46,6 +46,10 @@ final class NoteManager {
                 
                 try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
             }
+            
+            if FileManager.default.fileExists(atPath: from.path) {
+                try FileManager.default.removeItem(atPath: from.path)
+            }
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)

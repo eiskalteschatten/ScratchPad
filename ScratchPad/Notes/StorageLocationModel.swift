@@ -57,7 +57,7 @@ final class StorageLocationModel: ObservableObject {
     }
     
     var usesDefaultStorageLocation: Bool {
-        return storageLocation == defaultStorageLocation
+        return storageLocation?.path == defaultStorageLocation.path
     }
     
     private var defaultStorageLocation: URL {
