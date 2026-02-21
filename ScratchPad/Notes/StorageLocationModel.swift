@@ -13,6 +13,8 @@ final class StorageLocationModel: ObservableObject {
     private var previousStorageLocation: URL?
     private var securityScopedURL: URL?
     
+    @Published var formattedStorageLocation: String?
+    
     @Published var storageLocation: URL? {
         willSet {
             previousStorageLocation = storageLocation
@@ -29,9 +31,15 @@ final class StorageLocationModel: ObservableObject {
                         try FileManager.default.createDirectory(atPath: unwrappedLocation.path, withIntermediateDirectories: true, attributes: nil)
                     }
                     
-                    let bookmarkData = try unwrappedLocation.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
-                    
-                    UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
+                    if usesDefaultStorageLocation {
+                        // The default location is inside the app's sandbox container and doesn't
+                        // support security-scoped bookmarks. Clear any saved bookmark so that
+                        // init() falls through to resetStorageLocation() on the next launch.
+                        UserDefaults.standard.removeObject(forKey: "storageLocationBookmarkData")
+                    } else {
+                        let bookmarkData = try unwrappedLocation.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
+                        UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
+                    }
                     
                     if let unwrappedPreviousLocation = previousStorageLocation,
                        let unwrappedStorageLocation = storageLocation,
@@ -82,6 +90,8 @@ final class StorageLocationModel: ObservableObject {
         else {
             resetStorageLocation()
         }
+        
+        setFormattedStorageLocation()
     }
     
     private func handleStorageLocationNotFound() {
@@ -117,6 +127,7 @@ final class StorageLocationModel: ObservableObject {
     
     func resetStorageLocation() {
         storageLocation = defaultStorageLocation
+        setFormattedStorageLocation()
     }
     
     func selectStorageLocation() {
@@ -138,6 +149,17 @@ final class StorageLocationModel: ObservableObject {
             }
             
             storageLocation = newLocation
+            setFormattedStorageLocation()
+        }
+    }
+    
+    private func setFormattedStorageLocation() {
+        if usesDefaultStorageLocation {
+            formattedStorageLocation = String(localized: "Default Location", comment: "")
+        }
+        else {
+            guard let locationString = storageLocation?.absoluteString else { return }
+            formattedStorageLocation = locationString.replacingOccurrences(of: "file://", with: "")
         }
     }
 }

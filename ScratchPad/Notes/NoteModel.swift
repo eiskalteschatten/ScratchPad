@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 final class NoteModel: ObservableObject {
+    private var storageLocationModel: StorageLocationModel
     private var switchingPages = false
 
     @Published var pageNumber = UserDefaults.standard.value(forKey: "pageNumber") as? Int ?? 1 {
@@ -33,22 +34,13 @@ final class NoteModel: ObservableObject {
         return "\(NoteManager.NOTE_NAME_PREFIX) \(pageNumber).\(NoteManager.NOTE_NAME_EXTENSION)"
     }
     
-    init() {
+    init(storageLocationModel: StorageLocationModel) {
+        self.storageLocationModel = storageLocationModel
         openNote()
     }
     
     func openNote() {
-        // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
-        var isStale = false
-        
-        guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
-        else {
-            ErrorHandling.showStorageLocationNotFoundError()
-            return
-        }
-        
-        let fullURL = storageLocation.appendingPathComponent(noteName)
+        let fullURL = storageLocationModel.storageLocation!.appendingPathComponent(noteName)
         let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtfd]
         
         do {

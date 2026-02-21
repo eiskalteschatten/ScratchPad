@@ -67,9 +67,9 @@ struct SettingsWindowView: View {
                         .frame(width: labelColumnWidth, alignment: .trailing)
                     
                     VStack(alignment: .leading) {
-                        Text(settingsModel.formattedStorageLocation ?? "No storage location selected")
+                        Text(storageLocationModel.formattedStorageLocation ?? "No storage location selected")
                         Button("Change Storage Location...", action: storageLocationModel.selectStorageLocation)
-                        Button("Use Default Storage Location", action: settingsModel.resetStorageLocation)
+                        Button("Use Default Storage Location", action: storageLocationModel.resetStorageLocation)
                     }
                 }
             }

@@ -37,7 +37,7 @@ struct ScratchPadApp: App {
         let storageLocationModel = StorageLocationModel()
         _storageLocationModel = ObservedObject(wrappedValue: storageLocationModel)
         _settingsModel = ObservedObject(wrappedValue: SettingsModel(storageLocationModel: storageLocationModel))
-        _noteModel = ObservedObject(wrappedValue: NoteModel())
+        _noteModel = ObservedObject(wrappedValue: NoteModel(storageLocationModel: storageLocationModel))
         _commandsModel = ObservedObject(wrappedValue: CommandsModel())
     }
     

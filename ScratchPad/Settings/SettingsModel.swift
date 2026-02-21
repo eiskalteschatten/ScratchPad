@@ -25,25 +25,7 @@ final class SettingsModel: ObservableObject {
         }
     }
     
-    @Published var formattedStorageLocation: String?
-    
     init(storageLocationModel: StorageLocationModel) {
         self.storageLocationModel = storageLocationModel
-        setFormattedStorageLocation()
-    }
-    
-    func resetStorageLocation() {
-        storageLocationModel.resetStorageLocation()
-        setFormattedStorageLocation()
-    }
-    
-    private func setFormattedStorageLocation() {
-        if storageLocationModel.usesDefaultStorageLocation {
-            formattedStorageLocation = String(localized: "Default Location", comment: "")
-        }
-        else {
-            guard let locationString = storageLocationModel.storageLocation?.absoluteString else { return }
-            formattedStorageLocation = locationString.replacingOccurrences(of: "file://", with: "")
-        }
     }
 }
