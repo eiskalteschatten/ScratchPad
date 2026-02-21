@@ -40,35 +40,35 @@ struct ScratchPadApp: App {
         }
         .commands {
             CommandGroup(replacing: .newItem) {
-                Button("New Page") {
+                Button("New Page", systemImage: "plus") {
                     noteModel.appendNewNote()
                 }.keyboardShortcut("n", modifiers: [.command])
             }
             
             CommandGroup(after: .newItem) {
-                Button("Close") {
+                Button("Close", systemImage: "xmark") {
                     NSApplication.shared.keyWindow?.close()
                 }.keyboardShortcut("w", modifiers: [.command])
             }
             
             CommandGroup(replacing: .saveItem) {
-                Button("Delete Page") {
+                Button("Delete Page", systemImage: "trash") {
                     noteModel.deleteNote()
                 }.keyboardShortcut(.delete, modifiers: [.command])
             }
             
             CommandGroup(replacing: .importExport) {
-                Button("Export Page...") {
+                Button("Export Page...", systemImage: "square.and.arrow.up") {
                     noteModel.exportNote()
                 }
                 
-                Button("Import from Version 1...") {
+                Button("Import from Version 1...", systemImage: "square.and.arrow.down") {
                     commandsModel.importSheetOpen.toggle()
                 }
             }
             
             CommandGroup(before: .windowList) {
-                Button("Open Welcome Sheet...") {
+                Button("Open Welcome Sheet...", systemImage: "star") {
                     commandsModel.welcomeSheetOpen.toggle()
                 }
                 
@@ -76,21 +76,21 @@ struct ScratchPadApp: App {
             }
             
             CommandMenu("Go") {
-                Button("First Page") {
+                Button("First Page", systemImage: "chevron.backward.to.line") {
                     noteModel.goToFirstPage()
                 }.keyboardShortcut(.leftArrow, modifiers: [.shift, .command])
                 
-                Button("Previous Page") {
+                Button("Previous Page", systemImage: "chevron.left") {
                     if noteModel.pageNumber > 1 {
                         noteModel.pageNumber -= 1
                     }
                 }.keyboardShortcut(.leftArrow, modifiers: [.option, .command])
                 
-                Button("Next Page") {
+                Button("Next Page", systemImage: "chevron.right") {
                     noteModel.pageNumber += 1
                 }.keyboardShortcut(.rightArrow, modifiers: [.option, .command])
                 
-                Button("Last Page") {
+                Button("Last Page", systemImage: "chevron.forward.to.line") {
                     noteModel.goToLastPage()
                 }.keyboardShortcut(.rightArrow, modifiers: [.shift, .command])
             }
