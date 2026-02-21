@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 final class NoteModel: ObservableObject {
+    private var storageLocationModel: StorageLocationModel
     private var switchingPages = false
 
     @Published var pageNumber = UserDefaults.standard.value(forKey: "pageNumber") as? Int ?? 1 {
@@ -33,36 +34,20 @@ final class NoteModel: ObservableObject {
         return "\(NoteManager.NOTE_NAME_PREFIX) \(pageNumber).\(NoteManager.NOTE_NAME_EXTENSION)"
     }
     
-    init() {
+    init(storageLocationModel: StorageLocationModel) {
+        self.storageLocationModel = storageLocationModel
         openNote()
     }
     
     func openNote() {
-        // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
-        var isStale = false
-        
-        guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
-        else {
-            ErrorHandling.showStorageLocationNotFoundError()
-            return
-        }
-        
-        let fullURL = storageLocation.appendingPathComponent(noteName)
+        let fullURL = storageLocationModel.storageLocation!.appendingPathComponent(noteName)
         let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtfd]
         
         do {
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return
-            }
-            
             if let _ = try? fullURL.checkResourceIsReachable() {
                 let nsAttributedString = try NSAttributedString(url: fullURL, options: options, documentAttributes: nil)
                 noteContents = (try? AttributedString(nsAttributedString, including: \.appKit)) ?? AttributedString(nsAttributedString)
             }
-            
-            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
@@ -70,24 +55,9 @@ final class NoteModel: ObservableObject {
     }
     
     private func saveNote() {
-        // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
-        var isStale = false
-                
-        guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
-        else {
-            ErrorHandling.showStorageLocationNotFoundError()
-            return
-        }
-        
-        let fullURL = storageLocation.appendingPathComponent(noteName)
+        let fullURL = storageLocationModel.storageLocation!.appendingPathComponent(noteName)
 
         do {
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return
-            }
-            
             let nsContents = (try? NSAttributedString(noteContents, including: \.appKit)) ?? NSAttributedString(noteContents)
             if nsContents.length == 0 && FileManager.default.fileExists(atPath: fullURL.path) {
                 try FileManager.default.removeItem(atPath: fullURL.path)
@@ -96,8 +66,6 @@ final class NoteModel: ObservableObject {
                 let rtdf = nsContents.rtfdFileWrapper(from: .init(location: 0, length: nsContents.length))
                 try rtdf?.write(to: fullURL, options: .atomic, originalContentsURL: nil)
             }
-            
-            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
@@ -143,7 +111,8 @@ final class NoteModel: ObservableObject {
     
     func appendNewNote() {
         do {
-            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let location = storageLocationModel.storageLocation,
+                  let currentLastPageNumber = try NoteManager.getLastPageNumber(storageLocation: location) else {
                 ErrorHandling.showNewNoteCouldNotBeCreatedError()
                 return
             }
@@ -160,7 +129,8 @@ final class NoteModel: ObservableObject {
     
     func goToLastPage() {
         do {
-            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let location = storageLocationModel.storageLocation,
+                  let currentLastPageNumber = try NoteManager.getLastPageNumber(storageLocation: location) else {
                 ErrorHandling.showCouldNotFindLastPage()
                 return
             }

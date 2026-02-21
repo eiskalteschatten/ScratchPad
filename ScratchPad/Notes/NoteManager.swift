@@ -46,55 +46,32 @@ final class NoteManager {
                 
                 try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
             }
+            
+            if FileManager.default.fileExists(atPath: from.path) {
+                try FileManager.default.removeItem(atPath: from.path)
+            }
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)
         }
     }
     
-    static func getLastPageNumber() throws -> Int? {
-        if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
-            var isStale = false
-            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
-            
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return nil
-            }
-            
-            let notes = try getNoteFileList(storageLocation)
-            
-            let pageNumbers = notes.compactMap {
-                let noteURL = storageLocation.appendingPathComponent($0)
-                let fileName = noteURL.deletingPathExtension().lastPathComponent
-                let pageNumber = fileName.replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
-                return Int(pageNumber)
-            }.sorted()
-            
-            storageLocation.stopAccessingSecurityScopedResource()
-            
-            return pageNumbers.last ?? 1
-        }
+    static func getLastPageNumber(storageLocation: URL) throws -> Int? {
+        let notes = try getNoteFileList(storageLocation)
         
-        return nil
+        let pageNumbers = notes.compactMap {
+            let noteURL = storageLocation.appendingPathComponent($0)
+            let fileName = noteURL.deletingPathExtension().lastPathComponent
+            let pageNumber = fileName.replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
+            return Int(pageNumber)
+        }.sorted()
+        
+        return pageNumbers.last ?? 1
     }
     
-    static func importNotes(from: URL) {
+    static func importNotes(from: URL, to storageLocation: URL) {
         do {
-            guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data else {
-                ErrorHandling.showStorageLocationNotFoundError()
-                return
-            }
-            
-            var isStale = false
-            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale)
-            
-            guard storageLocation.startAccessingSecurityScopedResource() else {
-                ErrorHandling.showStorageLocationNotAccessible()
-                return
-            }
-            
-            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let currentLastPageNumber = try NoteManager.getLastPageNumber(storageLocation: storageLocation) else {
                 throw ErrorWithMessage(String(localized: "No last page number could be found!"))
             }
             
@@ -123,8 +100,6 @@ final class NoteManager {
                     try FileManager.default.moveItem(atPath: oldURL.path, toPath: newURL.path)
                 }
             }
-            
-            storageLocation.stopAccessingSecurityScopedResource()
         } catch {
             print(error)
             ErrorHandling.showErrorToUser(error.localizedDescription)

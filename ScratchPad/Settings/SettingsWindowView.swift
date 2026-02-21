@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsWindowView: View {
     @EnvironmentObject private var settingsModel: SettingsModel
+    @EnvironmentObject var storageLocationModel: StorageLocationModel
     
     @FocusState private var transTextfieldIsFocused: Bool
     
@@ -66,35 +67,14 @@ struct SettingsWindowView: View {
                         .frame(width: labelColumnWidth, alignment: .trailing)
                     
                     VStack(alignment: .leading) {
-                        Text(settingsModel.formattedStorageLocation ?? "No storage location selected")
-                        Button("Change Storage Location...", action: selectStorageLocation)
-                        Button("Use Default Storage Location", action: settingsModel.resetStorageLocation)
+                        Text(storageLocationModel.formattedStorageLocation ?? "No storage location selected")
+                        Button("Change Storage Location...", action: storageLocationModel.selectStorageLocation)
+                        Button("Use Default Storage Location", action: storageLocationModel.resetStorageLocation)
                     }
                 }
             }
         }
         .padding()
-    }
-    
-    private func selectStorageLocation() {
-        let openPanel = NSOpenPanel()
-        openPanel.allowsMultipleSelection = false
-        openPanel.canChooseDirectories = true
-        openPanel.canChooseFiles = false
-        openPanel.canCreateDirectories = true
-        let response = openPanel.runModal()
-        
-        if response == .OK {
-            guard var newLocation = openPanel.url else {
-                ErrorHandling.showErrorToUser(String(localized: "The folder you selected is invalid."), informativeText: String(localized: "Please select a different folder."))
-                return
-            }
-            
-            if newLocation.lastPathComponent != settingsModel.scratchPadFolderName {
-                newLocation = newLocation.appendingPathComponent(settingsModel.scratchPadFolderName)
-            }
-            settingsModel.storageLocation = newLocation
-        }
     }
 }
 

@@ -253,6 +253,64 @@
         }
       }
     },
+    "Choose Location..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ort auswählen…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir ubicación…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir l'emplacement…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli posizione…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "場所を選択…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locatie kiezen…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрать расположение…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择位置…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇位置…"
+          }
+        }
+      }
+    },
     "Close" : {
       "localizations" : {
         "de" : {
@@ -597,6 +655,64 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "由於現代 macOS 安全性限制，無法從 ScratchPad 1.x 自動匯入。請按照以下步驟繼續。"
+          }
+        }
+      }
+    },
+    "Due to modern macOS security, this setting cannot be imported. Your notes have been imported into ScratchPad, but you will have to re-select your DropBox location in the Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aufgrund der modernen macOS-Sicherheitsrichtlinien kann diese Einstellung nicht importiert werden. Deine Notizen wurden in ScratchPad importiert, aber du musst deinen DropBox-Speicherort in den Einstellungen erneut auswählen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debido a la seguridad moderna de macOS, esta configuración no se puede importar. Tus notas se han importado en ScratchPad, pero tendrás que volver a seleccionar tu ubicación de DropBox en la Configuración."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En raison des mesures de sécurité modernes de macOS, ce paramètre ne peut pas être importé. Vos notes ont été importées dans ScratchPad, mais vous devrez re-sélectionner votre emplacement DropBox dans les Paramètres."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A causa delle moderne restrizioni di sicurezza di macOS, questa impostazione non può essere importata. Le note sono state importate in ScratchPad, ma dovrai selezionare nuovamente la posizione di DropBox nelle Impostazioni."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOSのセキュリティの制約により、この設定をインポートすることはできません。メモはScratchPadにインポートされましたが、設定でDropBoxの場所を再選択する必要があります。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vanwege de moderne macOS-beveiliging kan deze instelling niet worden geïmporteerd. Uw notities zijn geïmporteerd in ScratchPad, maar u moet uw DropBox-locatie opnieuw selecteren in de Instellingen."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Из-за современных ограничений безопасности macOS этот параметр не может быть импортирован. Ваши заметки были импортированы в ScratchPad, но вам придётся повторно выбрать расположение DropBox в Настройках."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由于现代 macOS 安全限制，此设置无法导入。您的笔记已导入 ScratchPad，但您需要在设置中重新选择您的 DropBox 位置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由於現代 macOS 安全性限制，此設定無法匯入。您的筆記已匯入 ScratchPad，但您需要在設定中重新選擇您的 DropBox 位置。"
           }
         }
       }
@@ -1355,6 +1471,122 @@
         }
       }
     },
+    "OK" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        }
+      }
+    },
+    "Open Settings..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen öffnen…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir configuración…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir les paramètres…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri impostazioni…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を開く…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen openen…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть настройки…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开设置…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟設定…"
+          }
+        }
+      }
+    },
     "Open Welcome Sheet..." : {
       "localizations" : {
         "de" : {
@@ -1888,6 +2120,64 @@
         }
       }
     },
+    "ScratchPad version 1.x is using currently syncing to DropBox." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad Version 1.x synchronisiert derzeit mit DropBox."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad versión 1.x se está sincronizando actualmente con DropBox."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad version 1.x est actuellement en cours de synchronisation avec DropBox."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad versione 1.x è attualmente in sincronizzazione con DropBox."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad バージョン 1.x は現在 DropBox と同期中です。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad versie 1.x synchroniseert momenteel met DropBox."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad версии 1.x в настоящее время синхронизируется с DropBox."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 1.x 版本正在与 DropBox 同步。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 1.x 版本正在與 DropBox 同步。"
+          }
+        }
+      }
+    },
     "Select the \"ScratchPad\" folder." : {
       "localizations" : {
         "de" : {
@@ -2062,6 +2352,64 @@
         }
       }
     },
+    "Storage Location Not Found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicherort nicht gefunden"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación de almacenamiento no encontrada"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emplacement de stockage introuvable"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione di archiviazione non trovata"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存場所が見つかりません"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opslaglocatie niet gevonden"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Место хранения не найдено"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到存储位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到儲存位置"
+          }
+        }
+      }
+    },
     "Storage Location:" : {
       "localizations" : {
         "de" : {
@@ -2116,6 +2464,64 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "儲存位置："
+          }
+        }
+      }
+    },
+    "The folder where your notes are stored could not be found. Would you like to choose a new location or reset to the default?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Ordner, in dem deine Notizen gespeichert sind, konnte nicht gefunden werden. Möchtest du einen neuen Speicherort auswählen oder zum Standard zurückkehren?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo encontrar la carpeta donde se almacenan tus notas. ¿Te gustaría elegir una nueva ubicación o restablecer la predeterminada?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le dossier dans lequel vos notes sont stockées est introuvable. Souhaitez-vous choisir un nouvel emplacement ou réinitialiser l'emplacement par défaut ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile trovare la cartella in cui sono archiviate le note. Vuoi scegliere una nuova posizione o ripristinare quella predefinita?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メモが保存されているフォルダが見つかりませんでした。新しい場所を選択するか、デフォルトにリセットしますか？"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De map waar uw notities zijn opgeslagen, kon niet worden gevonden. Wilt u een nieuwe locatie kiezen of terugzetten naar de standaardlocatie?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Папка с вашими заметками не найдена. Хотите выбрать новое расположение или сбросить до значения по умолчанию?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到存储笔记的文件夹。您想选择新位置还是重置为默认位置？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到儲存筆記的資料夾。您想選擇新位置還是重設為預設位置？"
           }
         }
       }
@@ -2348,6 +2754,64 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "此版本使用 SwiftUI 等現代 macOS 技術從頭完全重寫了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生運行，並支援深色模式等現代 macOS 功能。"
+          }
+        }
+      }
+    },
+    "Use Default Location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardort verwenden"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar ubicación predeterminada"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utiliser l'emplacement par défaut"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa posizione predefinita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デフォルトの場所を使用"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standaardlocatie gebruiken"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовать расположение по умолчанию"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用默认位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用預設位置"
           }
         }
       }
