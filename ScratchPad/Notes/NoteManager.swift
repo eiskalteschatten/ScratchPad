@@ -52,37 +52,22 @@ final class NoteManager {
         }
     }
     
-    static func getLastPageNumber() throws -> Int? {
-        if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
-            var isStale = false
-            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
-            
-            let notes = try getNoteFileList(storageLocation)
-            
-            let pageNumbers = notes.compactMap {
-                let noteURL = storageLocation.appendingPathComponent($0)
-                let fileName = noteURL.deletingPathExtension().lastPathComponent
-                let pageNumber = fileName.replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
-                return Int(pageNumber)
-            }.sorted()
-            
-            return pageNumbers.last ?? 1
-        }
+    static func getLastPageNumber(storageLocation: URL) throws -> Int? {
+        let notes = try getNoteFileList(storageLocation)
         
-        return nil
+        let pageNumbers = notes.compactMap {
+            let noteURL = storageLocation.appendingPathComponent($0)
+            let fileName = noteURL.deletingPathExtension().lastPathComponent
+            let pageNumber = fileName.replacingOccurrences(of: "\(NOTE_NAME_PREFIX) ", with: "")
+            return Int(pageNumber)
+        }.sorted()
+        
+        return pageNumbers.last ?? 1
     }
     
-    static func importNotes(from: URL) {
+    static func importNotes(from: URL, to storageLocation: URL) {
         do {
-            guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data else {
-                ErrorHandling.showStorageLocationNotFoundError()
-                return
-            }
-            
-            var isStale = false
-            let storageLocation = try URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
-            
-            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let currentLastPageNumber = try NoteManager.getLastPageNumber(storageLocation: storageLocation) else {
                 throw ErrorWithMessage(String(localized: "No last page number could be found!"))
             }
             

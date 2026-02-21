@@ -11,6 +11,7 @@ struct ImportView: View {
     @EnvironmentObject var noteModel: NoteModel
     @EnvironmentObject var settingsModel: SettingsModel
     @EnvironmentObject var commandsModel: CommandsModel
+    @EnvironmentObject var storageLocationModel: StorageLocationModel
     
     @State private var importing = false
     
@@ -118,7 +119,9 @@ struct ImportView: View {
                 
                                 
                 // MARK: import notes
-                NoteManager.importNotes(from: notesURL)
+                if let storageLocation = storageLocationModel.storageLocation {
+                    NoteManager.importNotes(from: notesURL, to: storageLocation)
+                }
                 noteModel.openNote()
                 
                 

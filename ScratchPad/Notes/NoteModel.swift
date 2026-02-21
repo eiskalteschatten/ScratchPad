@@ -111,7 +111,8 @@ final class NoteModel: ObservableObject {
     
     func appendNewNote() {
         do {
-            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let location = storageLocationModel.storageLocation,
+                  let currentLastPageNumber = try NoteManager.getLastPageNumber(storageLocation: location) else {
                 ErrorHandling.showNewNoteCouldNotBeCreatedError()
                 return
             }
@@ -128,7 +129,8 @@ final class NoteModel: ObservableObject {
     
     func goToLastPage() {
         do {
-            guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
+            guard let location = storageLocationModel.storageLocation,
+                  let currentLastPageNumber = try NoteManager.getLastPageNumber(storageLocation: location) else {
                 ErrorHandling.showCouldNotFindLastPage()
                 return
             }
