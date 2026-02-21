@@ -64,6 +64,12 @@
             "state" : "translated",
             "value" : "Назад"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
         }
       }
     },
@@ -109,6 +115,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить место хранения…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改儲存位置…"
           }
         }
       }
@@ -156,6 +168,12 @@
             "state" : "translated",
             "value" : "Выбрать папку резервной копии…"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇備份資料夾…"
+          }
         }
       }
     },
@@ -201,6 +219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыть"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
           }
         }
       }
@@ -248,6 +272,12 @@
             "state" : "translated",
             "value" : "Продолжить"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繼續"
+          }
         }
       }
     },
@@ -293,6 +323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Создайте резервную копию в ScratchPad 1.x и запомните её расположение."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 ScratchPad 1.x 中建立備份並記住其位置。"
           }
         }
       }
@@ -340,6 +376,12 @@
             "state" : "translated",
             "value" : "Расположение по умолчанию"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設位置"
+          }
         }
       }
     },
@@ -385,6 +427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить страницу"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除頁面"
           }
         }
       }
@@ -432,6 +480,12 @@
             "state" : "translated",
             "value" : "Из-за современных ограничений безопасности macOS автоматический импорт из ScratchPad 1.x невозможен. Пожалуйста, следуйте инструкциям ниже для продолжения."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由於現代 macOS 安全性限制，無法從 ScratchPad 1.x 自動匯入。請按照以下步驟繼續。"
+          }
         }
       }
     },
@@ -477,6 +531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экспортировать страницу…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯出頁面…"
           }
         }
       }
@@ -524,6 +584,12 @@
             "state" : "translated",
             "value" : "Первая страница"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一頁"
+          }
         }
       }
     },
@@ -569,6 +635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поверх других окон"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮動於其他視窗之上"
           }
         }
       }
@@ -616,6 +688,12 @@
             "state" : "translated",
             "value" : "Поверх окон:"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮動："
+          }
         }
       }
     },
@@ -661,6 +739,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вперёд"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前進"
           }
         }
       }
@@ -708,6 +792,12 @@
             "state" : "translated",
             "value" : "Перейти"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往"
+          }
         }
       }
     },
@@ -753,6 +843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Однако вы можете импортировать их вручную, нажав «Файл», затем «Импортировать из версии 1…» и следуя инструкциям. Также можно нажать кнопку ниже."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不過，您可以點擊「檔案」，然後點擊「從版本 1 匯入…」並按照說明手動匯入。您也可以點擊下方按鈕。"
           }
         }
       }
@@ -800,6 +896,12 @@
             "state" : "translated",
             "value" : "Импортировать из версии 1…"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從版本 1 匯入…"
+          }
         }
       }
     },
@@ -845,6 +947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Импорт заметок из ScratchPad 1"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從 ScratchPad 1 匯入您的筆記"
           }
         }
       }
@@ -892,6 +1000,12 @@
             "state" : "translated",
             "value" : "Последняя страница"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最後一頁"
+          }
         }
       }
     },
@@ -937,6 +1051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Новая страница"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新頁面"
           }
         }
       }
@@ -984,6 +1104,12 @@
             "state" : "translated",
             "value" : "Следующая страница"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一頁"
+          }
         }
       }
     },
@@ -1030,6 +1156,12 @@
             "state" : "translated",
             "value" : "Открыть экран приветствия…"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟歡迎畫面…"
+          }
         }
       }
     },
@@ -1075,6 +1207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Предыдущая страница"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上一頁"
           }
         }
       }
@@ -1133,6 +1271,12 @@
             "state" : "translated",
             "value" : "Выберите папку «ScratchPad»."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇「ScratchPad」資料夾。"
+          }
         }
       }
     },
@@ -1178,6 +1322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите кнопку ниже, чтобы выбрать папку резервной копии. Папка будет называться «ScratchPad» и будет содержать две подпапки: «Notes» и «Preferences»."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "點擊下方按鈕選擇備份資料夾。該資料夾將命名為「ScratchPad」，並包含兩個子資料夾：「Notes」和「Preferences」。"
           }
         }
       }
@@ -1225,6 +1375,12 @@
             "state" : "translated",
             "value" : "Поскольку macOS обновила свои политики безопасности для запуска приложений, автоматический импорт заметок из ScratchPad 1 невозможен."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由於 macOS 已更新應用程式執行的安全性政策，無法從 ScratchPad 1 自動匯入您的筆記。"
+          }
         }
       }
     },
@@ -1270,6 +1426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Место хранения:"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "儲存位置："
           }
         }
       }
@@ -1317,6 +1479,12 @@
             "state" : "translated",
             "value" : "Этот помощник проведёт вас через импорт заметок и настроек из ScratchPad 1.x."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此匯入工具將引導您完成從 ScratchPad 1.x 匯入筆記和設定的步驟。"
+          }
         }
       }
     },
@@ -1362,6 +1530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эта версия — полная переработка ScratchPad с нуля с использованием современных технологий macOS, таких как SwiftUI. Она работает нативно на Mac с Intel и Apple Silicon и поддерживает современные функции macOS, такие как тёмный режим."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此版本使用 SwiftUI 等現代 macOS 技術從頭完全重寫了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生運行，並支援深色模式等現代 macOS 功能。"
           }
         }
       }
@@ -1409,6 +1583,12 @@
             "state" : "translated",
             "value" : "Использовать расположение по умолчанию"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用預設儲存位置"
+          }
         }
       }
     },
@@ -1454,6 +1634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "версия %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本 %@"
           }
         }
       }
@@ -1501,6 +1687,12 @@
             "state" : "translated",
             "value" : "ScratchPad 2 наконец-то здесь. Первая версия ScratchPad вышла в 2007 году для Mac OS X Tiger (10.4) и обновлялась вплоть до Mac OS X El Capitan (10.11)."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 終於來了。ScratchPad 的第一個版本於 2007 年針對 Mac OS X Tiger (10.4) 發布，並持續更新至 Mac OS X El Capitan (10.11)。"
+          }
         }
       }
     },
@@ -1547,6 +1739,12 @@
             "state" : "translated",
             "value" : "Добро пожаловать в ScratchPad 2!"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎使用 ScratchPad 2！"
+          }
         }
       }
     },
@@ -1592,6 +1790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Прозрачность окна:"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "視窗透明度："
           }
         }
       }
