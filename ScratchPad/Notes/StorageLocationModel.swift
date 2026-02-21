@@ -18,11 +18,6 @@ final class StorageLocationModel: ObservableObject {
     @Published var storageLocation: URL? {
         willSet {
             previousStorageLocation = storageLocation
-            // Stop accessing the previous security-scoped resource before switching
-            if let scoped = securityScopedURL, scoped != newValue {
-                scoped.stopAccessingSecurityScopedResource()
-                securityScopedURL = nil
-            }
         }
         didSet {
             do {
@@ -45,6 +40,13 @@ final class StorageLocationModel: ObservableObject {
                        let unwrappedStorageLocation = storageLocation,
                        storageLocation != previousStorageLocation {
                         NoteManager.moveNotes(from: unwrappedPreviousLocation, to: unwrappedStorageLocation)
+                    }
+                    
+                    // Stop accessing the previous security-scoped resource only after the move
+                    // is complete, so that moveNotes can still read from the old location.
+                    if let scoped = securityScopedURL, scoped != storageLocation {
+                        scoped.stopAccessingSecurityScopedResource()
+                        securityScopedURL = nil
                     }
                 }
             } catch {
