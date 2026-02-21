@@ -78,7 +78,7 @@ struct ScratchPadApp: App {
             CommandMenu("Go") {
                 Button("First Page", systemImage: "chevron.backward.to.line") {
                     noteModel.goToFirstPage()
-                }.keyboardShortcut(.leftArrow, modifiers: [.shift, .command])
+                }.keyboardShortcut(.leftArrow, modifiers: [.option, .shift, .command])
                 
                 Button("Previous Page", systemImage: "chevron.left") {
                     if noteModel.pageNumber > 1 {
@@ -92,7 +92,7 @@ struct ScratchPadApp: App {
                 
                 Button("Last Page", systemImage: "chevron.forward.to.line") {
                     noteModel.goToLastPage()
-                }.keyboardShortcut(.rightArrow, modifiers: [.shift, .command])
+                }.keyboardShortcut(.rightArrow, modifiers: [.option, .shift, .command])
             }
             
             TextEditingCommands()
