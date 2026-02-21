@@ -129,10 +129,10 @@ struct ImportView: View {
                 let syncDropBox = try String(contentsOf: syncDropBoxURL, encoding: .utf8)
                 if syncDropBox == "YES" {
                     let alert = NSAlert()
-                    alert.messageText = "ScratchPad version 1.x is using currently syncing to DropBox."
-                    alert.informativeText = "Due to modern macOS security, this setting cannot be imported. Your notes have been imported into ScratchPad, but you will have to re-select your DropBox location in the Settings."
-                    alert.addButton(withTitle: "Open Settings...")
-                    alert.addButton(withTitle: "OK")
+                    alert.messageText = String(localized: "ScratchPad version 1.x is using currently syncing to DropBox.")
+                    alert.informativeText = String(localized: "Due to modern macOS security, this setting cannot be imported. Your notes have been imported into ScratchPad, but you will have to re-select your DropBox location in the Settings.")
+                    alert.addButton(withTitle: String(localized: "Open Settings..."))
+                    alert.addButton(withTitle: String(localized: "OK"))
                     alert.alertStyle = .informational
                     
                     let response = alert.runModal()
