@@ -55,17 +55,7 @@ final class NoteModel: ObservableObject {
     }
     
     private func saveNote() {
-        // This is necessary, but macOS seems to recover the stale bookmark automatically, so don't handle it for now
-        var isStale = false
-                
-        guard let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data,
-              let storageLocation = try? URL(resolvingBookmarkData: bookmarkData, options: [], relativeTo: nil, bookmarkDataIsStale: &isStale)
-        else {
-            ErrorHandling.showStorageLocationNotFoundError()
-            return
-        }
-        
-        let fullURL = storageLocation.appendingPathComponent(noteName)
+        let fullURL = storageLocationModel.storageLocation!.appendingPathComponent(noteName)
 
         do {
             let nsContents = (try? NSAttributedString(noteContents, including: \.appKit)) ?? NSAttributedString(noteContents)
