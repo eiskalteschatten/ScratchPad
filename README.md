@@ -35,6 +35,7 @@ ScratchPad is currently offered in the following languages:
 * Russian
 * Japanese
 * Chinese (traditional)
+* Chinese (simplified)
 
 If you would like to add a language, feel free to open a pull request.
 

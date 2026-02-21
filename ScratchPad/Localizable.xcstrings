@@ -70,6 +70,12 @@
             "state" : "translated",
             "value" : "返回"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
         }
       }
     },
@@ -121,6 +127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更改儲存位置…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改存储位置…"
           }
         }
       }
@@ -174,6 +186,12 @@
             "state" : "translated",
             "value" : "選擇備份資料夾…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择备份文件夹…"
+          }
         }
       }
     },
@@ -225,6 +243,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關閉"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
           }
         }
       }
@@ -278,6 +302,12 @@
             "state" : "translated",
             "value" : "繼續"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "继续"
+          }
         }
       }
     },
@@ -329,6 +359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在 ScratchPad 1.x 中建立備份並記住其位置。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 ScratchPad 1.x 中创建备份并记住其位置。"
           }
         }
       }
@@ -382,6 +418,12 @@
             "state" : "translated",
             "value" : "預設位置"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认位置"
+          }
         }
       }
     },
@@ -433,6 +475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "刪除頁面"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除页面"
           }
         }
       }
@@ -486,6 +534,12 @@
             "state" : "translated",
             "value" : "由於現代 macOS 安全性限制，無法從 ScratchPad 1.x 自動匯入。請按照以下步驟繼續。"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由于现代 macOS 安全限制，无法从 ScratchPad 1.x 自动导入。请按照以下步骤继续。"
+          }
         }
       }
     },
@@ -537,6 +591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "匯出頁面…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导出页面…"
           }
         }
       }
@@ -590,6 +650,12 @@
             "state" : "translated",
             "value" : "第一頁"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一页"
+          }
         }
       }
     },
@@ -641,6 +707,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "浮動於其他視窗之上"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮动于其他窗口之上"
           }
         }
       }
@@ -694,6 +766,12 @@
             "state" : "translated",
             "value" : "浮動："
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮动："
+          }
         }
       }
     },
@@ -746,6 +824,12 @@
             "state" : "translated",
             "value" : "前進"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前进"
+          }
         }
       }
     },
@@ -794,6 +878,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "前往"
@@ -850,6 +940,12 @@
             "state" : "translated",
             "value" : "不過，您可以點擊「檔案」，然後點擊「從版本 1 匯入…」並按照說明手動匯入。您也可以點擊下方按鈕。"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不过，您可以点击「文件」，然后点击「从版本 1 导入…」并按照说明手动导入。您也可以点击下方按钮。"
+          }
         }
       }
     },
@@ -901,6 +997,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "從版本 1 匯入…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从版本 1 导入…"
           }
         }
       }
@@ -954,6 +1056,12 @@
             "state" : "translated",
             "value" : "從 ScratchPad 1 匯入您的筆記"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从 ScratchPad 1 导入您的笔记"
+          }
         }
       }
     },
@@ -1005,6 +1113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "最後一頁"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最后一页"
           }
         }
       }
@@ -1058,6 +1172,12 @@
             "state" : "translated",
             "value" : "新頁面"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新页面"
+          }
         }
       }
     },
@@ -1109,6 +1229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "下一頁"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一页"
           }
         }
       }
@@ -1162,6 +1288,12 @@
             "state" : "translated",
             "value" : "開啟歡迎畫面…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开欢迎界面…"
+          }
         }
       }
     },
@@ -1213,6 +1345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "上一頁"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上一页"
           }
         }
       }
@@ -1277,6 +1415,12 @@
             "state" : "translated",
             "value" : "選擇「ScratchPad」資料夾。"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择\"ScratchPad\"文件夹。"
+          }
         }
       }
     },
@@ -1328,6 +1472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "點擊下方按鈕選擇備份資料夾。該資料夾將命名為「ScratchPad」，並包含兩個子資料夾：「Notes」和「Preferences」。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击下方按钮选择备份文件夹。该文件夹将命名为\"ScratchPad\"，并包含两个子文件夹：\"Notes\"和\"Preferences\"。"
           }
         }
       }
@@ -1381,6 +1531,12 @@
             "state" : "translated",
             "value" : "由於 macOS 已更新應用程式執行的安全性政策，無法從 ScratchPad 1 自動匯入您的筆記。"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由于 macOS 已更新应用程序运行的安全策略，无法从 ScratchPad 1 自动导入您的笔记。"
+          }
         }
       }
     },
@@ -1432,6 +1588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "儲存位置："
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "存储位置："
           }
         }
       }
@@ -1485,6 +1647,12 @@
             "state" : "translated",
             "value" : "此匯入工具將引導您完成從 ScratchPad 1.x 匯入筆記和設定的步驟。"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此导入工具将引导您完成从 ScratchPad 1.x 导入笔记和设置的步骤。"
+          }
         }
       }
     },
@@ -1536,6 +1704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "此版本使用 SwiftUI 等現代 macOS 技術從頭完全重寫了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生運行，並支援深色模式等現代 macOS 功能。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此版本使用 SwiftUI 等现代 macOS 技术从头完全重写了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生运行，并支持深色模式等现代 macOS 功能。"
           }
         }
       }
@@ -1589,6 +1763,12 @@
             "state" : "translated",
             "value" : "使用預設儲存位置"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用默认存储位置"
+          }
         }
       }
     },
@@ -1637,6 +1817,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本 %@"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "版本 %@"
@@ -1693,6 +1879,12 @@
             "state" : "translated",
             "value" : "ScratchPad 2 終於來了。ScratchPad 的第一個版本於 2007 年針對 Mac OS X Tiger (10.4) 發布，並持續更新至 Mac OS X El Capitan (10.11)。"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 终于来了。ScratchPad 的第一个版本于 2007 年针对 Mac OS X Tiger (10.4) 发布，并持续更新至 Mac OS X El Capitan (10.11)。"
+          }
         }
       }
     },
@@ -1745,6 +1937,12 @@
             "state" : "translated",
             "value" : "歡迎使用 ScratchPad 2！"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎使用 ScratchPad 2！"
+          }
         }
       }
     },
@@ -1796,6 +1994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "視窗透明度："
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "窗口透明度："
           }
         }
       }
