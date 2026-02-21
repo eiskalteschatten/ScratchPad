@@ -95,7 +95,7 @@ final class NoteManager {
             }
             
             guard let currentLastPageNumber = try NoteManager.getLastPageNumber() else {
-                throw ErrorWithMessage("No last page number could be found!")
+                throw ErrorWithMessage(String(localized: "No last page number could be found!"))
             }
             
             let notesToImport = try getNoteFileList(from, sorted: true)

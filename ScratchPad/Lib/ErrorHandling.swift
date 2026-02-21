@@ -22,19 +22,19 @@ final class ErrorHandling {
     }
     
     static func showStorageLocationNotAccessible() {
-        showErrorToUser("ScratchPad is not allowed to access the storage location for your notes!", informativeText: "Please try re-selecting your storage location in the settings.")
+        showErrorToUser(String(localized: "ScratchPad is not allowed to access the storage location for your notes!"), informativeText: String(localized: "Please try re-selecting your storage location in the settings."))
     }
     
     static func showStorageLocationNotFoundError() {
-        showErrorToUser("The storage location for your notes could not be determined", informativeText: "Please re-select your storage location in the Settings and try again.")
+        showErrorToUser(String(localized: "The storage location for your notes could not be determined"), informativeText: String(localized: "Please re-select your storage location in the Settings and try again."))
     }
     
     static func showNewNoteCouldNotBeCreatedError() {
-        showErrorToUser("A new note could not be added!", informativeText: "Please manually navigate past the last page to create a new note.")
+        showErrorToUser(String(localized: "A new note could not be added!"), informativeText: String(localized: "Please manually navigate past the last page to create a new note."))
     }
     
     static func showCouldNotFindLastPage() {
-        showErrorToUser("ScratchPad could not find the last page!", informativeText: "Please manually navigate to the last page.")
+        showErrorToUser(String(localized: "ScratchPad could not find the last page!"), informativeText: String(localized: "Please manually navigate to the last page."))
     }
 }
 

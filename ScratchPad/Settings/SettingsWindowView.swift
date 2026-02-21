@@ -86,7 +86,7 @@ struct SettingsWindowView: View {
         
         if response == .OK {
             guard var newLocation = openPanel.url else {
-                ErrorHandling.showErrorToUser("The folder you selected is invalid.", informativeText: "Please select a different folder.")
+                ErrorHandling.showErrorToUser(String(localized: "The folder you selected is invalid."), informativeText: String(localized: "Please select a different folder."))
                 return
             }
             

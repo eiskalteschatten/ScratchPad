@@ -21,6 +21,64 @@
       },
       "shouldTranslate" : false
     },
+    "A new note could not be added!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine neue Notiz konnte nicht hinzugefügt werden!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡No se pudo agregar una nueva nota!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une nouvelle note n'a pas pu être ajoutée !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile aggiungere una nuova nota!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいメモを追加できませんでした！"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er kon geen nieuwe notitie worden toegevoegd!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось добавить новую заметку!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法添加新笔记！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法新增筆記！"
+          }
+        }
+      }
+    },
     "Back" : {
       "localizations" : {
         "de" : {
@@ -29,10 +87,22 @@
             "value" : "Zurück"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atrás"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indietro"
           }
         },
         "ja" : {
@@ -47,31 +117,19 @@
             "value" : "Terug"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atrás"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Indietro"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Назад"
           }
         },
-        "zh-Hant" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "返回"
           }
         },
-        "zh-Hans" : {
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "返回"
@@ -87,10 +145,22 @@
             "value" : "Speicherort ändern…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar ubicación de almacenamiento…"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changer l'emplacement de stockage…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia posizione di archiviazione…"
           }
         },
         "ja" : {
@@ -105,34 +175,22 @@
             "value" : "Opslaglocatie wijzigen…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambiar ubicación de almacenamiento…"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambia posizione di archiviazione…"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Изменить место хранения…"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更改儲存位置…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "更改存储位置…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改儲存位置…"
           }
         }
       }
@@ -145,10 +203,22 @@
             "value" : "Backup-Ordner auswählen…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir carpeta de copia de seguridad…"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisir le dossier de sauvegarde…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli cartella di backup…"
           }
         },
         "ja" : {
@@ -163,34 +233,22 @@
             "value" : "Back-upmap kiezen…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elegir carpeta de copia de seguridad…"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scegli cartella di backup…"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выбрать папку резервной копии…"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "選擇備份資料夾…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "选择备份文件夹…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇備份資料夾…"
           }
         }
       }
@@ -203,10 +261,22 @@
             "value" : "Schließen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
           }
         },
         "ja" : {
@@ -221,34 +291,22 @@
             "value" : "Sluiten"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cerrar"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chiudi"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыть"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "關閉"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
           }
         }
       }
@@ -261,10 +319,22 @@
             "value" : "Fortfahren"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continuer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua"
           }
         },
         "ja" : {
@@ -279,34 +349,22 @@
             "value" : "Doorgaan"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continuar"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continua"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продолжить"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "繼續"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "继续"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繼續"
           }
         }
       }
@@ -319,10 +377,22 @@
             "value" : "Erstelle ein Backup in ScratchPad 1.x und merke dir den Speicherort."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una copia de seguridad en ScratchPad 1.x y recuerda su ubicación."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Créez une sauvegarde dans ScratchPad 1.x et notez son emplacement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea un backup in ScratchPad 1.x e ricorda la sua posizione."
           }
         },
         "ja" : {
@@ -337,34 +407,22 @@
             "value" : "Maak een back-up in ScratchPad 1.x en onthoud de locatie."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crea una copia de seguridad en ScratchPad 1.x y recuerda su ubicación."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crea un backup in ScratchPad 1.x e ricorda la sua posizione."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Создайте резервную копию в ScratchPad 1.x и запомните её расположение."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在 ScratchPad 1.x 中建立備份並記住其位置。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "在 ScratchPad 1.x 中创建备份并记住其位置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 ScratchPad 1.x 中建立備份並記住其位置。"
           }
         }
       }
@@ -377,10 +435,22 @@
             "value" : "Standardort"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación predeterminada"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emplacement par défaut"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione predefinita"
           }
         },
         "ja" : {
@@ -395,34 +465,22 @@
             "value" : "Standaardlocatie"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ubicación predeterminada"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Posizione predefinita"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Расположение по умолчанию"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "預設位置"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "默认位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設位置"
           }
         }
       }
@@ -435,10 +493,22 @@
             "value" : "Seite löschen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar página"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer la page"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina pagina"
           }
         },
         "ja" : {
@@ -453,34 +523,22 @@
             "value" : "Pagina verwijderen"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Eliminar página"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elimina pagina"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить страницу"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "刪除頁面"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "删除页面"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除頁面"
           }
         }
       }
@@ -493,10 +551,22 @@
             "value" : "Aufgrund der modernen macOS-Sicherheitsrichtlinien ist es nicht möglich, automatisch von ScratchPad 1.x zu importieren. Bitte folge den untenstehenden Schritten, um fortzufahren."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debido a la seguridad moderna de macOS, no es posible importar automáticamente desde ScratchPad 1.x. Sigue los pasos a continuación para continuar."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "En raison des mesures de sécurité modernes de macOS, il n'est pas possible d'importer automatiquement depuis ScratchPad 1.x. Veuillez suivre les étapes ci-dessous pour continuer."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A causa delle moderne restrizioni di sicurezza di macOS, non è possibile importare automaticamente da ScratchPad 1.x. Segui i passaggi seguenti per procedere."
           }
         },
         "ja" : {
@@ -511,34 +581,22 @@
             "value" : "Vanwege de moderne macOS-beveiliging is het niet mogelijk om automatisch te importeren vanuit ScratchPad 1.x. Volg de onderstaande stappen om door te gaan."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Debido a la seguridad moderna de macOS, no es posible importar automáticamente desde ScratchPad 1.x. Sigue los pasos a continuación para continuar."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A causa delle moderne restrizioni di sicurezza di macOS, non è possibile importare automaticamente da ScratchPad 1.x. Segui i passaggi seguenti per procedere."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Из-за современных ограничений безопасности macOS автоматический импорт из ScratchPad 1.x невозможен. Пожалуйста, следуйте инструкциям ниже для продолжения."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "由於現代 macOS 安全性限制，無法從 ScratchPad 1.x 自動匯入。請按照以下步驟繼續。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "由于现代 macOS 安全限制，无法从 ScratchPad 1.x 自动导入。请按照以下步骤继续。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由於現代 macOS 安全性限制，無法從 ScratchPad 1.x 自動匯入。請按照以下步驟繼續。"
           }
         }
       }
@@ -551,10 +609,22 @@
             "value" : "Seite exportieren…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportar página…"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exporter la page…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esporta pagina…"
           }
         },
         "ja" : {
@@ -569,34 +639,22 @@
             "value" : "Pagina exporteren…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Exportar página…"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Esporta pagina…"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экспортировать страницу…"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "匯出頁面…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "导出页面…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯出頁面…"
           }
         }
       }
@@ -609,10 +667,22 @@
             "value" : "Erste Seite"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primera página"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Première page"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima pagina"
           }
         },
         "ja" : {
@@ -627,34 +697,22 @@
             "value" : "Eerste pagina"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Primera página"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prima pagina"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Первая страница"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "第一頁"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "第一页"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一頁"
           }
         }
       }
@@ -667,10 +725,22 @@
             "value" : "Über anderen Fenstern schweben"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flotar sobre otras ventanas"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flotter au-dessus des autres fenêtres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fluttua sopra le altre finestre"
           }
         },
         "ja" : {
@@ -685,34 +755,22 @@
             "value" : "Boven andere vensters zweven"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flotar sobre otras ventanas"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fluttua sopra le altre finestre"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поверх других окон"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "浮動於其他視窗之上"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "浮动于其他窗口之上"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮動於其他視窗之上"
           }
         }
       }
@@ -725,10 +783,22 @@
             "value" : "Schwebend:"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flotante:"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flottant :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mobile:"
           }
         },
         "ja" : {
@@ -743,34 +813,22 @@
             "value" : "Zwevend:"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flotante:"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mobile:"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поверх окон:"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "浮動："
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "浮动："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮動："
           }
         }
       }
@@ -783,10 +841,22 @@
             "value" : "Vorwärts"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adelante"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suivant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanti"
           }
         },
         "ja" : {
@@ -801,34 +871,22 @@
             "value" : "Vooruit"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adelante"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Avanti"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вперёд"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "前進"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "前进"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前進"
           }
         }
       }
@@ -841,10 +899,22 @@
             "value" : "Gehe zu"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ir"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aller"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vai"
           }
         },
         "ja" : {
@@ -859,31 +929,19 @@
             "value" : "Ga"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ir"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vai"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перейти"
           }
         },
-        "zh-Hant" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "前往"
           }
         },
-        "zh-Hans" : {
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "前往"
@@ -899,10 +957,22 @@
             "value" : "Du kannst deine Notizen jedoch manuell importieren, indem du auf \"Ablage\" und dann auf \"Von Version 1 importieren…\" klickst und den Anweisungen folgst. Alternativ kannst du auf die Schaltfläche unten klicken."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin embargo, puedes importarlos manualmente haciendo clic en «Archivo», luego en «Importar desde la versión 1…» y siguiendo las instrucciones. También puedes hacer clic en el botón de abajo."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous pouvez toutefois les importer manuellement en cliquant sur « Fichier », puis sur « Importer depuis la version 1… » et en suivant les instructions. Vous pouvez également cliquer sur le bouton ci-dessous."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuttavia, puoi importarle manualmente facendo clic su «File», poi su «Importa dalla versione 1…» e seguendo le istruzioni. Puoi anche fare clic sul pulsante in basso."
           }
         },
         "ja" : {
@@ -917,34 +987,22 @@
             "value" : "U kunt ze echter handmatig importeren door op \"Bestand\" te klikken, dan op \"Importeren vanuit versie 1…\" en de instructies te volgen. U kunt ook op de onderstaande knop klikken."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sin embargo, puedes importarlos manualmente haciendo clic en «Archivo», luego en «Importar desde la versión 1…» y siguiendo las instrucciones. También puedes hacer clic en el botón de abajo."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tuttavia, puoi importarle manualmente facendo clic su «File», poi su «Importa dalla versione 1…» e seguendo le istruzioni. Puoi anche fare clic sul pulsante in basso."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Однако вы можете импортировать их вручную, нажав «Файл», затем «Импортировать из версии 1…» и следуя инструкциям. Также можно нажать кнопку ниже."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不過，您可以點擊「檔案」，然後點擊「從版本 1 匯入…」並按照說明手動匯入。您也可以點擊下方按鈕。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "不过，您可以点击「文件」，然后点击「从版本 1 导入…」并按照说明手动导入。您也可以点击下方按钮。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不過，您可以點擊「檔案」，然後點擊「從版本 1 匯入…」並按照說明手動匯入。您也可以點擊下方按鈕。"
           }
         }
       }
@@ -957,10 +1015,22 @@
             "value" : "Von Version 1 importieren…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importar desde la versión 1…"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importer depuis la version 1…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importa dalla versione 1…"
           }
         },
         "ja" : {
@@ -975,34 +1045,22 @@
             "value" : "Importeren vanuit versie 1…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importar desde la versión 1…"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importa dalla versione 1…"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Импортировать из версии 1…"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "從版本 1 匯入…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "从版本 1 导入…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從版本 1 匯入…"
           }
         }
       }
@@ -1015,10 +1073,22 @@
             "value" : "Deine Notizen von ScratchPad 1 importieren"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importando tus notas desde ScratchPad 1"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importer vos notes depuis ScratchPad 1"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importazione delle note da ScratchPad 1"
           }
         },
         "ja" : {
@@ -1033,34 +1103,22 @@
             "value" : "Uw notities importeren vanuit ScratchPad 1"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importando tus notas desde ScratchPad 1"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importazione delle note da ScratchPad 1"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Импорт заметок из ScratchPad 1"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "從 ScratchPad 1 匯入您的筆記"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "从 ScratchPad 1 导入您的笔记"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從 ScratchPad 1 匯入您的筆記"
           }
         }
       }
@@ -1073,10 +1131,22 @@
             "value" : "Letzte Seite"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Última página"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dernière page"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ultima pagina"
           }
         },
         "ja" : {
@@ -1091,34 +1161,22 @@
             "value" : "Laatste pagina"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Última página"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ultima pagina"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Последняя страница"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最後一頁"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "最后一页"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最後一頁"
           }
         }
       }
@@ -1131,10 +1189,22 @@
             "value" : "Neue Seite"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva página"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nouvelle page"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuova pagina"
           }
         },
         "ja" : {
@@ -1149,34 +1219,22 @@
             "value" : "Nieuwe pagina"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nueva página"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nuova pagina"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Новая страница"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新頁面"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "新页面"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新頁面"
           }
         }
       }
@@ -1189,10 +1247,22 @@
             "value" : "Nächste Seite"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Página siguiente"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Page suivante"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagina successiva"
           }
         },
         "ja" : {
@@ -1207,22 +1277,16 @@
             "value" : "Volgende pagina"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Página siguiente"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pagina successiva"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Следующая страница"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一页"
           }
         },
         "zh-Hant" : {
@@ -1230,11 +1294,63 @@
             "state" : "translated",
             "value" : "下一頁"
           }
+        }
+      }
+    },
+    "No last page number could be found!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine letzte Seitenzahl gefunden!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡No se pudo encontrar el número de la última página!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun numéro de dernière page n'a pu être trouvé !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile trovare l'ultimo numero di pagina!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最後のページ番号が見つかりませんでした！"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er kon geen laatste paginanummer worden gevonden!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось найти номер последней страницы!"
+          }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "下一页"
+            "value" : "找不到最后一页的页码！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到最後一頁的頁碼！"
           }
         }
       }
@@ -1247,10 +1363,22 @@
             "value" : "Willkommensbildschirm öffnen…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir pantalla de bienvenida…"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvrir l'écran de bienvenue…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri schermata di benvenuto…"
           }
         },
         "ja" : {
@@ -1265,22 +1393,16 @@
             "value" : "Welkomstscherm openen…"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir pantalla de bienvenida…"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apri schermata di benvenuto…"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Открыть экран приветствия…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开欢迎界面…"
           }
         },
         "zh-Hant" : {
@@ -1288,11 +1410,295 @@
             "state" : "translated",
             "value" : "開啟歡迎畫面…"
           }
+        }
+      }
+    },
+    "Please manually navigate past the last page to create a new note." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte navigiere manuell über die letzte Seite hinaus, um eine neue Notiz zu erstellen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navega manualmente más allá de la última página para crear una nueva nota."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez naviguer manuellement au-delà de la dernière page pour créer une nouvelle note."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naviga manualmente oltre l'ultima pagina per creare una nuova nota."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいメモを作成するには、手動で最後のページを超えてナビゲートしてください。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigeer handmatig voorbij de laatste pagina om een nieuwe notitie te maken."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, вручную перейдите за последнюю страницу, чтобы создать новую заметку."
+          }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打开欢迎界面…"
+            "value" : "请手动导航到最后一页之后以创建新笔记。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請手動導航到最後一頁之後以建立新筆記。"
+          }
+        }
+      }
+    },
+    "Please manually navigate to the last page." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte navigiere manuell zur letzten Seite."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navega manualmente a la última página."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez naviguer manuellement jusqu'à la dernière page."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naviga manualmente all'ultima pagina."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動で最後のページに移動してください。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navigeer handmatig naar de laatste pagina."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, вручную перейдите на последнюю страницу."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请手动导航到最后一页。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請手動導航到最後一頁。"
+          }
+        }
+      }
+    },
+    "Please re-select your storage location in the Settings and try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte wähle deinen Speicherort in den Einstellungen erneut aus und versuche es noch einmal."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuelve a seleccionar tu ubicación de almacenamiento en la Configuración e inténtalo de nuevo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez re-sélectionner votre emplacement de stockage dans les Paramètres et réessayer."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona nuovamente la posizione di archiviazione nelle Impostazioni e riprova."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定でストレージの場所を再選択してから、もう一度お試しください。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecteer uw opslaglocatie opnieuw in de Instellingen en probeer het opnieuw."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, повторно выберите место хранения в Настройках и попробуйте снова."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在设置中重新选择存储位置，然后重试。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請在設定中重新選擇儲存位置，然後重試。"
+          }
+        }
+      }
+    },
+    "Please select a different folder." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte wähle einen anderen Ordner aus."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, selecciona una carpeta diferente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez sélectionner un autre dossier."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona una cartella diversa."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "別のフォルダを選択してください。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecteer een andere map."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, выберите другую папку."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择其他文件夹。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請選擇其他資料夾。"
+          }
+        }
+      }
+    },
+    "Please try re-selecting your storage location in the settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte versuche, deinen Speicherort in den Einstellungen erneut auszuwählen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intenta volver a seleccionar tu ubicación de almacenamiento en la configuración."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez essayer de re-sélectionner votre emplacement de stockage dans les paramètres."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prova a selezionare nuovamente la posizione di archiviazione nelle impostazioni."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定でストレージの場所を再選択してみてください。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Probeer uw opslaglocatie opnieuw te selecteren in de instellingen."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, попробуйте повторно выбрать место хранения в настройках."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请尝试在设置中重新选择存储位置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請嘗試在設定中重新選擇儲存位置。"
           }
         }
       }
@@ -1305,10 +1711,22 @@
             "value" : "Vorherige Seite"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Página anterior"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Page précédente"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagina precedente"
           }
         },
         "ja" : {
@@ -1323,34 +1741,22 @@
             "value" : "Vorige pagina"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Página anterior"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pagina precedente"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Предыдущая страница"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "上一頁"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "上一页"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上一頁"
           }
         }
       }
@@ -1366,6 +1772,122 @@
       },
       "shouldTranslate" : false
     },
+    "ScratchPad could not find the last page!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad konnte die letzte Seite nicht finden!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡ScratchPad no pudo encontrar la última página!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad n'a pas pu trouver la dernière page !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad non ha trovato l'ultima pagina!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPadは最後のページを見つけられませんでした！"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad kon de laatste pagina niet vinden!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad не смог найти последнюю страницу!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 找不到最后一页！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 找不到最後一頁！"
+          }
+        }
+      }
+    },
+    "ScratchPad is not allowed to access the storage location for your notes!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad hat keine Berechtigung, auf den Speicherort deiner Notizen zuzugreifen!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡ScratchPad no tiene permiso para acceder a la ubicación de almacenamiento de tus notas!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad n'est pas autorisé à accéder à l'emplacement de stockage de vos notes !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad non è autorizzato ad accedere alla posizione di archiviazione delle note!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPadはメモのストレージの場所にアクセスする権限がありません！"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad heeft geen toegang tot de opslaglocatie van uw notities!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad не имеет доступа к месту хранения ваших заметок!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 没有权限访问您笔记的存储位置！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 沒有權限存取您筆記的儲存位置！"
+          }
+        }
+      }
+    },
     "Select the \"ScratchPad\" folder." : {
       "localizations" : {
         "de" : {
@@ -1374,10 +1896,22 @@
             "value" : "Wähle den Ordner \"ScratchPad\" aus."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona la carpeta «ScratchPad»."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sélectionnez le dossier « ScratchPad »."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona la cartella «ScratchPad»."
           }
         },
         "ja" : {
@@ -1392,34 +1926,22 @@
             "value" : "Selecteer de map \"ScratchPad\"."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selecciona la carpeta «ScratchPad»."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seleziona la cartella «ScratchPad»."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите папку «ScratchPad»."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "選擇「ScratchPad」資料夾。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "选择\"ScratchPad\"文件夹。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇「ScratchPad」資料夾。"
           }
         }
       }
@@ -1432,10 +1954,22 @@
             "value" : "Wähle die Schaltfläche unten aus, um den Backup-Ordner auszuwählen. Der Ordner heißt \"ScratchPad\" und enthält zwei Unterordner namens \"Notes\" und \"Preferences\"."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz clic en el botón de abajo para elegir la carpeta de copia de seguridad. La carpeta se llamará «ScratchPad» y contendrá dos subcarpetas llamadas «Notes» y «Preferences»."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cliquez sur le bouton ci-dessous pour choisir le dossier de sauvegarde. Ce dossier s'appellera « ScratchPad » et contiendra deux sous-dossiers nommés « Notes » et « Preferences »."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fai clic sul pulsante in basso per scegliere la cartella di backup. La cartella si chiamerà «ScratchPad» e conterrà due sottocartelle chiamate «Notes» e «Preferences»."
           }
         },
         "ja" : {
@@ -1450,34 +1984,22 @@
             "value" : "Klik op de onderstaande knop om de back-upmap te kiezen. De map heet \"ScratchPad\" en bevat twee submappen met de naam \"Notes\" en \"Preferences\"."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Haz clic en el botón de abajo para elegir la carpeta de copia de seguridad. La carpeta se llamará «ScratchPad» y contendrá dos subcarpetas llamadas «Notes» y «Preferences»."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fai clic sul pulsante in basso per scegliere la cartella di backup. La cartella si chiamerà «ScratchPad» e conterrà due sottocartelle chiamate «Notes» e «Preferences»."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите кнопку ниже, чтобы выбрать папку резервной копии. Папка будет называться «ScratchPad» и будет содержать две подпапки: «Notes» и «Preferences»."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "點擊下方按鈕選擇備份資料夾。該資料夾將命名為「ScratchPad」，並包含兩個子資料夾：「Notes」和「Preferences」。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "点击下方按钮选择备份文件夹。该文件夹将命名为\"ScratchPad\"，并包含两个子文件夹：\"Notes\"和\"Preferences\"。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "點擊下方按鈕選擇備份資料夾。該資料夾將命名為「ScratchPad」，並包含兩個子資料夾：「Notes」和「Preferences」。"
           }
         }
       }
@@ -1490,10 +2012,22 @@
             "value" : "Da macOS seine Sicherheitsrichtlinien für die Ausführung von Anwendungen aktualisiert hat, ist es nicht möglich, deine Notizen automatisch aus ScratchPad 1 zu importieren."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dado que macOS ha actualizado sus políticas de seguridad para la ejecución de aplicaciones, no es posible importar automáticamente tus notas desde ScratchPad 1."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depuis que macOS a mis à jour ses politiques de sécurité concernant l'exécution des applications, il n'est pas possible d'importer automatiquement vos notes depuis ScratchPad 1."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poiché macOS ha aggiornato le sue politiche di sicurezza per l'esecuzione delle applicazioni, non è possibile importare automaticamente le note da ScratchPad 1."
           }
         },
         "ja" : {
@@ -1508,34 +2042,22 @@
             "value" : "Omdat macOS zijn beveiligingsbeleid voor de uitvoering van applicaties heeft bijgewerkt, is het niet mogelijk om uw notities automatisch te importeren vanuit ScratchPad 1."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dado que macOS ha actualizado sus políticas de seguridad para la ejecución de aplicaciones, no es posible importar automáticamente tus notas desde ScratchPad 1."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Poiché macOS ha aggiornato le sue politiche di sicurezza per l'esecuzione delle applicazioni, non è possibile importare automaticamente le note da ScratchPad 1."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поскольку macOS обновила свои политики безопасности для запуска приложений, автоматический импорт заметок из ScratchPad 1 невозможен."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "由於 macOS 已更新應用程式執行的安全性政策，無法從 ScratchPad 1 自動匯入您的筆記。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "由于 macOS 已更新应用程序运行的安全策略，无法从 ScratchPad 1 自动导入您的笔记。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由於 macOS 已更新應用程式執行的安全性政策，無法從 ScratchPad 1 自動匯入您的筆記。"
           }
         }
       }
@@ -1548,10 +2070,22 @@
             "value" : "Speicherort:"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación de almacenamiento:"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emplacement de stockage :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione di archiviazione:"
           }
         },
         "ja" : {
@@ -1566,22 +2100,16 @@
             "value" : "Opslaglocatie:"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ubicación de almacenamiento:"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Posizione di archiviazione:"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Место хранения:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "存储位置："
           }
         },
         "zh-Hant" : {
@@ -1589,11 +2117,121 @@
             "state" : "translated",
             "value" : "儲存位置："
           }
+        }
+      }
+    },
+    "The folder you selected is invalid." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der ausgewählte Ordner ist ungültig."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La carpeta que seleccionaste no es válida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le dossier que vous avez sélectionné n'est pas valide."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La cartella selezionata non è valida."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択したフォルダは無効です。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De door u geselecteerde map is ongeldig."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбранная папка недействительна."
+          }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "存储位置："
+            "value" : "您选择的文件夹无效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您選擇的資料夾無效。"
+          }
+        }
+      }
+    },
+    "The storage location for your notes could not be determined" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Speicherort deiner Notizen konnte nicht ermittelt werden"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo determinar la ubicación de almacenamiento de tus notas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'emplacement de stockage de vos notes n'a pas pu être déterminé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile determinare la posizione di archiviazione delle note"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メモのストレージの場所を特定できませんでした"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De opslaglocatie van uw notities kon niet worden bepaald"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось определить место хранения ваших заметок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法确定您笔记的存储位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法確定您筆記的儲存位置"
           }
         }
       }
@@ -1606,10 +2244,22 @@
             "value" : "Dieser Importassistent führt dich durch den Import deiner Notizen und Einstellungen aus ScratchPad 1.x."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este asistente de importación te guiará a través de la importación de tus notas y ajustes desde ScratchPad 1.x."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cet assistant d'importation vous guidera tout au long de l'importation de vos notes et paramètres depuis ScratchPad 1.x."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa procedura guidata ti aiuterà a importare le note e le impostazioni da ScratchPad 1.x."
           }
         },
         "ja" : {
@@ -1624,34 +2274,22 @@
             "value" : "Deze importassistent begeleidt u bij het importeren van uw notities en instellingen vanuit ScratchPad 1.x."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Este asistente de importación te guiará a través de la importación de tus notas y ajustes desde ScratchPad 1.x."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Questa procedura guidata ti aiuterà a importare le note e le impostazioni da ScratchPad 1.x."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Этот помощник проведёт вас через импорт заметок и настроек из ScratchPad 1.x."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "此匯入工具將引導您完成從 ScratchPad 1.x 匯入筆記和設定的步驟。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "此导入工具将引导您完成从 ScratchPad 1.x 导入笔记和设置的步骤。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此匯入工具將引導您完成從 ScratchPad 1.x 匯入筆記和設定的步驟。"
           }
         }
       }
@@ -1664,10 +2302,22 @@
             "value" : "Diese Version ist eine vollständige Neuentwicklung von ScratchPad mit modernen macOS-Technologien wie SwiftUI. Sie läuft nativ auf Intel- und Apple Silicon-Macs und unterstützt moderne macOS-Funktionen wie den Dunkelmodus."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta versión es una reescritura completa de ScratchPad desde cero utilizando tecnologías modernas de macOS como SwiftUI. Se ejecuta de forma nativa en Mac Intel y Apple Silicon y admite funciones modernas de macOS como el Modo Oscuro."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette version est une réécriture complète de ScratchPad en utilisant des technologies macOS modernes telles que SwiftUI. Elle s'exécute nativement sur les Mac Intel et Apple Silicon et prend en charge les fonctionnalités modernes de macOS telles que le mode sombre."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa versione è una riscrittura completa di ScratchPad da zero utilizzando le moderne tecnologie macOS come SwiftUI. Funziona nativamente su Mac Intel e Apple Silicon e supporta le funzionalità moderne di macOS come la Modalità Scura."
           }
         },
         "ja" : {
@@ -1682,34 +2332,22 @@
             "value" : "Deze versie is een volledige herschrijving van ScratchPad met moderne macOS-technologieën zoals SwiftUI. Het draait native op zowel Intel- als Apple Silicon-Macs en ondersteunt moderne macOS-functies zoals de donkere modus."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Esta versión es una reescritura completa de ScratchPad desde cero utilizando tecnologías modernas de macOS como SwiftUI. Se ejecuta de forma nativa en Mac Intel y Apple Silicon y admite funciones modernas de macOS como el Modo Oscuro."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Questa versione è una riscrittura completa di ScratchPad da zero utilizzando le moderne tecnologie macOS come SwiftUI. Funziona nativamente su Mac Intel e Apple Silicon e supporta le funzionalità moderne di macOS come la Modalità Scura."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эта версия — полная переработка ScratchPad с нуля с использованием современных технологий macOS, таких как SwiftUI. Она работает нативно на Mac с Intel и Apple Silicon и поддерживает современные функции macOS, такие как тёмный режим."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "此版本使用 SwiftUI 等現代 macOS 技術從頭完全重寫了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生運行，並支援深色模式等現代 macOS 功能。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "此版本使用 SwiftUI 等现代 macOS 技术从头完全重写了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生运行，并支持深色模式等现代 macOS 功能。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此版本使用 SwiftUI 等現代 macOS 技術從頭完全重寫了 ScratchPad。它可在 Intel 和 Apple Silicon Mac 上原生運行，並支援深色模式等現代 macOS 功能。"
           }
         }
       }
@@ -1722,10 +2360,22 @@
             "value" : "Standardspeicherort verwenden"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar ubicación de almacenamiento predeterminada"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utiliser l'emplacement de stockage par défaut"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa posizione di archiviazione predefinita"
           }
         },
         "ja" : {
@@ -1740,34 +2390,22 @@
             "value" : "Standaard opslaglocatie gebruiken"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Usar ubicación de almacenamiento predeterminada"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Usa posizione di archiviazione predefinita"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Использовать расположение по умолчанию"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使用預設儲存位置"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用默认存储位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用預設儲存位置"
           }
         }
       }
@@ -1780,10 +2418,22 @@
             "value" : "Version %@"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "versión %@"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "versione %@"
           }
         },
         "ja" : {
@@ -1798,31 +2448,19 @@
             "value" : "Versie %@"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "versión %@"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "versione %@"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "версия %@"
           }
         },
-        "zh-Hant" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "版本 %@"
           }
         },
-        "zh-Hans" : {
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "版本 %@"
@@ -1838,10 +2476,22 @@
             "value" : "ScratchPad 2 ist endlich da. Die erste Version von ScratchPad wurde 2007 für Mac OS X Tiger (10.4) veröffentlicht und bis Mac OS X El Capitan (10.11) aktualisiert."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 ha llegado por fin. La primera versión de ScratchPad se lanzó en 2007 para Mac OS X Tiger (10.4) y se actualizó hasta Mac OS X El Capitan (10.11)."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ScratchPad 2 est enfin là. La première version de ScratchPad a été publiée en 2007 pour Mac OS X Tiger (10.4) et a été mise à jour jusqu'à Mac OS X El Capitan (10.11)."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 è finalmente arrivato. La prima versione di ScratchPad è stata rilasciata nel 2007 per Mac OS X Tiger (10.4) ed è stata aggiornata fino a Mac OS X El Capitan (10.11)."
           }
         },
         "ja" : {
@@ -1856,34 +2506,22 @@
             "value" : "ScratchPad 2 is eindelijk hier. De eerste versie van ScratchPad werd in 2007 uitgebracht voor Mac OS X Tiger (10.4) en werd bijgewerkt tot Mac OS X El Capitan (10.11)."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ScratchPad 2 ha llegado por fin. La primera versión de ScratchPad se lanzó en 2007 para Mac OS X Tiger (10.4) y se actualizó hasta Mac OS X El Capitan (10.11)."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ScratchPad 2 è finalmente arrivato. La prima versione di ScratchPad è stata rilasciata nel 2007 per Mac OS X Tiger (10.4) ed è stata aggiornata fino a Mac OS X El Capitan (10.11)."
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ScratchPad 2 наконец-то здесь. Первая версия ScratchPad вышла в 2007 году для Mac OS X Tiger (10.4) и обновлялась вплоть до Mac OS X El Capitan (10.11)."
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ScratchPad 2 終於來了。ScratchPad 的第一個版本於 2007 年針對 Mac OS X Tiger (10.4) 發布，並持續更新至 Mac OS X El Capitan (10.11)。"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ScratchPad 2 终于来了。ScratchPad 的第一个版本于 2007 年针对 Mac OS X Tiger (10.4) 发布，并持续更新至 Mac OS X El Capitan (10.11)。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScratchPad 2 終於來了。ScratchPad 的第一個版本於 2007 年針對 Mac OS X Tiger (10.4) 發布，並持續更新至 Mac OS X El Capitan (10.11)。"
           }
         }
       }
@@ -1896,10 +2534,22 @@
             "value" : "Willkommen bei ScratchPad 2!"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Bienvenido a ScratchPad 2!"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bienvenue dans ScratchPad 2 !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benvenuto in ScratchPad 2!"
           }
         },
         "ja" : {
@@ -1914,34 +2564,22 @@
             "value" : "Welkom bij ScratchPad 2!"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¡Bienvenido a ScratchPad 2!"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Benvenuto in ScratchPad 2!"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добро пожаловать в ScratchPad 2!"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "歡迎使用 ScratchPad 2！"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "欢迎使用 ScratchPad 2！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎使用 ScratchPad 2！"
           }
         }
       }
@@ -1954,10 +2592,22 @@
             "value" : "Fenstertransparenz:"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transparencia de la ventana:"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transparence de la fenêtre :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trasparenza della finestra:"
           }
         },
         "ja" : {
@@ -1972,34 +2622,22 @@
             "value" : "Venstertransparantie:"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Transparencia de la ventana:"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trasparenza della finestra:"
-          }
-        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Прозрачность окна:"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "視窗透明度："
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "窗口透明度："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "視窗透明度："
           }
         }
       }
