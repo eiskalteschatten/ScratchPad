@@ -33,7 +33,7 @@ final class SettingsModel: ObservableObject {
         }
         didSet {
             do {
-                if var unwrappedLocation = storageLocation {                   
+                if let unwrappedLocation = storageLocation {                   
                     if !FileManager.default.fileExists(atPath: unwrappedLocation.path) {
                         try FileManager.default.createDirectory(atPath: unwrappedLocation.path, withIntermediateDirectories: true, attributes: nil)
                     }
