@@ -8,7 +8,11 @@
 import SwiftUI
 
 final class StorageLocationModel: ObservableObject {
+    #if DEBUG
+    let scratchPadFolderName = "ScratchPad-debug"
+    #else
     let scratchPadFolderName = "ScratchPad"
+    #endif
     
     private var previousStorageLocation: URL?
     private var securityScopedURL: URL?
@@ -30,10 +34,10 @@ final class StorageLocationModel: ObservableObject {
                         // The default location is inside the app's sandbox container and doesn't
                         // support security-scoped bookmarks. Clear any saved bookmark so that
                         // init() falls through to resetStorageLocation() on the next launch.
-                        UserDefaults.standard.removeObject(forKey: "storageLocationBookmarkData")
+                        UserDefaults.standard.removeObject(forKey: UserDefaultsConfig.storageLocationBookmarkData)
                     } else {
                         let bookmarkData = try unwrappedLocation.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
-                        UserDefaults.standard.set(bookmarkData, forKey: "storageLocationBookmarkData")
+                        UserDefaults.standard.set(bookmarkData, forKey: UserDefaultsConfig.storageLocationBookmarkData)
                     }
                     
                     if let unwrappedPreviousLocation = previousStorageLocation,
@@ -67,11 +71,11 @@ final class StorageLocationModel: ObservableObject {
     }
     
     init() {
-        if let bookmarkData = UserDefaults.standard.object(forKey: "storageLocationBookmarkData") as? Data {
+        if let bookmarkData = UserDefaults.standard.object(forKey: UserDefaultsConfig.storageLocationBookmarkData) as? Data {
             var isStale = false
             if let resolved = try? URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale) {
                 guard resolved.startAccessingSecurityScopedResource() else {
-                    UserDefaults.standard.removeObject(forKey: "storageLocationBookmarkData")
+                    UserDefaults.standard.removeObject(forKey: UserDefaultsConfig.storageLocationBookmarkData)
                     handleStorageLocationNotFound()
                     return
                 }
@@ -79,13 +83,13 @@ final class StorageLocationModel: ObservableObject {
                 if isStale {
                     // Renew the stale bookmark now that we have access
                     if let renewed = try? resolved.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil) {
-                        UserDefaults.standard.set(renewed, forKey: "storageLocationBookmarkData")
+                        UserDefaults.standard.set(renewed, forKey: UserDefaultsConfig.storageLocationBookmarkData)
                     }
                 }
                 storageLocation = resolved
             }
             else {
-                UserDefaults.standard.removeObject(forKey: "storageLocationBookmarkData")
+                UserDefaults.standard.removeObject(forKey: UserDefaultsConfig.storageLocationBookmarkData)
                 handleStorageLocationNotFound()
             }
         }

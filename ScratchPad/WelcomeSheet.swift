@@ -72,7 +72,7 @@ struct WelcomeSheet: View {
     
     private func close() {
         commandsModel.welcomeSheetOpen = false
-        UserDefaults.standard.set(false, forKey: "openWelcomeSheetOnLaunch")
+        UserDefaults.standard.set(false, forKey: UserDefaultsConfig.openWelcomeSheetOnLaunch)
     }
 }
 
