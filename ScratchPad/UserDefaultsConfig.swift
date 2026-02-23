@@ -7,16 +7,14 @@
 
 final class UserDefaultsConfig {
     #if DEBUG
-    static let storageLocationBookmarkData = "storageLocationBookmarkData-debug"
-    static let windowTransparency = "windowTransparency-debug"
-    static let floatAboveOtherWindows = "floatAboveOtherWindows-debug"
-    static let openWelcomeSheetOnLaunch = "openWelcomeSheetOnLaunch-debug"
-    static let pageNumber = "pageNumber-debug"
+    private static let keySuffix = "-debug"
     #else
-    static let storageLocationBookmarkData = "storageLocationBookmarkData"
-    static let windowTransparency = "windowTransparency"
-    static let floatAboveOtherWindows = "floatAboveOtherWindows"
-    static let openWelcomeSheetOnLaunch = "openWelcomeSheetOnLaunch-debug"
-    static let pageNumber = "pageNumber"
+    private static let keySuffix = ""
     #endif
+
+    static var storageLocationBookmarkData: String { "storageLocationBookmarkData\(keySuffix)" }
+    static var windowTransparency: String { "windowTransparency\(keySuffix)" }
+    static var floatAboveOtherWindows: String { "floatAboveOtherWindows\(keySuffix)" }
+    static var openWelcomeSheetOnLaunch: String { "openWelcomeSheetOnLaunch\(keySuffix)" }
+    static var pageNumber: String { "pageNumber\(keySuffix)" }
 }
