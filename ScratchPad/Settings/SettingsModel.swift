@@ -10,17 +10,17 @@ import SwiftUI
 final class SettingsModel: ObservableObject {
     private var storageLocationModel: StorageLocationModel
     
-    @Published var windowTransparency = UserDefaultsConfig.defaults.value(forKey: UserDefaultsConfig.windowTransparency) as? Double ?? 100 {
+    @Published var windowTransparency = ScratchPadUserDefaults.defaults.value(forKey: ScratchPadUserDefaults.windowTransparency) as? Double ?? 100 {
         didSet {
-            UserDefaultsConfig.defaults.set(windowTransparency, forKey: UserDefaultsConfig.windowTransparency)
+            ScratchPadUserDefaults.defaults.set(windowTransparency, forKey: ScratchPadUserDefaults.windowTransparency)
             NSApp.windows.first?.isOpaque = windowTransparency == 100
             NSApp.windows.first?.alphaValue = windowTransparency / 100
         }
     }
 
-    @Published var floatAboveOtherWindows = UserDefaultsConfig.defaults.bool(forKey: UserDefaultsConfig.floatAboveOtherWindows) {
+    @Published var floatAboveOtherWindows = ScratchPadUserDefaults.defaults.bool(forKey: ScratchPadUserDefaults.floatAboveOtherWindows) {
         didSet {
-            UserDefaultsConfig.defaults.set(floatAboveOtherWindows, forKey: UserDefaultsConfig.floatAboveOtherWindows)
+            ScratchPadUserDefaults.defaults.set(floatAboveOtherWindows, forKey: ScratchPadUserDefaults.floatAboveOtherWindows)
             NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
         }
     }

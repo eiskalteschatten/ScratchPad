@@ -9,6 +9,6 @@ import SwiftUI
 
 final class CommandsModel: ObservableObject {
     @Published var importSheetOpen = false
-    @Published var welcomeSheetOpen = UserDefaultsConfig.defaults.object(forKey: UserDefaultsConfig.openWelcomeSheetOnLaunch) as? Bool ?? true
+    @Published var welcomeSheetOpen = ScratchPadUserDefaults.defaults.object(forKey: ScratchPadUserDefaults.openWelcomeSheetOnLaunch) as? Bool ?? true
 }
 

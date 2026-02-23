@@ -72,7 +72,7 @@ struct WelcomeSheet: View {
     
     private func close() {
         commandsModel.welcomeSheetOpen = false
-        UserDefaultsConfig.defaults.set(false, forKey: UserDefaultsConfig.openWelcomeSheetOnLaunch)
+        ScratchPadUserDefaults.defaults.set(false, forKey: ScratchPadUserDefaults.openWelcomeSheetOnLaunch)
     }
 }
 

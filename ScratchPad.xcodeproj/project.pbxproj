@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		932C66D52F4C4DA000B198E8 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C66D42F4C4D9E00B198E8 /* UserDefaultsConfig.swift */; };
+		932C66D52F4C4DA000B198E8 /* ScratchPadUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C66D42F4C4D9E00B198E8 /* ScratchPadUserDefaults.swift */; };
 		9356ECCE2F489EB400EA4C62 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */; };
 		9356ECD02F48A72C00EA4C62 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9356ECCF2F48A72C00EA4C62 /* AppIcon.icon */; };
 		93CCA3702F49D9AA00D07448 /* StorageLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CCA36F2F49D9A500D07448 /* StorageLocationModel.swift */; };
@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		932C66D42F4C4D9E00B198E8 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
+		932C66D42F4C4D9E00B198E8 /* ScratchPadUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadUserDefaults.swift; sourceTree = "<group>"; };
 		9356ECCD2F489EB400EA4C62 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		9356ECCF2F48A72C00EA4C62 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		93CCA36F2F49D9A500D07448 /* StorageLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLocationModel.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		93FE2E8029433D7900C07F70 /* ScratchPad */ = {
 			isa = PBXGroup;
 			children = (
-				932C66D42F4C4D9E00B198E8 /* UserDefaultsConfig.swift */,
+				932C66D42F4C4D9E00B198E8 /* ScratchPadUserDefaults.swift */,
 				93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */,
 				93FE2EB3294541BA00C07F70 /* CommandsModel.swift */,
 				93FE2E8329433D7900C07F70 /* ContentView.swift */,
@@ -244,7 +244,7 @@
 				93FE2E8429433D7900C07F70 /* ContentView.swift in Sources */,
 				93CCA3702F49D9AA00D07448 /* StorageLocationModel.swift in Sources */,
 				93FE2E8229433D7900C07F70 /* ScratchPadApp.swift in Sources */,
-				932C66D52F4C4DA000B198E8 /* UserDefaultsConfig.swift in Sources */,
+				932C66D52F4C4DA000B198E8 /* ScratchPadUserDefaults.swift in Sources */,
 				93FE2E9C29434C1D00C07F70 /* SettingsWindowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

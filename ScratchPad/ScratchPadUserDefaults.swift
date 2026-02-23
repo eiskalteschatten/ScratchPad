@@ -1,5 +1,5 @@
 //
-//  UserDefaultsConfig.swift
+//  ScratchPadUserDefaults.swift
 //  ScratchPad
 //
 //  Created by Benjamin Seifert on 23.02.26.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class UserDefaultsConfig {
+final class ScratchPadUserDefaults {
     #if DEBUG
     static let defaults = UserDefaults(suiteName: "com.alexseifert.ScratchPad.debug") ?? .standard
     #else

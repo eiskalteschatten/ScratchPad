@@ -12,11 +12,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSWindow.allowsAutomaticWindowTabbing = false
         
-        let windowTransparency = UserDefaultsConfig.defaults.value(forKey: UserDefaultsConfig.windowTransparency) as? Double ?? 100
+        let windowTransparency = ScratchPadUserDefaults.defaults.value(forKey: ScratchPadUserDefaults.windowTransparency) as? Double ?? 100
         NSApp.windows.first?.isOpaque = windowTransparency == 100
         NSApp.windows.first?.alphaValue = windowTransparency / 100
         
-        let floatAboveOtherWindows = UserDefaultsConfig.defaults.bool(forKey: UserDefaultsConfig.floatAboveOtherWindows)
+        let floatAboveOtherWindows = ScratchPadUserDefaults.defaults.bool(forKey: ScratchPadUserDefaults.floatAboveOtherWindows)
         NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
     }
 }
