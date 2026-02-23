@@ -5,16 +5,18 @@
 //  Created by Benjamin Seifert on 23.02.26.
 //
 
+import Foundation
+
 final class UserDefaultsConfig {
     #if DEBUG
-    private static let keySuffix = "-debug"
+    static let defaults = UserDefaults(suiteName: "com.alexseifert.ScratchPad.debug") ?? .standard
     #else
-    private static let keySuffix = ""
+    static let defaults = UserDefaults.standard
     #endif
 
-    static var storageLocationBookmarkData: String { "storageLocationBookmarkData\(keySuffix)" }
-    static var windowTransparency: String { "windowTransparency\(keySuffix)" }
-    static var floatAboveOtherWindows: String { "floatAboveOtherWindows\(keySuffix)" }
-    static var openWelcomeSheetOnLaunch: String { "openWelcomeSheetOnLaunch\(keySuffix)" }
-    static var pageNumber: String { "pageNumber\(keySuffix)" }
+    static let storageLocationBookmarkData = "storageLocationBookmarkData"
+    static let windowTransparency = "windowTransparency"
+    static let floatAboveOtherWindows = "floatAboveOtherWindows"
+    static let openWelcomeSheetOnLaunch = "openWelcomeSheetOnLaunch"
+    static let pageNumber = "pageNumber"
 }

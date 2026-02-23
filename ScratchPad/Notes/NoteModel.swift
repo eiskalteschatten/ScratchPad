@@ -12,9 +12,9 @@ final class NoteModel: ObservableObject {
     private var storageLocationModel: StorageLocationModel
     private var switchingPages = false
 
-    @Published var pageNumber = UserDefaults.standard.value(forKey: UserDefaultsConfig.pageNumber) as? Int ?? 1 {
+    @Published var pageNumber = UserDefaultsConfig.defaults.value(forKey: UserDefaultsConfig.pageNumber) as? Int ?? 1 {
         didSet {
-            UserDefaults.standard.set(pageNumber, forKey: UserDefaultsConfig.pageNumber)
+            UserDefaultsConfig.defaults.set(pageNumber, forKey: UserDefaultsConfig.pageNumber)
             switchingPages = true
             noteContents = AttributedString()
             openNote()

@@ -10,17 +10,17 @@ import SwiftUI
 final class SettingsModel: ObservableObject {
     private var storageLocationModel: StorageLocationModel
     
-    @Published var windowTransparency = UserDefaults.standard.value(forKey: UserDefaultsConfig.windowTransparency) as? Double ?? 100 {
+    @Published var windowTransparency = UserDefaultsConfig.defaults.value(forKey: UserDefaultsConfig.windowTransparency) as? Double ?? 100 {
         didSet {
-            UserDefaults.standard.set(windowTransparency, forKey: UserDefaultsConfig.windowTransparency)
+            UserDefaultsConfig.defaults.set(windowTransparency, forKey: UserDefaultsConfig.windowTransparency)
             NSApp.windows.first?.isOpaque = windowTransparency == 100
             NSApp.windows.first?.alphaValue = windowTransparency / 100
         }
     }
 
-    @Published var floatAboveOtherWindows = UserDefaults.standard.bool(forKey: UserDefaultsConfig.floatAboveOtherWindows) {
+    @Published var floatAboveOtherWindows = UserDefaultsConfig.defaults.bool(forKey: UserDefaultsConfig.floatAboveOtherWindows) {
         didSet {
-            UserDefaults.standard.set(floatAboveOtherWindows, forKey: UserDefaultsConfig.floatAboveOtherWindows)
+            UserDefaultsConfig.defaults.set(floatAboveOtherWindows, forKey: UserDefaultsConfig.floatAboveOtherWindows)
             NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
         }
     }
