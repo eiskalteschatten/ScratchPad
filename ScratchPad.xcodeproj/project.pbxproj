@@ -385,7 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20260223.2;
+				CURRENT_PROJECT_VERSION = 20260223.3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ScratchPad/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
@@ -398,7 +398,7 @@
 				INFOPLIST_FILE = ScratchPad/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ScratchPad;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2007-2026 Alex Seifert";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -420,7 +420,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20260223.2;
+				CURRENT_PROJECT_VERSION = 20260223.3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ScratchPad/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
@@ -433,7 +433,7 @@
 				INFOPLIST_FILE = ScratchPad/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ScratchPad;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2007-2026 Alex Seifert";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
