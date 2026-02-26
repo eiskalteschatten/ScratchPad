@@ -35,7 +35,7 @@
 		93CCA36F2F49D9A500D07448 /* StorageLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLocationModel.swift; sourceTree = "<group>"; };
 		93CCA3712F4A13A700D07448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93E366492F49045E00C3533E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		93FE2E7E29433D7900C07F70 /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FE2E7E29433D7900C07F70 /* ScratchBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FE2E8129433D7900C07F70 /* ScratchPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadApp.swift; sourceTree = "<group>"; };
 		93FE2E8329433D7900C07F70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93FE2E8529433D7B00C07F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		93FE2E7529433D7900C07F70 = {
 			isa = PBXGroup;
 			children = (
-				93FE2E8029433D7900C07F70 /* ScratchPad */,
+				93FE2E8029433D7900C07F70 /* ScratchBook */,
 				93FE2E7F29433D7900C07F70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,12 +74,12 @@
 		93FE2E7F29433D7900C07F70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93FE2E7E29433D7900C07F70 /* ScratchPad.app */,
+				93FE2E7E29433D7900C07F70 /* ScratchBook.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93FE2E8029433D7900C07F70 /* ScratchPad */ = {
+		93FE2E8029433D7900C07F70 /* ScratchBook */ = {
 			isa = PBXGroup;
 			children = (
 				932C66D42F4C4D9E00B198E8 /* ScratchPadUserDefaults.swift */,
@@ -98,7 +98,7 @@
 				9356ECCF2F48A72C00EA4C62 /* AppIcon.icon */,
 				93CCA3712F4A13A700D07448 /* Info.plist */,
 			);
-			path = ScratchPad;
+			path = ScratchBook;
 			sourceTree = "<group>";
 		};
 		93FE2E8729433D7B00C07F70 /* Preview Content */ = {
@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93FE2E7D29433D7900C07F70 /* ScratchPad */ = {
+		93FE2E7D29433D7900C07F70 /* ScratchBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93FE2E8D29433D7B00C07F70 /* Build configuration list for PBXNativeTarget "ScratchPad" */;
+			buildConfigurationList = 93FE2E8D29433D7B00C07F70 /* Build configuration list for PBXNativeTarget "ScratchBook" */;
 			buildPhases = (
 				93FE2E7A29433D7900C07F70 /* Sources */,
 				93FE2E7B29433D7900C07F70 /* Frameworks */,
@@ -161,11 +161,11 @@
 			);
 			dependencies = (
 			);
-			name = ScratchPad;
+			name = ScratchBook;
 			packageProductDependencies = (
 			);
 			productName = ScratchPad;
-			productReference = 93FE2E7E29433D7900C07F70 /* ScratchPad.app */;
+			productReference = 93FE2E7E29433D7900C07F70 /* ScratchBook.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93FE2E7929433D7900C07F70 /* Build configuration list for PBXProject "ScratchPad" */;
+			buildConfigurationList = 93FE2E7929433D7900C07F70 /* Build configuration list for PBXProject "ScratchBook" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93FE2E7D29433D7900C07F70 /* ScratchPad */,
+				93FE2E7D29433D7900C07F70 /* ScratchBook */,
 			);
 		};
 /* End PBXProject section */
@@ -382,12 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScratchBook/ScratchBook.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 20260223.3;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"ScratchPad/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchBook/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
@@ -395,8 +396,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScratchPad/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScratchPad;
+				INFOPLIST_FILE = ScratchBook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScratchBook;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2007-2026 Alex Seifert";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -405,7 +406,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchPad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -417,12 +418,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScratchBook/ScratchBook.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 20260223.3;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"ScratchPad/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchBook/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
@@ -430,8 +432,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScratchPad/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScratchPad;
+				INFOPLIST_FILE = ScratchBook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScratchBook;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2007-2026 Alex Seifert";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,7 +442,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchPad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexseifert.ScratchBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,7 +452,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93FE2E7929433D7900C07F70 /* Build configuration list for PBXProject "ScratchPad" */ = {
+		93FE2E7929433D7900C07F70 /* Build configuration list for PBXProject "ScratchBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93FE2E8B29433D7B00C07F70 /* Debug */,
@@ -459,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93FE2E8D29433D7B00C07F70 /* Build configuration list for PBXNativeTarget "ScratchPad" */ = {
+		93FE2E8D29433D7B00C07F70 /* Build configuration list for PBXNativeTarget "ScratchBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93FE2E8E29433D7B00C07F70 /* Debug */,

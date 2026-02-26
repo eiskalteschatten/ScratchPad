@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93FE2E7D29433D7900C07F70"
-               BuildableName = "ScratchPad.app"
-               BlueprintName = "ScratchPad"
-               ReferencedContainer = "container:ScratchPad.xcodeproj">
+               BuildableName = "ScratchBook.app"
+               BlueprintName = "ScratchBook"
+               ReferencedContainer = "container:ScratchBook.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93FE2E7D29433D7900C07F70"
-            BuildableName = "ScratchPad.app"
-            BlueprintName = "ScratchPad"
-            ReferencedContainer = "container:ScratchPad.xcodeproj">
+            BuildableName = "ScratchBook.app"
+            BlueprintName = "ScratchBook"
+            ReferencedContainer = "container:ScratchBook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93FE2E7D29433D7900C07F70"
-            BuildableName = "ScratchPad.app"
-            BlueprintName = "ScratchPad"
-            ReferencedContainer = "container:ScratchPad.xcodeproj">
+            BuildableName = "ScratchBook.app"
+            BlueprintName = "ScratchBook"
+            ReferencedContainer = "container:ScratchBook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
