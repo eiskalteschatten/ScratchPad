@@ -49,6 +49,7 @@ struct ScratchBookApp: App {
                 .environmentObject(settingsModel)
                 .environmentObject(commandsModel)
         }
+        .defaultSize(width: 600, height: 700)
         .commands {
             CommandGroup(replacing: .newItem) {
                 Button("New Page", systemImage: "plus") {
