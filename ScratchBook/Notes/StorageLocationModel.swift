@@ -9,9 +9,9 @@ import SwiftUI
 
 final class StorageLocationModel: ObservableObject {
     #if DEBUG
-    let scratchPadFolderName = "ScratchPad-debug"
+    let scratchBookFolderName = "ScratchBook-debug"
     #else
-    let scratchPadFolderName = "ScratchPad"
+    let scratchBookFolderName = "ScratchBook"
     #endif
     
     private var previousStorageLocation: URL?
@@ -34,10 +34,10 @@ final class StorageLocationModel: ObservableObject {
                         // The default location is inside the app's sandbox container and doesn't
                         // support security-scoped bookmarks. Clear any saved bookmark so that
                         // init() falls through to resetStorageLocation() on the next launch.
-                        ScratchPadUserDefaults.defaults.removeObject(forKey: ScratchPadUserDefaults.storageLocationBookmarkData)
+                        ScratchBookUserDefaults.defaults.removeObject(forKey: ScratchBookUserDefaults.storageLocationBookmarkData)
                     } else {
                         let bookmarkData = try unwrappedLocation.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
-                        ScratchPadUserDefaults.defaults.set(bookmarkData, forKey: ScratchPadUserDefaults.storageLocationBookmarkData)
+                        ScratchBookUserDefaults.defaults.set(bookmarkData, forKey: ScratchBookUserDefaults.storageLocationBookmarkData)
                     }
                     
                     if let unwrappedPreviousLocation = previousStorageLocation,
@@ -67,15 +67,15 @@ final class StorageLocationModel: ObservableObject {
     private var defaultStorageLocation: URL {
         let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         /// Note: This is necessary for the comparison in usesDefaultStorageLocation to work
-        return documentURL.appendingPathComponent(scratchPadFolderName)
+        return documentURL.appendingPathComponent(scratchBookFolderName)
     }
     
     init() {
-        if let bookmarkData = ScratchPadUserDefaults.defaults.object(forKey: ScratchPadUserDefaults.storageLocationBookmarkData) as? Data {
+        if let bookmarkData = ScratchBookUserDefaults.defaults.object(forKey: ScratchBookUserDefaults.storageLocationBookmarkData) as? Data {
             var isStale = false
             if let resolved = try? URL(resolvingBookmarkData: bookmarkData, options: [.withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &isStale) {
                 guard resolved.startAccessingSecurityScopedResource() else {
-                    ScratchPadUserDefaults.defaults.removeObject(forKey: ScratchPadUserDefaults.storageLocationBookmarkData)
+                    ScratchBookUserDefaults.defaults.removeObject(forKey: ScratchBookUserDefaults.storageLocationBookmarkData)
                     handleStorageLocationNotFound()
                     return
                 }
@@ -83,13 +83,13 @@ final class StorageLocationModel: ObservableObject {
                 if isStale {
                     // Renew the stale bookmark now that we have access
                     if let renewed = try? resolved.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil) {
-                        ScratchPadUserDefaults.defaults.set(renewed, forKey: ScratchPadUserDefaults.storageLocationBookmarkData)
+                        ScratchBookUserDefaults.defaults.set(renewed, forKey: ScratchBookUserDefaults.storageLocationBookmarkData)
                     }
                 }
                 storageLocation = resolved
             }
             else {
-                ScratchPadUserDefaults.defaults.removeObject(forKey: ScratchPadUserDefaults.storageLocationBookmarkData)
+                ScratchBookUserDefaults.defaults.removeObject(forKey: ScratchBookUserDefaults.storageLocationBookmarkData)
                 handleStorageLocationNotFound()
             }
         }
@@ -117,8 +117,8 @@ final class StorageLocationModel: ObservableObject {
             openPanel.canCreateDirectories = true
             
             if openPanel.runModal() == .OK, var newLocation = openPanel.url {
-                if newLocation.lastPathComponent != scratchPadFolderName {
-                    newLocation = newLocation.appendingPathComponent(scratchPadFolderName)
+                if newLocation.lastPathComponent != scratchBookFolderName {
+                    newLocation = newLocation.appendingPathComponent(scratchBookFolderName)
                 }
                 storageLocation = newLocation
             }
@@ -150,8 +150,8 @@ final class StorageLocationModel: ObservableObject {
                 return
             }
             
-            if newLocation.lastPathComponent != scratchPadFolderName {
-                newLocation = newLocation.appendingPathComponent(scratchPadFolderName)
+            if newLocation.lastPathComponent != scratchBookFolderName {
+                newLocation = newLocation.appendingPathComponent(scratchBookFolderName)
             }
             
             storageLocation = newLocation

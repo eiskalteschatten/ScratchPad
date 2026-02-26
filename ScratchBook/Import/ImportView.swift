@@ -36,7 +36,7 @@ struct ImportView: View {
                 .font(.system(size: 12))
                 .lineLimit(nil)
             
-            Text("Note: The imported notes will be added after any notes that currently exist in ScratchPad 2. No existing notes will be deleted, modified or overwritten.")
+            Text("Note: The imported notes will be added after any notes that currently exist in ScratchBook. No existing notes will be deleted, modified or overwritten.")
                 .italic()
                 .font(.system(size: 12))
                 .lineLimit(nil)
@@ -159,7 +159,7 @@ struct ImportView: View {
                 // MARK: inform the user that everything was successful
                 let alert = NSAlert()
                 alert.messageText = String(localized: "Your notes were successfully imported!")
-                alert.informativeText = String(localized: "Your imported notes will appear after the last page of the notes that were already in ScratchPad 2.")
+                alert.informativeText = String(localized: "Your imported notes will appear after the last page of the notes that were already in ScratchBook.")
                 alert.addButton(withTitle: String(localized: "OK"))
                 alert.alertStyle = .informational
                 alert.runModal()

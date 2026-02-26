@@ -12,9 +12,9 @@ final class NoteModel: ObservableObject {
     private var storageLocationModel: StorageLocationModel
     private var switchingPages = false
 
-    @Published var pageNumber = ScratchPadUserDefaults.defaults.value(forKey: ScratchPadUserDefaults.pageNumber) as? Int ?? 1 {
+    @Published var pageNumber = ScratchBookUserDefaults.defaults.value(forKey: ScratchBookUserDefaults.pageNumber) as? Int ?? 1 {
         didSet {
-            ScratchPadUserDefaults.defaults.set(pageNumber, forKey: ScratchPadUserDefaults.pageNumber)
+            ScratchBookUserDefaults.defaults.set(pageNumber, forKey: ScratchBookUserDefaults.pageNumber)
             switchingPages = true
             noteContents = AttributedString()
             openNote()

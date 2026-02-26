@@ -21,7 +21,7 @@ struct WelcomeSheet: View {
                         .padding(.trailing, 10)
                     
                     VStack(alignment: .leading) {
-                        Text("ScratchPad")
+                        Text("ScratchBook")
                             .font(.system(size: 42))
                         
                         if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
@@ -30,15 +30,15 @@ struct WelcomeSheet: View {
                     }
                 }
             
-                Text("Welcome to ScratchPad 2!")
+                Text("Welcome to ScratchBook!")
                     .font(.system(size: 16))
                     .bold()
                 
-                Text("Version 2 of ScratchPad has finally arrived. The first version of ScratchPad was released in 2007 for Mac OS X Tiger (10.4) and was updated through Mac OS X El Capitan (10.11).")
+                Text("Version 2 of ScratchPad has finally arrived! However, it is now called ScratchBook. The first version of ScratchPad was released in 2007 for Mac OS X Tiger (10.4) and was updated through Mac OS X El Capitan (10.11).")
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)
                 
-                Text("This version is a complete rewrite of ScratchPad from the ground up using modern macOS technologies such as SwiftUI. It runs natively on both Intel and Apple Silicon Macs and supports modern macOS features such as Dark Mode.")
+                Text("This version is a complete rewrite from the ground up using modern macOS technologies such as SwiftUI. It runs natively on both Intel and Apple Silicon Macs and supports modern macOS features such as Dark Mode.")
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)
                 
@@ -72,7 +72,7 @@ struct WelcomeSheet: View {
     
     private func close() {
         commandsModel.welcomeSheetOpen = false
-        ScratchPadUserDefaults.defaults.set(false, forKey: ScratchPadUserDefaults.openWelcomeSheetOnLaunch)
+        ScratchBookUserDefaults.defaults.set(false, forKey: ScratchBookUserDefaults.openWelcomeSheetOnLaunch)
     }
 }
 

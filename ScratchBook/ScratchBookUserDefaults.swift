@@ -1,5 +1,5 @@
 //
-//  ScratchPadUserDefaults.swift
+//  ScratchBookUserDefaults.swift
 //  ScratchPad
 //
 //  Created by Benjamin Seifert on 23.02.26.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class ScratchPadUserDefaults {
+final class ScratchBookUserDefaults {
     #if DEBUG
-    static let defaults = UserDefaults(suiteName: "com.alexseifert.ScratchPad.debug") ?? .standard
+    static let defaults = UserDefaults(suiteName: "com.alexseifert.ScratchBook.debug") ?? .standard
     #else
     static let defaults = UserDefaults.standard
     #endif

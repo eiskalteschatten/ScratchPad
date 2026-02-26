@@ -1,5 +1,5 @@
 //
-//  ScratchPadApp.swift
+//  ScratchBookApp.swift
 //  ScratchPad
 //
 //  Created by Alex Seifert on 09.12.22.
@@ -12,17 +12,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSWindow.allowsAutomaticWindowTabbing = false
         
-        let windowTransparency = ScratchPadUserDefaults.defaults.value(forKey: ScratchPadUserDefaults.windowTransparency) as? Double ?? 100
+        let windowTransparency = ScratchBookUserDefaults.defaults.value(forKey: ScratchBookUserDefaults.windowTransparency) as? Double ?? 100
         NSApp.windows.first?.isOpaque = windowTransparency == 100
         NSApp.windows.first?.alphaValue = windowTransparency / 100
         
-        let floatAboveOtherWindows = ScratchPadUserDefaults.defaults.bool(forKey: ScratchPadUserDefaults.floatAboveOtherWindows)
+        let floatAboveOtherWindows = ScratchBookUserDefaults.defaults.bool(forKey: ScratchBookUserDefaults.floatAboveOtherWindows)
         NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
     }
 }
 
 @main
-struct ScratchPadApp: App {
+struct ScratchBookApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @ObservedObject private var storageLocationModel: StorageLocationModel
