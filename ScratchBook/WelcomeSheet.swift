@@ -34,7 +34,7 @@ struct WelcomeSheet: View {
                     .font(.system(size: 16))
                     .bold()
                 
-                Text("Version 2 of ScratchPad has finally arrived! However, it is now called ScratchBook. The first version of ScratchPad was released in 2007 for Mac OS X Tiger (10.4) and was updated through Mac OS X El Capitan (10.11).")
+                Text("ScratchBook is version 2.0 of a small application that used to be called ScratchPad. The first version of ScratchPad was released in 2007 for Mac OS X Tiger (10.4) and was updated through Mac OS X El Capitan (10.11).")
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)
                 
