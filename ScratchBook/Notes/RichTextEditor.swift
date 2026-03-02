@@ -18,6 +18,8 @@ struct RichTextEditor: NSViewRepresentable {
         }
 
         textView.isRichText = true
+        textView.isEditable = true
+        textView.isSelectable = true
         textView.allowsUndo = true
         textView.allowsImageEditing = true
         textView.allowsDocumentBackgroundColorChange = true
@@ -46,6 +48,11 @@ struct RichTextEditor: NSViewRepresentable {
 
     func updateNSView(_ nsView: NSScrollView, context: Context) {
         guard let textView = context.coordinator.textView else { return }
+        // Skip update if the change came from the textView itself
+        if context.coordinator.isUpdatingFromTextView {
+            context.coordinator.isUpdatingFromTextView = false
+            return
+        }
         let nsAttributedString = (try? NSAttributedString(noteModel.noteContents, including: \.appKit))
             ?? NSAttributedString(noteModel.noteContents)
         // Only update if the content actually changed to avoid overwriting the selection/undo stack
@@ -61,6 +68,7 @@ struct RichTextEditor: NSViewRepresentable {
     class Coordinator: NSObject, NSTextViewDelegate {
         var parent: RichTextEditor
         var textView: NSTextView?
+        var isUpdatingFromTextView = false
 
         init(_ parent: RichTextEditor) {
             self.parent = parent
@@ -68,6 +76,7 @@ struct RichTextEditor: NSViewRepresentable {
 
         func textDidChange(_ notification: Notification) {
             guard let textView = notification.object as? NSTextView else { return }
+            isUpdatingFromTextView = true
             let attributed = textView.attributedString()
             parent.noteModel.noteContents = (try? AttributedString(attributed, including: \.appKit))
                 ?? AttributedString(attributed)
