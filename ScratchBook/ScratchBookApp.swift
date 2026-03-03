@@ -19,6 +19,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let floatAboveOtherWindows = ScratchBookUserDefaults.defaults.bool(forKey: ScratchBookUserDefaults.floatAboveOtherWindows)
         NSApp.windows.first?.level = floatAboveOtherWindows ? .popUpMenu : .normal
     }
+
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        true
+    }
 }
 
 @main
