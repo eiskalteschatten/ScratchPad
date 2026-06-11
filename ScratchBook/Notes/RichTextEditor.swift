@@ -7,11 +7,23 @@
 
 import SwiftUI
 
+private class ScratchBookTextView: NSTextView {
+    override func performKeyEquivalent(with event: NSEvent) -> Bool {
+        let flags = event.modifierFlags.intersection(.deviceIndependentFlagsMask)
+        if flags == [.command, .shift, .option],
+           event.charactersIgnoringModifiers?.lowercased() == "v" {
+            pasteAsPlainText(nil)
+            return true
+        }
+        return super.performKeyEquivalent(with: event)
+    }
+}
+
 struct RichTextEditor: NSViewRepresentable {
     @EnvironmentObject var noteModel: NoteModel
 
     func makeNSView(context: Context) -> NSScrollView {
-        let scrollView = NSTextView.scrollableTextView()
+        let scrollView = ScratchBookTextView.scrollableTextView()
 
         guard let textView = scrollView.documentView as? NSTextView else {
             return scrollView
