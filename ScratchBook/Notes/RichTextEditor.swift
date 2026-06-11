@@ -17,6 +17,26 @@ private class ScratchBookTextView: NSTextView {
         }
         return super.performKeyEquivalent(with: event)
     }
+
+    @objc func resetFormatting(_ sender: Any?) {
+        guard let textStorage = textStorage else { return }
+        let range = selectedRange().length > 0 ? selectedRange() : NSRange(location: 0, length: textStorage.length)
+        guard range.length > 0 else { return }
+
+        let defaultFont = NSFont.userFont(ofSize: NSFont.systemFontSize) ?? NSFont.systemFont(ofSize: NSFont.systemFontSize)
+        let defaultAttributes: [NSAttributedString.Key: Any] = [
+            .font: defaultFont,
+            .foregroundColor: NSColor.textColor,
+            .paragraphStyle: NSParagraphStyle.default
+        ]
+
+        if shouldChangeText(in: range, replacementString: nil) {
+            textStorage.beginEditing()
+            textStorage.setAttributes(defaultAttributes, range: range)
+            textStorage.endEditing()
+            didChangeText()
+        }
+    }
 }
 
 struct RichTextEditor: NSViewRepresentable {

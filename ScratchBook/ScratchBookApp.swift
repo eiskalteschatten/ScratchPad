@@ -114,6 +114,13 @@ struct ScratchBookApp: App {
             TextEditingCommands()
             TextFormattingCommands()
             ToolbarCommands()
+
+            CommandGroup(after: .textFormatting) {
+                Divider()
+                Button("Reset Formatting", systemImage: "eraser") {
+                    NSApp.sendAction(NSSelectorFromString("resetFormatting:"), to: nil, from: nil)
+                }
+            }
         }
         
         Settings {
